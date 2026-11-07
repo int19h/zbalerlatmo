@@ -109,7 +109,8 @@ def required_upstream() -> list[str]:
 
 class Font:
     def __init__(self, path: Path):
-        self.tt = TTFont(path)
+        # Keep the upstream timestamp so rebuilds are byte-for-byte reproducible.
+        self.tt = TTFont(path, recalcTimestamp=False)
         self.cff = self.tt["CFF "].cff
         self.top = self.cff.topDictIndex[0]
         self.order = list(self.tt.getGlyphOrder())
@@ -149,7 +150,8 @@ class LatinSource:
     """The Latin companion font, scaled to the upstream design."""
 
     def __init__(self, path: Path, target: Font):
-        self.tt = TTFont(path)
+        # Keep the upstream timestamp so rebuilds are byte-for-byte reproducible.
+        self.tt = TTFont(path, recalcTimestamp=False)
         self.glyphs = self.tt.getGlyphSet()
         self.cmap = self.tt.getBestCmap()
         self.scale = self._fit_scale(target)
