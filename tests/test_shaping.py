@@ -8,7 +8,7 @@ and is checked against every built font listed in fonts.toml. Lines starting
 with ``#`` and blank lines are ignored. Glyph names are those of the upstream
 Zbalermorna fonts, which all share one naming scheme.
 
-``corpus.tsv`` has a third column instead of a comment: the same text in the
+``corpus*.tsv`` files have a third column instead of a comment: the same text in the
 upstream Private Use Area encoding. That text must shape to the same glyphs,
 which checks that the upstream behaviour for PUA input is preserved.
 """
@@ -67,22 +67,23 @@ def test_manual(font, text, expected, note):
     assert glyph_names(font, text) == expected, note
 
 
-def test_corpus_latin(font):
-    if not load("corpus.tsv"):
-        pytest.skip("no corpus")
+CORPORA = sorted(p.name for p in CASES.glob("corpus*.tsv"))
+
+
+@pytest.mark.parametrize("corpus", CORPORA)
+def test_corpus_latin(font, corpus):
     failures = []
-    for text, expected, _ in load("corpus.tsv"):
+    for text, expected, _ in load(corpus):
         got = glyph_names(font, text)
         if got != expected:
             failures.append(f"{text}\n  expected {' '.join(expected)}\n  got      {' '.join(got)}")
     assert not failures, f"{len(failures)} mismatches:\n" + "\n".join(failures[:40])
 
 
-def test_corpus_pua(font):
-    if not load("corpus.tsv"):
-        pytest.skip("no corpus")
+@pytest.mark.parametrize("corpus", CORPORA)
+def test_corpus_pua(font, corpus):
     failures = []
-    for text, expected, pua in load("corpus.tsv"):
+    for text, expected, pua in load(corpus):
         got = glyph_names(font, pua)
         if got != expected:
             failures.append(f"{text} (PUA)\n  expected {' '.join(expected)}\n  got      {' '.join(got)}")

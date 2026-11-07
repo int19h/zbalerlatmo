@@ -102,7 +102,8 @@ python -m pytest tests
 ```
 
 `tests/cases/manual.tsv` holds hand-checked cases. `tests/cases/corpus.tsv`
-holds dictionary words and sentences whose expected output was produced by an
+(dictionary words and sentences) and `tests/cases/corpus-ziholafti.tsv`
+(sentences from Joi Massat's *zi’o lafti*) hold text whose expected output was produced by an
 independent Latin-to-Zbalermorna renderer and shaped with the original
 upstream font; the same text in the PUA encoding must shape identically, which
 checks that upstream behaviour is preserved.
@@ -112,5 +113,10 @@ checks that upstream behaviour is preserved.
 The build code is MIT-licensed (see [`LICENSE`](LICENSE)). The built fonts
 are Modified Versions under the SIL Open Font License 1.1 (see
 [`fonts/OFL.txt`](fonts/OFL.txt)). The vendored Lato fonts are under the OFL
-(see [`vendor/lato/OFL.txt`](vendor/lato/OFL.txt)). The upstream repository in
+(see [`vendor/lato/OFL.txt`](vendor/lato/OFL.txt)).
+`tests/cases/corpus-ziholafti.tsv` contains text from
+[*zi’o lafti*](https://suzypavlis.neocities.org/lojban/prux/ziholafti) © 2026
+by Joi Massat, used and adapted under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); that file is
+under CC BY-NC 4.0. The upstream repository in
 `zbalermorna/` keeps its own license.
