@@ -18,6 +18,7 @@ Fonts are configured in fonts.toml. For each font this:
 from __future__ import annotations
 
 import copy
+import io
 import statistics
 import sys
 import tomllib
@@ -26,12 +27,12 @@ from pathlib import Path
 from fontTools.feaLib.builder import Builder
 from fontTools.feaLib.parser import Parser
 from fontTools.misc.transform import Transform
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont, newTable
 from fontTools.ttLib.tables import otTables
-import io
 
 from . import features
 
@@ -40,7 +41,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Latin punctuation and symbols to copy from the companion font when the
 # upstream font lacks them, as (glyph name, code points).
 PUNCTUATION = [
-    ("comma", [0x2C]),
+    ("comma", []),              # U+002C goes to lat.comma; this is its punctuation form
     ("quotesingle", []),        # reached via the apostrophe logic only
     ("quoteright", []),         # likewise
     ("quoteleft", [0x2018]),
@@ -103,6 +104,7 @@ def required_upstream() -> list[str]:
     f = features
     names = list(f.RADICAL.values()) + list(f.VOWEL_MARK.values())
     names += list(f.VOWEL_FULL.values()) + list(f.GLIDE.values())
+    names += list(f.DIPHTHONG_MARK.values()) + list(f.DIPHTHONG_FULL.values())
     names += [f.PERIOD, f.APOSTROPHE, f.SEPARATOR, f.STRESS, f.STRETCH]
     return names
 
@@ -124,8 +126,13 @@ class Font:
             raise ValueError(f"glyph {name} already exists")
         private = self.top.Private
         pen = T2CharStringPen(width - private.nominalWidthX, None)
+        lsb = 0
         if draw is not None:
             draw(pen)
+            bounds = BoundsPen(None)
+            draw(bounds)
+            if bounds.bounds is not None:
+                lsb = round(bounds.bounds[0])
         cs = pen.getCharString(private=private, globalSubrs=self.cff.GlobalSubrs)
         strings = self.top.CharStrings
         if strings.charStringsAreIndexed:
@@ -136,8 +143,8 @@ class Font:
         self.order.append(name)
         self.top.charset = self.order
         self.tt.setGlyphOrder(self.order)
-        # lsb is recomputed from the outline on save.
-        self.tt["hmtx"].metrics[name] = (width, 0)
+        # fontTools does not recompute lsb for CFF fonts; hmtx lsb must be xMin.
+        self.tt["hmtx"].metrics[name] = (width, lsb)
 
     def map(self, codepoint: int, name: str) -> None:
         for table in self.tt["cmap"].tables:
@@ -150,8 +157,7 @@ class LatinSource:
     """The Latin companion font, scaled to the upstream design."""
 
     def __init__(self, path: Path, target: Font):
-        # Keep the upstream timestamp so rebuilds are byte-for-byte reproducible.
-        self.tt = TTFont(path, recalcTimestamp=False)
+        self.tt = TTFont(path)
         self.glyphs = self.tt.getGlyphSet()
         self.cmap = self.tt.getBestCmap()
         self.scale = self._fit_scale(target)
@@ -212,9 +218,8 @@ def _shift_lookup_refs(lookup, offset: int) -> None:
     for st in lookup.SubTable:
         if lookup.LookupType == 7:
             st = st.ExtSubTable
-        for attr in ("SubstLookupRecord",):
-            for rec in getattr(st, attr, None) or []:
-                rec.LookupListIndex += offset
+        for rec in getattr(st, "SubstLookupRecord", None) or []:
+            rec.LookupListIndex += offset
         for setattr_ in ("SubRuleSet", "SubClassSet", "ChainSubRuleSet", "ChainSubClassSet"):
             for s in getattr(st, setattr_, None) or []:
                 if s is None:
@@ -279,6 +284,9 @@ def merge_gsub(font: Font, generated: otTables.GSUB, order: list[int], pua_featu
             idx.append(rlig_index)
         ls.FeatureIndex = sorted(idx)
         ls.FeatureCount = len(ls.FeatureIndex)
+        if ls.ReqFeatureIndex != 0xFFFF:
+            req = final.get(ls.ReqFeatureIndex)
+            ls.ReqFeatureIndex = 0xFFFF if req is None else req
 
     scripts = orig.ScriptList.ScriptRecord
     have = {sr.ScriptTag for sr in scripts}
@@ -314,7 +322,11 @@ def merge_gsub(font: Font, generated: otTables.GSUB, order: list[int], pua_featu
         font.tt["GSUB"] = t
 
 
-def rename(font: Font, family: str, style: str, version_note: str) -> None:
+RIBBI = ("Regular", "Bold", "Italic", "Bold Italic")
+
+
+def rename(font: Font, family: str, style: str, version: str) -> None:
+    """Set names, version strings and style bits for the built font."""
     ps_family = family.replace(" ", "")
     ps = f"{ps_family}-{style.replace(' ', '')}"
     full = f"{family} {style}"
@@ -323,11 +335,15 @@ def rename(font: Font, family: str, style: str, version_note: str) -> None:
         if rec.nameID in (1, 3, 4, 6, 16, 17, 21, 22):
             name.removeNames(nameID=rec.nameID)
     name.setName(family, 1, 3, 1, 0x409)
-    name.setName(style if style in ("Regular", "Bold", "Italic", "Bold Italic") else "Regular", 2, 3, 1, 0x409)
-    name.setName(f"{ps};{version_note}", 3, 3, 1, 0x409)
+    bold, italic = "Bold" in style, "Italic" in style
+    ribbi = {(False, False): "Regular", (True, False): "Bold",
+             (False, True): "Italic", (True, True): "Bold Italic"}[(bold, italic)]
+    name.setName(ribbi, 2, 3, 1, 0x409)
+    name.setName(f"{ps};latmo {version}", 3, 3, 1, 0x409)
+    name.setName(f"Version {version}; latmo", 5, 3, 1, 0x409)
     name.setName(full, 4, 3, 1, 0x409)
     name.setName(ps, 6, 3, 1, 0x409)
-    if style not in ("Regular", "Bold", "Italic", "Bold Italic"):
+    if style not in RIBBI:
         name.setName(family, 16, 3, 1, 0x409)
         name.setName(style, 17, 3, 1, 0x409)
     # Drop Mac-platform names; modern systems read the Windows ones.
@@ -339,9 +355,19 @@ def rename(font: Font, family: str, style: str, version_note: str) -> None:
     font.cff.fontNames = [ps]
     font.top.FullName = full
     font.top.FamilyName = family
+    font.top.version = version
+    font.tt["head"].fontRevision = float(version)
+    # Style bits must agree with the names; browsers and font menus use them.
+    os2, head = font.tt["OS/2"], font.tt["head"]
+    sel = os2.fsSelection & ~0b1100001  # clear ITALIC, BOLD, REGULAR
+    sel |= (1 if italic else 0) | (1 << 5 if bold else 0) | (0 if bold or italic else 1 << 6)
+    os2.fsSelection = sel
+    head.macStyle = (head.macStyle & ~0b11) | (1 if bold else 0) | (2 if italic else 0)
+    if bold and os2.usWeightClass < 600:
+        os2.usWeightClass = 700
 
 
-def build_font(cfg: dict) -> list[Path]:
+def build_font(cfg: dict, out_dir: Path | None = None) -> list[Path]:
     src = ROOT / cfg["source"]
     font = Font(src)
     missing = [g for g in required_upstream() if not font.has(g)]
@@ -383,13 +409,10 @@ def build_font(cfg: dict) -> list[Path]:
     generated, order = compile_generated(font)
     merge_gsub(font, generated, order, cfg.get("pua_feature"))
 
-    version = cfg.get("version", "0.1")
-    rename(font, cfg["family"], cfg["style"], f"latmo {version}")
-    head = font.tt["head"]
-    head.fontRevision = float(version)
+    rename(font, cfg["family"], cfg["style"], cfg.get("version", "0.1"))
 
-    out_dir = ROOT / "fonts"
-    out_dir.mkdir(exist_ok=True)
+    out_dir = out_dir or ROOT / "fonts"
+    out_dir.mkdir(parents=True, exist_ok=True)
     stem = f"{cfg['family'].replace(' ', '')}-{cfg['style'].replace(' ', '')}"
     otf = out_dir / f"{stem}.otf"
     font.tt.save(otf)

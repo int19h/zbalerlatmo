@@ -65,16 +65,20 @@ The input is well-formed Latin Lojban. In particular:
   `.ian.`); anywhere else it is a visible comma.
 - **Stress**: a capital vowel (`klAma`), or an acute or grave accent
   (`kláma`, precomposed or combining). It is drawn as the stress dot. A
-  stressed diphthong takes one dot.
+  stressed diphthong or glide syllable takes one dot, even when both of its
+  vowels are capitals (`COI`, `.UI`).
 - **Stretch**: a tilde after a vowel (`gle~ki~~`) draws the stretch mark.
 - **Attitudinal shorthand**: `.V'V` (for example `.e'u`) is drawn with the
   combined period-and-apostrophe form, as the upstream fonts do.
 - Punctuation and digits render as Latin; quotation marks, dashes, the
   ellipsis and digits are taken from the Latin companion font.
 
-All of this lives in `rlig`, the one ligature feature that applications and
-CSS (`font-variant-ligatures: none`) cannot turn off. Where no shaping happens
-at all, the text shows as Latin Lojban.
+All of this lives in `rlig`, the "required ligatures" feature. Ligature
+switches in applications and CSS `font-variant-ligatures: none` leave it on;
+only an explicit `font-feature-settings: "rlig" 0` turns it off. Where no
+shaping happens at all, the text shows as Latin Lojban. Characters the font
+does not cover, such as `q` and `w`, fall back to the next font in the CSS
+`font-family` list.
 
 ## Building
 

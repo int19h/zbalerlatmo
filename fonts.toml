@@ -5,8 +5,9 @@
 #   latin        Latin companion font the upstream design was derived from;
 #                supplies missing punctuation and the Latin fallback outlines
 #   family/style names of the built font
-#   pua_feature  upstream feature holding the Zbalermorna lookups; it is
-#                folded into rlig so it cannot be switched off
+#   pua_feature  upstream feature holding the Zbalermorna lookups ("liga" in
+#                most upstream fonts, "calt" in fira-code-zlm); it is folded
+#                into rlig so it cannot be switched off
 
 [[font]]
 id = "crisa-regular"

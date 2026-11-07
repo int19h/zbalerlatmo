@@ -2,8 +2,9 @@
 
 The generated lookups turn Latin-orthography Lojban into the same sequence of
 Zbalermorna glyphs that the upstream fonts use for their Private Use Area
-encoding. The font's own upstream lookups (diphthong ligatures, attitudinal
-shorthand, self-dotting and so on) run afterwards and finish the job.
+encoding, with glides and diphthongs already formed. The font's own upstream
+lookups (attitudinal shorthand, contextual forms, self-dotting and so on, which
+differ from font to font) run afterwards and finish the job.
 
 Every Latin character is mapped by cmap to an *input* glyph named ``lat.*``.
 Input glyphs never survive shaping: the last generated lookup lowers each of
@@ -29,6 +30,8 @@ RADICAL = {c: c + "y" for c in CONSONANTS}
 RADICAL["b"] = "by"
 VOWEL_MARK = {v: v + "bu" for v in VOWELS}
 VOWEL_FULL = {v: "seplime" + v + "bu" for v in VOWELS}
+DIPHTHONG_MARK = {d: d + "bu" for d in DIPHTHONGS}
+DIPHTHONG_FULL = {d: "seplime" + d + "bu" for d in DIPHTHONGS}
 GLIDE = {"i": "iy", "u": "uy"}
 PERIOD = "denpabu"
 APOSTROPHE = "yhy"
@@ -48,24 +51,45 @@ def nm(key: str) -> str:
     return "lat." + key + ".nm"
 
 
-def input_glyphs() -> list[str]:
-    """Glyphs that cmap points at (the Latin input glyphs)."""
-    names = [lat(c) for c in CONSONANTS]
-    names += [lat(v) for v in VOWELS]
-    names += [lat(v) + ".str" for v in VOWELS]
-    names += [lat(k) for k in ("stress", "tilde", "period", "comma", "h",
-                               "quotesingle", "quoteright")]
-    return names
-
-
 def internal_glyphs() -> list[str]:
     """Glyphs that only exist between generated lookups."""
     names = [lat("apos"), lat("sep")]
     names += [nm(k) for k in LETTER_KEYS]
     names += [lat("i.gl"), lat("u.gl")]
-    for d in DIPHTHONGS:
-        names += [lat(d[0] + "_stress_" + d[1]), nm(d[0] + "_stress_" + d[1])]
+    for a, b in stress_pairs():
+        names += [lat(a + "_stress_" + b), nm(a + "_stress_" + b)]
     return names
+
+
+def glide_pairs() -> list[tuple[str, str]]:
+    return [(g, v) for g in "iu" for v in VOWELS]
+
+
+def diphthong_pairs() -> list[tuple[str, str]]:
+    return [(d[0], d[1]) for d in DIPHTHONGS]
+
+
+def stress_pairs() -> list[tuple[str, str]]:
+    """Two-vowel syllables whose stress, written on the first vowel, is moved
+    after the second: a glide with its vowel, and the diphthongs."""
+    return glide_pairs() + diphthong_pairs()
+
+
+def stress_lookups(name: str, pairs: list[tuple[str, str]]) -> list[str]:
+    """A ligature lookup that catches V1 stress V2 [stress], and one that
+    splits it into V1 V2 stress."""
+    out = [f"lookup {name}Liga {{"]
+    for a, b in pairs:
+        for f in (lat, nm):
+            out.append(f"    sub {f(a)} {f('stress')} {f(b)} {f('stress')} by {f(a + '_stress_' + b)};")
+            out.append(f"    sub {f(a)} {f('stress')} {f(b)} by {f(a + '_stress_' + b)};")
+    out.append(f"}} {name}Liga;")
+    out.append(f"lookup {name}Split {{")
+    for a, b in pairs:
+        for f in (lat, nm):
+            out.append(f"    sub {f(a + '_stress_' + b)} by {f(a)} {f(b)} {f('stress')};")
+    out.append(f"}} {name}Split;\n")
+    return out
 
 
 def cls(names) -> str:
@@ -137,7 +161,16 @@ def generate() -> str:
     w(f"    rsub @latCons' by @latConsNm;")
     w("} latNames;\n")
 
-    # 4. Glides: i or u before a vowel. This must precede diphthong
+    # 4. Stress written on the first vowel of a two-vowel syllable moves
+    #    after the second vowel, so the glide and diphthong rules still see
+    #    two adjacent vowels. A syllable is stressed once: stress on both
+    #    halves (all-caps .UI, COI) is one stress mark, as two would read as
+    #    a double-dot dynamic. Glide syllables (.Ua, .UI) are handled before
+    #    the glide rule and diphthongs (lAi) after it, so that in .mAias. the
+    #    i still goes to the glide (ma-ias), not to a diphthong.
+    out.extend(stress_lookups("latGlideStress", glide_pairs()))
+
+    # 5. Glides: i or u before a vowel. This must precede diphthong
     #    formation: .maias. is ma-ias, not mai-as. Of two i/u before a
     #    vowel only the second is a glide: .mariias. is ma-ri-ias.
     w("lookup latToGlide {")
@@ -152,25 +185,18 @@ def generate() -> str:
     w(f"    sub {iu_nm}' lookup latToGlide @latVowelNm;")
     w("} latGlides;\n")
 
-    # 5. Stress on the first vowel of a diphthong: move the stress mark after
-    #    the second vowel so the upstream diphthong ligature still forms. A
-    #    diphthong is one syllable, so stress on both halves (as in all-caps
-    #    COI) is one stress mark; two would read as a double-dot dynamic.
-    w("lookup latDiphStressLiga {")
-    for d in DIPHTHONGS:
-        a, b = d
-        for f in (lat, nm):
-            w(f"    sub {f(a)} {f('stress')} {f(b)} {f('stress')} by {f(a + '_stress_' + b)};")
-            w(f"    sub {f(a)} {f('stress')} {f(b)} by {f(a + '_stress_' + b)};")
-    w("} latDiphStressLiga;")
-    w("lookup latDiphStressSplit {")
-    for d in DIPHTHONGS:
-        a, b = d
-        w(f"    sub {lat(a + '_stress_' + b)} by {lat(a)} {lat(b)} {lat('stress')};")
-        w(f"    sub {nm(a + '_stress_' + b)} by {nm(a)} {nm(b)} {nm('stress')};")
-    w("} latDiphStressSplit;\n")
+    out.extend(stress_lookups("latDiphStress", diphthong_pairs()))
 
-    # 6. Lower every remaining input glyph to its upstream glyph.
+    # 6. Diphthongs, here rather than left to the upstream lookups: not every
+    #    upstream font forms them from separate vowels (Fira Code ZLM expects
+    #    the IME to send them composed).
+    w("lookup latDiphthongs {")
+    for d in DIPHTHONGS:
+        w(f"    sub {lat(d[0])} {lat(d[1])} by {DIPHTHONG_MARK[d]};")
+        w(f"    sub {nm(d[0])} {nm(d[1])} by {DIPHTHONG_FULL[d]};")
+    w("} latDiphthongs;\n")
+
+    # 7. Lower every remaining input glyph to its upstream glyph.
     lower: list[tuple[str, str]] = []
     for c in CONSONANTS:
         lower += [(lat(c), RADICAL[c]), (nm(c), RADICAL[c])]
@@ -202,8 +228,11 @@ LOOKUP_ORDER = [
     "latDecompose",
     "latPunct",
     "latNames",
+    "latGlideStressLiga",
+    "latGlideStressSplit",
     "latGlides",
     "latDiphStressLiga",
     "latDiphStressSplit",
+    "latDiphthongs",
     "latLower",
 ]

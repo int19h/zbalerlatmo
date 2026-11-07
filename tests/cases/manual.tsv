@@ -11,6 +11,12 @@ lAi	ly aibu bahebu	stress on a diphthong follows the diphthong
 COI	cy oibu bahebu	all-caps diphthong is one stress mark, not a double-dot dynamic
 .ÁU	denpabu aubu bahebu	accented all-caps diphthong
 .uÍ	denpabu uy ibu bahebu	stress after a glide
+.UI	denpabu uy ibu bahebu	all-caps glide syllable is one stress mark
+ÚA	uy abu bahebu	accented glide syllable
+.Ua	denpabu uy abu bahebu	stress written on the glide moves after its vowel
+la .pIAtr.	ly abu space denpabu py iy seplimeabu bahebu ty ry denpabu	stressed glide syllable in a name
+.DIAN.	denpabu dy iy seplimeabu bahebu ny denpabu	all-caps name with a glide
+.mAias.	denpabu my seplimeabu bahebu iy seplimeabu sy denpabu	stress before a glide does not form a diphthong
 
 # Names (cmevla): full vowels, glides, comma separation
 .DANkikang.	denpabu dy seplimeabu bahebu ny ky seplimeibu ky seplimeabu ny gy denpabu	stressed name
