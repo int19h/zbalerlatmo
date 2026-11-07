@@ -1,0 +1,3198 @@
+# Dictionary words and sentences: input <TAB> expected glyphs <TAB> same text in the PUA encoding.
+# Expected output comes from an independent Latin-to-Zbalermorna renderer shaped with the
+# original upstream crisa-regular.otf (fu'ivla adjusted to use vowel diacritics). Generated; do not edit.
+.a	denpabu abu	
+.a'a	denpabu.cas abu yhy.cas abu	
+.a'e	denpabu.cas abu yhy.cas ebu	
+.a'i	denpabu.cas abu yhy.cas ibu	
+.a'o	denpabu.cas abu yhy.cas obu	
+.a'u	denpabu.cas abu yhy.cas ubu	
+.ai	denpabu aibu	
+.au	denpabu aubu	
+ba	by abu	
+ba'a	by abu yhy abu	
+ba'e	by abu yhy ebu	
+ba'i	by abu yhy ibu	
+ba'o	by abu yhy obu	
+ba'u	by abu yhy ubu	
+bai	by aibu	
+bau	by aubu	
+be	by ebu	
+be'a	by ebu yhy abu	
+be'e	by ebu yhy ebu	
+be'i	by ebu yhy ibu	
+be'o	by ebu yhy obu	
+be'u	by ebu yhy ubu	
+bei	by eibu	
+bi	by ibu	
+bi'e	by ibu yhy ebu	
+bi'i	by ibu yhy ibu	
+bi'o	by ibu yhy obu	
+bi'u	by ibu yhy ubu	
+bo	by obu	
+boi	by oibu	
+bu	by ubu	
+bu'a	by ubu yhy abu	
+bu'e	by ubu yhy ebu	
+bu'i	by ubu yhy ibu	
+bu'o	by ubu yhy obu	
+bu'u	by ubu yhy ubu	
+by	by ybu	
+ca	cy abu	
+ca'a	cy abu yhy abu	
+ca'e	cy abu yhy ebu	
+ca'i	cy abu yhy ibu	
+ca'o	cy abu yhy obu	
+ca'u	cy abu yhy ubu	
+cai	cy aibu	
+cau	cy aubu	
+ce	cy ebu	
+ce'a	cy ebu yhy abu	
+ce'e	cy ebu yhy ebu	
+ce'i	cy ebu yhy ibu	
+ce'o	cy ebu yhy obu	
+ce'u	cy ebu yhy ubu	
+cei	cy eibu	
+ci	cy ibu	
+ci'e	cy ibu yhy ebu	
+ci'i	cy ibu yhy ibu	
+ci'o	cy ibu yhy obu	
+ci'u	cy ibu yhy ubu	
+co	cy obu	
+co'a	cy obu yhy abu	
+co'e	cy obu yhy ebu	
+co'i	cy obu yhy ibu	
+co'o	cy obu yhy obu	
+co'u	cy obu yhy ubu	
+coi	cy oibu	
+cu	cy ubu	
+cu'a	cy ubu yhy abu	
+cu'e	cy ubu yhy ebu	
+cu'i	cy ubu yhy ibu	
+cu'o	cy ubu yhy obu	
+cu'u	cy ubu yhy ubu	
+cy	cy ybu	
+da	dy abu	
+da'a	dy abu yhy abu	
+da'e	dy abu yhy ebu	
+da'i	dy abu yhy ibu	
+da'o	dy abu yhy obu	
+da'u	dy abu yhy ubu	
+dai	dy aibu	
+dau	dy aubu	
+de	dy ebu	
+de'a	dy ebu yhy abu	
+de'e	dy ebu yhy ebu	
+de'i	dy ebu yhy ibu	
+de'o	dy ebu yhy obu	
+de'u	dy ebu yhy ubu	
+dei	dy eibu	
+di	dy ibu	
+di'a	dy ibu yhy abu	
+di'e	dy ibu yhy ebu	
+di'i	dy ibu yhy ibu	
+di'o	dy ibu yhy obu	
+di'u	dy ibu yhy ubu	
+do	dy obu	
+do'a	dy obu yhy abu	
+do'e	dy obu yhy ebu	
+do'i	dy obu yhy ibu	
+do'o	dy obu yhy obu	
+do'u	dy obu yhy ubu	
+doi	dy oibu	
+du	dy ubu	
+du'a	dy ubu yhy abu	
+du'e	dy ubu yhy ebu	
+du'i	dy ubu yhy ibu	
+du'o	dy ubu yhy obu	
+du'u	dy ubu yhy ubu	
+dy	dy ybu	
+.e	denpabu ebu	
+.e'a	denpabu.cas ebu yhy.cas abu	
+.e'e	denpabu.cas ebu yhy.cas ebu	
+.e'i	denpabu.cas ebu yhy.cas ibu	
+.e'o	denpabu.cas ebu yhy.cas obu	
+.e'u	denpabu.cas ebu yhy.cas ubu	
+.ei	denpabu eibu	
+fa	fy abu	
+fa'a	fy abu yhy abu	
+fa'e	fy abu yhy ebu	
+fa'i	fy abu yhy ibu	
+fa'o	fy abu yhy obu	
+fa'u	fy abu yhy ubu	
+fai	fy aibu	
+fau	fy aubu	
+fe	fy ebu	
+fe'a	fy ebu yhy abu	
+fe'e	fy ebu yhy ebu	
+fe'i	fy ebu yhy ibu	
+fe'o	fy ebu yhy obu	
+fe'u	fy ebu yhy ubu	
+fei	fy eibu	
+fi	fy ibu	
+fi'a	fy ibu yhy abu	
+fi'e	fy ibu yhy ebu	
+fi'i	fy ibu yhy ibu	
+fi'o	fy ibu yhy obu	
+fi'u	fy ibu yhy ubu	
+fo	fy obu	
+fo'a	fy obu yhy abu	
+fo'e	fy obu yhy ebu	
+fo'i	fy obu yhy ibu	
+fo'o	fy obu yhy obu	
+fo'u	fy obu yhy ubu	
+foi	fy oibu	
+fu	fy ubu	
+fu'a	fy ubu yhy abu	
+fu'e	fy ubu yhy ebu	
+fu'i	fy ubu yhy ibu	
+fu'o	fy ubu yhy obu	
+fu'u	fy ubu yhy ubu	
+fy	fy ybu	
+ga	gy abu	
+ga'a	gy abu yhy abu	
+ga'e	gy abu yhy ebu	
+ga'i	gy abu yhy ibu	
+ga'o	gy abu yhy obu	
+ga'u	gy abu yhy ubu	
+gai	gy aibu	
+gau	gy aubu	
+ge	gy ebu	
+ge'a	gy ebu yhy abu	
+ge'e	gy ebu yhy ebu	
+ge'i	gy ebu yhy ibu	
+ge'o	gy ebu yhy obu	
+ge'u	gy ebu yhy ubu	
+gei	gy eibu	
+gi	gy ibu	
+gi'a	gy ibu yhy abu	
+gi'e	gy ibu yhy ebu	
+gi'i	gy ibu yhy ibu	
+gi'o	gy ibu yhy obu	
+gi'u	gy ibu yhy ubu	
+go	gy obu	
+go'a	gy obu yhy abu	
+go'e	gy obu yhy ebu	
+go'i	gy obu yhy ibu	
+go'o	gy obu yhy obu	
+go'u	gy obu yhy ubu	
+goi	gy oibu	
+gu	gy ubu	
+gu'a	gy ubu yhy abu	
+gu'e	gy ubu yhy ebu	
+gu'i	gy ubu yhy ibu	
+gu'o	gy ubu yhy obu	
+gu'u	gy ubu yhy ubu	
+gy	gy ybu	
+.i	denpabu ibu	
+.i'a	denpabu.cas ibu yhy.cas abu	
+.i'e	denpabu.cas ibu yhy.cas ebu	
+.i'i	denpabu.cas ibu yhy.cas ibu	
+.i'o	denpabu.cas ibu yhy.cas obu	
+.i'u	denpabu.cas ibu yhy.cas ubu	
+.ia	denpabu iy abu	
+.ie	denpabu iy ebu	
+.ii	denpabu iy ibu	
+.io	denpabu iy obu	
+.iu	denpabu iy ubu	
+ja	jy abu	
+ja'a	jy abu yhy abu	
+ja'e	jy abu yhy ebu	
+ja'i	jy abu yhy ibu	
+ja'o	jy abu yhy obu	
+jai	jy aibu	
+jau	jy aubu	
+je	jy ebu	
+je'a	jy ebu yhy abu	
+je'e	jy ebu yhy ebu	
+je'i	jy ebu yhy ibu	
+je'o	jy ebu yhy obu	
+je'u	jy ebu yhy ubu	
+jei	jy eibu	
+ji	jy ibu	
+ji'a	jy ibu yhy abu	
+ji'e	jy ibu yhy ebu	
+ji'i	jy ibu yhy ibu	
+ji'o	jy ibu yhy obu	
+ji'u	jy ibu yhy ubu	
+jo	jy obu	
+jo'a	jy obu yhy abu	
+jo'e	jy obu yhy ebu	
+jo'i	jy obu yhy ibu	
+jo'o	jy obu yhy obu	
+jo'u	jy obu yhy ubu	
+joi	jy oibu	
+ju	jy ubu	
+ju'a	jy ubu yhy abu	
+ju'e	jy ubu yhy ebu	
+ju'i	jy ubu yhy ibu	
+ju'o	jy ubu yhy obu	
+ju'u	jy ubu yhy ubu	
+jy	jy ybu	
+ka	ky abu	
+ka'a	ky abu yhy abu	
+ka'e	ky abu yhy ebu	
+ka'i	ky abu yhy ibu	
+ka'o	ky abu yhy obu	
+ka'u	ky abu yhy ubu	
+kai	ky aibu	
+kau	ky aubu	
+ke	ky ebu	
+ke'a	ky ebu yhy abu	
+ke'e	ky ebu yhy ebu	
+ke'i	ky ebu yhy ibu	
+ke'o	ky ebu yhy obu	
+ke'u	ky ebu yhy ubu	
+kei	ky eibu	
+ki	ky ibu	
+ki'a	ky ibu yhy abu	
+ki'e	ky ibu yhy ebu	
+ki'i	ky ibu yhy ibu	
+ki'o	ky ibu yhy obu	
+ki'u	ky ibu yhy ubu	
+ko	ky obu	
+ko'a	ky obu yhy abu	
+ko'e	ky obu yhy ebu	
+ko'i	ky obu yhy ibu	
+ko'o	ky obu yhy obu	
+ko'u	ky obu yhy ubu	
+koi	ky oibu	
+ku	ky ubu	
+ku'a	ky ubu yhy abu	
+ku'e	ky ubu yhy ebu	
+ku'i	ky ubu yhy ibu	
+ku'o	ky ubu yhy obu	
+ku'u	ky ubu yhy ubu	
+ky	ky ybu	
+la	ly abu	
+la'a	ly abu yhy abu	
+la'e	ly abu yhy ebu	
+la'i	ly abu yhy ibu	
+la'u	ly abu yhy ubu	
+lai	ly aibu	
+lau	ly aubu	
+le	ly ebu	
+le'a	ly ebu yhy abu	
+le'e	ly ebu yhy ebu	
+le'i	ly ebu yhy ibu	
+le'o	ly ebu yhy obu	
+le'u	ly ebu yhy ubu	
+lei	ly eibu	
+li	ly ibu	
+li'a	ly ibu yhy abu	
+li'e	ly ibu yhy ebu	
+li'i	ly ibu yhy ibu	
+li'o	ly ibu yhy obu	
+li'u	ly ibu yhy ubu	
+lo	ly obu	
+lo'a	ly obu yhy abu	
+lo'e	ly obu yhy ebu	
+lo'i	ly obu yhy ibu	
+lo'o	ly obu yhy obu	
+lo'u	ly obu yhy ubu	
+loi	ly oibu	
+lu	ly ubu	
+lu'a	ly ubu yhy abu	
+lu'e	ly ubu yhy ebu	
+lu'i	ly ubu yhy ibu	
+lu'o	ly ubu yhy obu	
+lu'u	ly ubu yhy ubu	
+ly	ly ybu	
+ma	my abu	
+ma'a	my abu yhy abu	
+ma'e	my abu yhy ebu	
+ma'i	my abu yhy ibu	
+ma'o	my abu yhy obu	
+ma'u	my abu yhy ubu	
+mai	my aibu	
+mau	my aubu	
+me	my ebu	
+me'a	my ebu yhy abu	
+me'e	my ebu yhy ebu	
+me'i	my ebu yhy ibu	
+me'o	my ebu yhy obu	
+me'u	my ebu yhy ubu	
+mei	my eibu	
+mi	my ibu	
+mi'a	my ibu yhy abu	
+mi'e	my ibu yhy ebu	
+mi'i	my ibu yhy ibu	
+mi'o	my ibu yhy obu	
+mi'u	my ibu yhy ubu	
+mo	my obu	
+mo'a	my obu yhy abu	
+mo'e	my obu yhy ebu	
+mo'i	my obu yhy ibu	
+mo'o	my obu yhy obu	
+mo'u	my obu yhy ubu	
+moi	my oibu	
+mu	my ubu	
+mu'a	my ubu yhy abu	
+mu'e	my ubu yhy ebu	
+mu'i	my ubu yhy ibu	
+mu'o	my ubu yhy obu	
+mu'u	my ubu yhy ubu	
+my	my ybu	
+na	ny abu	
+na'a	ny abu yhy abu	
+na'e	ny abu yhy ebu	
+na'i	ny abu yhy ibu	
+na'o	ny abu yhy obu	
+na'u	ny abu yhy ubu	
+nai	ny aibu	
+nau	ny aubu	
+ne	ny ebu	
+ne'a	ny ebu yhy abu	
+ne'i	ny ebu yhy ibu	
+ne'o	ny ebu yhy obu	
+ne'u	ny ebu yhy ubu	
+nei	ny eibu	
+ni	ny ibu	
+ni'a	ny ibu yhy abu	
+ni'e	ny ibu yhy ebu	
+ni'i	ny ibu yhy ibu	
+ni'o	ny ibu yhy obu	
+ni'u	ny ibu yhy ubu	
+no	ny obu	
+no'a	ny obu yhy abu	
+no'e	ny obu yhy ebu	
+no'i	ny obu yhy ibu	
+no'o	ny obu yhy obu	
+no'u	ny obu yhy ubu	
+noi	ny oibu	
+nu	ny ubu	
+nu'a	ny ubu yhy abu	
+nu'e	ny ubu yhy ebu	
+nu'i	ny ubu yhy ibu	
+nu'o	ny ubu yhy obu	
+nu'u	ny ubu yhy ubu	
+ny	ny ybu	
+.o	denpabu obu	
+.o'a	denpabu.cas obu yhy.cas abu	
+.o'e	denpabu.cas obu yhy.cas ebu	
+.o'i	denpabu.cas obu yhy.cas ibu	
+.o'o	denpabu.cas obu yhy.cas obu	
+.o'u	denpabu.cas obu yhy.cas ubu	
+.oi	denpabu oibu	
+pa	py abu	
+pa'a	py abu yhy abu	
+pa'e	py abu yhy ebu	
+pa'i	py abu yhy ibu	
+pa'o	py abu yhy obu	
+pa'u	py abu yhy ubu	
+pai	py aibu	
+pau	py aubu	
+pe	py ebu	
+pe'a	py ebu yhy abu	
+pe'e	py ebu yhy ebu	
+pe'i	py ebu yhy ibu	
+pe'o	py ebu yhy obu	
+pe'u	py ebu yhy ubu	
+pei	py eibu	
+pi	py ibu	
+pi'a	py ibu yhy abu	
+pi'e	py ibu yhy ebu	
+pi'i	py ibu yhy ibu	
+pi'o	py ibu yhy obu	
+pi'u	py ibu yhy ubu	
+po	py obu	
+po'e	py obu yhy ebu	
+po'i	py obu yhy ibu	
+po'o	py obu yhy obu	
+po'u	py obu yhy ubu	
+poi	py oibu	
+pu	py ubu	
+pu'a	py ubu yhy abu	
+pu'e	py ubu yhy ebu	
+pu'i	py ubu yhy ibu	
+pu'o	py ubu yhy obu	
+pu'u	py ubu yhy ubu	
+py	py ybu	
+ra	ry abu	
+ra'a	ry abu yhy abu	
+ra'e	ry abu yhy ebu	
+ra'i	ry abu yhy ibu	
+ra'o	ry abu yhy obu	
+ra'u	ry abu yhy ubu	
+rai	ry aibu	
+rau	ry aubu	
+re	ry ebu	
+re'a	ry ebu yhy abu	
+re'e	ry ebu yhy ebu	
+re'i	ry ebu yhy ibu	
+re'o	ry ebu yhy obu	
+re'u	ry ebu yhy ubu	
+rei	ry eibu	
+ri	ry ibu	
+ri'a	ry ibu yhy abu	
+ri'e	ry ibu yhy ebu	
+ri'i	ry ibu yhy ibu	
+ri'o	ry ibu yhy obu	
+ri'u	ry ibu yhy ubu	
+ro	ry obu	
+ro'a	ry obu yhy abu	
+ro'e	ry obu yhy ebu	
+ro'i	ry obu yhy ibu	
+ro'o	ry obu yhy obu	
+ro'u	ry obu yhy ubu	
+roi	ry oibu	
+ru	ry ubu	
+ru'a	ry ubu yhy abu	
+ru'e	ry ubu yhy ebu	
+ru'i	ry ubu yhy ibu	
+ru'o	ry ubu yhy obu	
+ru'u	ry ubu yhy ubu	
+ry	ry ybu	
+sa	sy abu	
+sa'a	sy abu yhy abu	
+sa'e	sy abu yhy ebu	
+sa'i	sy abu yhy ibu	
+sa'o	sy abu yhy obu	
+sa'u	sy abu yhy ubu	
+sai	sy aibu	
+sau	sy aubu	
+se	sy ebu	
+se'a	sy ebu yhy abu	
+se'e	sy ebu yhy ebu	
+se'i	sy ebu yhy ibu	
+se'o	sy ebu yhy obu	
+se'u	sy ebu yhy ubu	
+sei	sy eibu	
+si	sy ibu	
+si'a	sy ibu yhy abu	
+si'e	sy ibu yhy ebu	
+si'i	sy ibu yhy ibu	
+si'o	sy ibu yhy obu	
+si'u	sy ibu yhy ubu	
+so	sy obu	
+so'a	sy obu yhy abu	
+so'e	sy obu yhy ebu	
+so'i	sy obu yhy ibu	
+so'o	sy obu yhy obu	
+so'u	sy obu yhy ubu	
+soi	sy oibu	
+su	sy ubu	
+su'a	sy ubu yhy abu	
+su'e	sy ubu yhy ebu	
+su'i	sy ubu yhy ibu	
+su'o	sy ubu yhy obu	
+su'u	sy ubu yhy ubu	
+sy	sy ybu	
+ta	ty abu	
+ta'a	ty abu yhy abu	
+ta'e	ty abu yhy ebu	
+ta'i	ty abu yhy ibu	
+ta'o	ty abu yhy obu	
+ta'u	ty abu yhy ubu	
+tai	ty aibu	
+tau	ty aubu	
+te	ty ebu	
+te'a	ty ebu yhy abu	
+te'e	ty ebu yhy ebu	
+te'o	ty ebu yhy obu	
+te'u	ty ebu yhy ubu	
+tei	ty eibu	
+ti	ty ibu	
+ti'a	ty ibu yhy abu	
+ti'e	ty ibu yhy ebu	
+ti'i	ty ibu yhy ibu	
+ti'o	ty ibu yhy obu	
+ti'u	ty ibu yhy ubu	
+to	ty obu	
+to'a	ty obu yhy abu	
+to'e	ty obu yhy ebu	
+to'i	ty obu yhy ibu	
+to'o	ty obu yhy obu	
+to'u	ty obu yhy ubu	
+toi	ty oibu	
+tu	ty ubu	
+tu'a	ty ubu yhy abu	
+tu'e	ty ubu yhy ebu	
+tu'i	ty ubu yhy ibu	
+tu'o	ty ubu yhy obu	
+tu'u	ty ubu yhy ubu	
+ty	ty ybu	
+.u	denpabu ubu	
+.u'a	denpabu.cas ubu yhy.cas abu	
+.u'e	denpabu.cas ubu yhy.cas ebu	
+.u'i	denpabu.cas ubu yhy.cas ibu	
+.u'o	denpabu.cas ubu yhy.cas obu	
+.u'u	denpabu.cas ubu yhy.cas ubu	
+.ua	denpabu uy abu	
+.ue	denpabu uy ebu	
+.ui	denpabu uy ibu	
+.uo	denpabu uy obu	
+.uu	denpabu uy ubu	
+va	vy abu	
+va'a	vy abu yhy abu	
+va'e	vy abu yhy ebu	
+va'i	vy abu yhy ibu	
+va'o	vy abu yhy obu	
+va'u	vy abu yhy ubu	
+vai	vy aibu	
+vau	vy aubu	
+ve	vy ebu	
+ve'a	vy ebu yhy abu	
+ve'e	vy ebu yhy ebu	
+ve'i	vy ebu yhy ibu	
+ve'o	vy ebu yhy obu	
+ve'u	vy ebu yhy ubu	
+vei	vy eibu	
+vi	vy ibu	
+vi'a	vy ibu yhy abu	
+vi'e	vy ibu yhy ebu	
+vi'i	vy ibu yhy ibu	
+vi'o	vy ibu yhy obu	
+vi'u	vy ibu yhy ubu	
+vo	vy obu	
+vo'a	vy obu yhy abu	
+vo'e	vy obu yhy ebu	
+vo'i	vy obu yhy ibu	
+vo'o	vy obu yhy obu	
+vo'u	vy obu yhy ubu	
+voi	vy oibu	
+vu	vy ubu	
+vu'a	vy ubu yhy abu	
+vu'e	vy ubu yhy ebu	
+vu'i	vy ubu yhy ibu	
+vu'o	vy ubu yhy obu	
+vu'u	vy ubu yhy ubu	
+vy	vy ybu	
+xa	xy abu	
+xe	xy ebu	
+xi	xy ibu	
+xo	xy obu	
+xu	xy ubu	
+xy	xy ybu	
+.y	denpabu ybu	
+.y'y	denpabu.cas ybu yhy.cas ybu	
+za	zy abu	
+za'a	zy abu yhy abu	
+za'e	zy abu yhy ebu	
+za'i	zy abu yhy ibu	
+za'o	zy abu yhy obu	
+za'u	zy abu yhy ubu	
+zai	zy aibu	
+zau	zy aubu	
+ze	zy ebu	
+ze'a	zy ebu yhy abu	
+ze'e	zy ebu yhy ebu	
+ze'i	zy ebu yhy ibu	
+ze'o	zy ebu yhy obu	
+ze'u	zy ebu yhy ubu	
+zei	zy eibu	
+zi	zy ibu	
+zi'e	zy ibu yhy ebu	
+zi'o	zy ibu yhy obu	
+zo'a	zy obu yhy abu	
+zo'e	zy obu yhy ebu	
+zo'i	zy obu yhy ibu	
+zo'o	zy obu yhy obu	
+zo'u	zy obu yhy ubu	
+zu	zy ubu	
+zu'a	zy ubu yhy abu	
+zu'e	zy ubu yhy ebu	
+zu'i	zy ubu yhy ibu	
+zu'o	zy ubu yhy obu	
+zu'u	zy ubu yhy ubu	
+zy	zy ybu	
+bacru	by abu cy ry ubu	
+badna	by abu dy ny abu	
+badri	by abu dy ry ibu	
+bajra	by abu jy ry abu	
+bakfu	by abu ky fy ubu	
+bakni	by abu ky ny ibu	
+bakri	by abu ky ry ibu	
+baktu	by abu ky ty ubu	
+balji	by abu ly jy ibu	
+balni	by abu ly ny ibu	
+balre	by abu ly ry ebu	
+balvi	by abu ly vy ibu	
+bancu	by abu ny cy ubu	
+bandu	by abu ny dy ubu	
+banfi	by abu ny fy ibu	
+bangu	by abu ny gy ubu	
+banli	by abu ny ly ibu	
+banro	by abu ny ry obu	
+banxa	by abu ny xy abu	
+banzu	by abu ny zy ubu	
+bapli	by abu py ly ibu	
+barda	by abu ry dy abu	
+bargu	by abu ry gy ubu	
+barja	by abu ry jy abu	
+barna	by abu ry ny abu	
+bartu	by abu ry ty ubu	
+basna	by abu sy ny abu	
+basti	by abu sy ty ibu	
+batci	by abu ty cy ibu	
+batke	by abu ty ky ebu	
+bavmi	by abu vy my ibu	
+baxso	by abu xy sy obu	
+bebna	by ebu by ny abu	
+bemro	by ebu my ry obu	
+bende	by ebu ny dy ebu	
+bengo	by ebu ny gy obu	
+benji	by ebu ny jy ibu	
+bersa	by ebu ry sy abu	
+berti	by ebu ry ty ibu	
+besna	by ebu sy ny abu	
+betfu	by ebu ty fy ubu	
+betri	by ebu ty ry ibu	
+bevri	by ebu vy ry ibu	
+bidju	by ibu dy jy ubu	
+bifce	by ibu fy cy ebu	
+bikla	by ibu ky ly abu	
+bilga	by ibu ly gy abu	
+bilma	by ibu ly my abu	
+bilni	by ibu ly ny ibu	
+bindo	by ibu ny dy obu	
+binra	by ibu ny ry abu	
+binxo	by ibu ny xy obu	
+birje	by ibu ry jy ebu	
+birka	by ibu ry ky abu	
+birti	by ibu ry ty ibu	
+bisli	by ibu sy ly ibu	
+bitmu	by ibu ty my ubu	
+blabi	by ly abu by ibu	
+blaci	by ly abu cy ibu	
+blanu	by ly abu ny ubu	
+bliku	by ly ibu ky ubu	
+bloti	by ly obu ty ibu	
+bolci	by obu ly cy ibu	
+bongu	by obu ny gy ubu	
+botpi	by obu ty py ibu	
+boxfo	by obu xy fy obu	
+boxna	by obu xy ny abu	
+bradi	by ry abu dy ibu	
+bratu	by ry abu ty ubu	
+brazo	by ry abu zy obu	
+bredi	by ry ebu dy ibu	
+bridi	by ry ibu dy ibu	
+brife	by ry ibu fy ebu	
+briju	by ry ibu jy ubu	
+brito	by ry ibu ty obu	
+broda	by ry obu dy abu	
+bruna	by ry ubu ny abu	
+budjo	by ubu dy jy obu	
+bukpu	by ubu ky py ubu	
+bumru	by ubu my ry ubu	
+bunda	by ubu ny dy abu	
+bunre	by ubu ny ry ebu	
+burcu	by ubu ry cy ubu	
+burna	by ubu ry ny abu	
+cabna	cy abu by ny abu	
+cabra	cy abu by ry abu	
+cacra	cy abu cy ry abu	
+cadzu	cy abu dy zy ubu	
+cafne	cy abu fy ny ebu	
+cakla	cy abu ky ly abu	
+calku	cy abu ly ky ubu	
+canci	cy abu ny cy ibu	
+cando	cy abu ny dy obu	
+cange	cy abu ny gy ebu	
+canja	cy abu ny jy abu	
+canko	cy abu ny ky obu	
+canlu	cy abu ny ly ubu	
+canpa	cy abu ny py abu	
+canre	cy abu ny ry ebu	
+canti	cy abu ny ty ibu	
+carce	cy abu ry cy ebu	
+carmi	cy abu ry my ibu	
+carna	cy abu ry ny abu	
+cartu	cy abu ry ty ubu	
+carvi	cy abu ry vy ibu	
+casnu	cy abu sy ny ubu	
+catke	cy abu ty ky ebu	
+catlu	cy abu ty ly ubu	
+catni	cy abu ty ny ibu	
+catra	cy abu ty ry abu	
+caxno	cy abu xy ny obu	
+cecla	cy ebu cy ly abu	
+cecmu	cy ebu cy my ubu	
+cedra	cy ebu dy ry abu	
+cenba	cy ebu ny by abu	
+censa	cy ebu ny sy abu	
+centi	cy ebu ny ty ibu	
+cerda	cy ebu ry dy abu	
+cerni	cy ebu ry ny ibu	
+certu	cy ebu ry ty ubu	
+cevni	cy ebu vy ny ibu	
+cfari	cy fy abu ry ibu	
+cfika	cy fy ibu ky abu	
+cfila	cy fy ibu ly abu	
+cfine	cy fy ibu ny ebu	
+cfipu	cy fy ibu py ubu	
+ciblu	cy ibu by ly ubu	
+cicna	cy ibu cy ny abu	
+cidja	cy ibu dy jy abu	
+cidni	cy ibu dy ny ibu	
+cidro	cy ibu dy ry obu	
+cifnu	cy ibu fy ny ubu	
+cigla	cy ibu gy ly abu	
+cikna	cy ibu ky ny abu	
+cikre	cy ibu ky ry ebu	
+ciksi	cy ibu ky sy ibu	
+cilce	cy ibu ly cy ebu	
+cilmo	cy ibu ly my obu	
+cilre	cy ibu ly ry ebu	
+cilta	cy ibu ly ty abu	
+cimde	cy ibu my dy ebu	
+cimni	cy ibu my ny ibu	
+cinba	cy ibu ny by abu	
+cindu	cy ibu ny dy ubu	
+cinfo	cy ibu ny fy obu	
+cinje	cy ibu ny jy ebu	
+cinki	cy ibu ny ky ibu	
+cinla	cy ibu ny ly abu	
+cinmo	cy ibu ny my obu	
+cinri	cy ibu ny ry ibu	
+cinse	cy ibu ny sy ebu	
+cinta	cy ibu ny ty abu	
+cinza	cy ibu ny zy abu	
+cipni	cy ibu py ny ibu	
+cipra	cy ibu py ry abu	
+cirko	cy ibu ry ky obu	
+cirla	cy ibu ry ly abu	
+ciska	cy ibu sy ky abu	
+cisma	cy ibu sy my abu	
+ciste	cy ibu sy ty ebu	
+citka	cy ibu ty ky abu	
+citno	cy ibu ty ny obu	
+citri	cy ibu ty ry ibu	
+citsi	cy ibu ty sy ibu	
+civla	cy ibu vy ly abu	
+cizra	cy ibu zy ry abu	
+ckabu	cy ky abu by ubu	
+ckafi	cy ky abu fy ibu	
+ckaji	cy ky abu jy ibu	
+ckana	cy ky abu ny abu	
+ckape	cy ky abu py ebu	
+ckasu	cy ky abu sy ubu	
+ckeji	cy ky ebu jy ibu	
+ckiku	cy ky ibu ky ubu	
+ckilu	cy ky ibu ly ubu	
+ckini	cy ky ibu ny ibu	
+ckire	cy ky ibu ry ebu	
+ckule	cy ky ubu ly ebu	
+ckunu	cy ky ubu ny ubu	
+cladu	cy ly abu dy ubu	
+clani	cy ly abu ny ibu	
+claxu	cy ly abu xy ubu	
+clika	cy ly ibu ky abu	
+clira	cy ly ibu ry abu	
+clite	cy ly ibu ty ebu	
+cliva	cy ly ibu vy abu	
+clupa	cy ly ubu py abu	
+cmaci	cy my abu cy ibu	
+cmalu	cy my abu ly ubu	
+cmana	cy my abu ny abu	
+cmavo	cy my abu vy obu	
+cmene	cy my ebu ny ebu	
+cmila	cy my ibu ly abu	
+cmima	cy my ibu my abu	
+cmoni	cy my obu ny ibu	
+cnano	cy ny abu ny obu	
+cnebo	cy ny ebu by obu	
+cnemu	cy ny ebu my ubu	
+cnici	cy ny ibu cy ibu	
+cnino	cy ny ibu ny obu	
+cnisa	cy ny ibu sy abu	
+cnita	cy ny ibu ty abu	
+cokcu	cy obu ky cy ubu	
+condi	cy obu ny dy ibu	
+cortu	cy obu ry ty ubu	
+cpacu	cy py abu cy ubu	
+cpana	cy py abu ny abu	
+cpare	cy py abu ry ebu	
+cpedu	cy py ebu dy ubu	
+cpina	cy py ibu ny abu	
+cradi	cy ry abu dy ibu	
+crane	cy ry abu ny ebu	
+creka	cy ry ebu ky abu	
+crepu	cy ry ebu py ubu	
+cribe	cy ry ibu by ebu	
+crida	cy ry ibu dy abu	
+crino	cy ry ibu ny obu	
+cripu	cy ry ibu py ubu	
+crisa	cy ry ibu sy abu	
+critu	cy ry ibu ty ubu	
+ctaru	cy ty abu ry ubu	
+ctebi	cy ty ebu by ibu	
+cteki	cy ty ebu ky ibu	
+ctile	cy ty ibu ly ebu	
+ctino	cy ty ibu ny obu	
+ctuca	cy ty ubu cy abu	
+cukla	cy ubu ky ly abu	
+cukta	cy ubu ky ty abu	
+culno	cy ubu ly ny obu	
+cumki	cy ubu my ky ibu	
+cumla	cy ubu my ly abu	
+cunmi	cy ubu ny my ibu	
+cunso	cy ubu ny sy obu	
+cuntu	cy ubu ny ty ubu	
+cupra	cy ubu py ry abu	
+curmi	cy ubu ry my ibu	
+curnu	cy ubu ry ny ubu	
+curve	cy ubu ry vy ebu	
+cusku	cy ubu sy ky ubu	
+cutci	cy ubu ty cy ibu	
+cutne	cy ubu ty ny ebu	
+cuxna	cy ubu xy ny abu	
+dacru	dy abu cy ry ubu	
+dacti	dy abu cy ty ibu	
+dadjo	dy abu dy jy obu	
+dakfu	dy abu ky fy ubu	
+dakli	dy abu ky ly ibu	
+damba	dy abu my by abu	
+damri	dy abu my ry ibu	
+dandu	dy abu ny dy ubu	
+danfu	dy abu ny fy ubu	
+danlu	dy abu ny ly ubu	
+danmo	dy abu ny my obu	
+danre	dy abu ny ry ebu	
+dansu	dy abu ny sy ubu	
+danti	dy abu ny ty ibu	
+daplu	dy abu py ly ubu	
+dapma	dy abu py my abu	
+dargu	dy abu ry gy ubu	
+darlu	dy abu ry ly ubu	
+darno	dy abu ry ny obu	
+darsi	dy abu ry sy ibu	
+darxi	dy abu ry xy ibu	
+daski	dy abu sy ky ibu	
+dasni	dy abu sy ny ibu	
+daspo	dy abu sy py obu	
+dasri	dy abu sy ry ibu	
+datka	dy abu ty ky abu	
+datni	dy abu ty ny ibu	
+decti	dy ebu cy ty ibu	
+degji	dy ebu gy jy ibu	
+dejni	dy ebu jy ny ibu	
+dekpu	dy ebu ky py ubu	
+dekto	dy ebu ky ty obu	
+delno	dy ebu ly ny obu	
+dembi	dy ebu my by ibu	
+denci	dy ebu ny cy ibu	
+denmi	dy ebu ny my ibu	
+denpa	dy ebu ny py abu	
+dertu	dy ebu ry ty ubu	
+derxi	dy ebu ry xy ibu	
+desku	dy ebu sy ky ubu	
+detri	dy ebu ty ry ibu	
+dicra	dy ibu cy ry abu	
+dikca	dy ibu ky cy abu	
+diklo	dy ibu ky ly obu	
+dikni	dy ibu ky ny ibu	
+dilcu	dy ibu ly cy ubu	
+dilnu	dy ibu ly ny ubu	
+dimna	dy ibu my ny abu	
+dinju	dy ibu ny jy ubu	
+dinko	dy ibu ny ky obu	
+dirba	dy ibu ry by abu	
+dirce	dy ibu ry cy ebu	
+dirgo	dy ibu ry gy obu	
+dizlo	dy ibu zy ly obu	
+djacu	dy jy abu cy ubu	
+djedi	dy jy ebu dy ibu	
+djica	dy jy ibu cy abu	
+djine	dy jy ibu ny ebu	
+djuno	dy jy ubu ny obu	
+donri	dy obu ny ry ibu	
+dotco	dy obu ty cy obu	
+draci	dy ry abu cy ibu	
+drani	dy ry abu ny ibu	
+drata	dy ry abu ty abu	
+drudi	dy ry ubu dy ibu	
+dugri	dy ubu gy ry ibu	
+dukse	dy ubu ky sy ebu	
+dukti	dy ubu ky ty ibu	
+dunda	dy ubu ny dy abu	
+dunja	dy ubu ny jy abu	
+dunku	dy ubu ny ky ubu	
+dunli	dy ubu ny ly ibu	
+dunra	dy ubu ny ry abu	
+dzena	dy zy ebu ny abu	
+dzipo	dy zy ibu py obu	
+facki	fy abu cy ky ibu	
+fadni	fy abu dy ny ibu	
+fagri	fy abu gy ry ibu	
+falnu	fy abu ly ny ubu	
+famti	fy abu my ty ibu	
+fancu	fy abu ny cy ubu	
+fange	fy abu ny gy ebu	
+fanmo	fy abu ny my obu	
+fanri	fy abu ny ry ibu	
+fanta	fy abu ny ty abu	
+fanva	fy abu ny vy abu	
+fanza	fy abu ny zy abu	
+fapro	fy abu py ry obu	
+farlu	fy abu ry ly ubu	
+farna	fy abu ry ny abu	
+farvi	fy abu ry vy ibu	
+fasnu	fy abu sy ny ubu	
+fatci	fy abu ty cy ibu	
+fatne	fy abu ty ny ebu	
+fatri	fy abu ty ry ibu	
+febvi	fy ebu by vy ibu	
+femti	fy ebu my ty ibu	
+fendi	fy ebu ny dy ibu	
+fengu	fy ebu ny gy ubu	
+fenki	fy ebu ny ky ibu	
+fenra	fy ebu ny ry abu	
+fenso	fy ebu ny sy obu	
+fepni	fy ebu py ny ibu	
+fepri	fy ebu py ry ibu	
+ferti	fy ebu ry ty ibu	
+festi	fy ebu sy ty ibu	
+fetsi	fy ebu ty sy ibu	
+figre	fy ibu gy ry ebu	
+filso	fy ibu ly sy obu	
+finpe	fy ibu ny py ebu	
+finti	fy ibu ny ty ibu	
+flalu	fy ly abu ly ubu	
+flani	fy ly abu ny ibu	
+flecu	fy ly ebu cy ubu	
+fliba	fy ly ibu by abu	
+flira	fy ly ibu ry abu	
+foldi	fy obu ly dy ibu	
+fonmo	fy obu ny my obu	
+fonxa	fy obu ny xy abu	
+forca	fy obu ry cy abu	
+fraso	fy ry abu sy obu	
+frati	fy ry abu ty ibu	
+fraxu	fy ry abu xy ubu	
+frica	fy ry ibu cy abu	
+friko	fy ry ibu ky obu	
+frili	fy ry ibu ly ibu	
+frinu	fy ry ibu ny ubu	
+friti	fy ry ibu ty ibu	
+frumu	fy ry ubu my ubu	
+fukpi	fy ubu ky py ibu	
+fulta	fy ubu ly ty abu	
+funca	fy ubu ny cy abu	
+fusra	fy ubu sy ry abu	
+fuzme	fy ubu zy my ebu	
+gacri	gy abu cy ry ibu	
+gadri	gy abu dy ry ibu	
+galfi	gy abu ly fy ibu	
+galtu	gy abu ly ty ubu	
+galxe	gy abu ly xy ebu	
+ganlo	gy abu ny ly obu	
+ganra	gy abu ny ry abu	
+ganse	gy abu ny sy ebu	
+ganti	gy abu ny ty ibu	
+ganxo	gy abu ny xy obu	
+ganzu	gy abu ny zy ubu	
+gapci	gy abu py cy ibu	
+gapru	gy abu py ry ubu	
+garna	gy abu ry ny abu	
+gasnu	gy abu sy ny ubu	
+gasta	gy abu sy ty abu	
+genja	gy ebu ny jy abu	
+gento	gy ebu ny ty obu	
+genxu	gy ebu ny xy ubu	
+gerku	gy ebu ry ky ubu	
+gerna	gy ebu ry ny abu	
+gidva	gy ibu dy vy abu	
+gigdo	gy ibu gy dy obu	
+ginka	gy ibu ny ky abu	
+girzu	gy ibu ry zy ubu	
+gismu	gy ibu sy my ubu	
+glare	gy ly abu ry ebu	
+gleki	gy ly ebu ky ibu	
+gletu	gy ly ebu ty ubu	
+glico	gy ly ibu cy obu	
+gluta	gy ly ubu ty abu	
+gocti	gy obu cy ty ibu	
+gotro	gy obu ty ry obu	
+gradu	gy ry abu dy ubu	
+grake	gy ry abu ky ebu	
+grana	gy ry abu ny abu	
+grasu	gy ry abu sy ubu	
+greku	gy ry ebu ky ubu	
+grusi	gy ry ubu sy ibu	
+grute	gy ry ubu ty ebu	
+gubni	gy ubu by ny ibu	
+gugde	gy ubu gy dy ebu	
+gundi	gy ubu ny dy ibu	
+gunka	gy ubu ny ky abu	
+gunma	gy ubu ny my abu	
+gunro	gy ubu ny ry obu	
+gunse	gy ubu ny sy ebu	
+gunta	gy ubu ny ty abu	
+gurni	gy ubu ry ny ibu	
+guska	gy ubu sy ky abu	
+gusni	gy ubu sy ny ibu	
+gusta	gy ubu sy ty abu	
+gutci	gy ubu ty cy ibu	
+gutra	gy ubu ty ry abu	
+guzme	gy ubu zy my ebu	
+jabre	jy abu by ry ebu	
+jadni	jy abu dy ny ibu	
+jakne	jy abu ky ny ebu	
+jalge	jy abu ly gy ebu	
+jalna	jy abu ly ny abu	
+jalra	jy abu ly ry abu	
+jamfu	jy abu my fy ubu	
+jamna	jy abu my ny abu	
+janbe	jy abu ny by ebu	
+janco	jy abu ny cy obu	
+janli	jy abu ny ly ibu	
+jansu	jy abu ny sy ubu	
+janta	jy abu ny ty abu	
+jarbu	jy abu ry by ubu	
+jarco	jy abu ry cy obu	
+jarki	jy abu ry ky ibu	
+jaspu	jy abu sy py ubu	
+jatna	jy abu ty ny abu	
+javni	jy abu vy ny ibu	
+jbama	jy by abu my abu	
+jbari	jy by abu ry ibu	
+jbena	jy by ebu ny abu	
+jbera	jy by ebu ry abu	
+jbini	jy by ibu ny ibu	
+jdari	jy dy abu ry ibu	
+jdice	jy dy ibu cy ebu	
+jdika	jy dy ibu ky abu	
+jdima	jy dy ibu my abu	
+jdini	jy dy ibu ny ibu	
+jduli	jy dy ubu ly ibu	
+jecta	jy ebu cy ty abu	
+jeftu	jy ebu fy ty ubu	
+jegvo	jy ebu gy vy obu	
+jelca	jy ebu ly cy abu	
+jemna	jy ebu my ny abu	
+jenca	jy ebu ny cy abu	
+jendu	jy ebu ny dy ubu	
+jenmi	jy ebu ny my ibu	
+jerna	jy ebu ry ny abu	
+jersi	jy ebu ry sy ibu	
+jerxo	jy ebu ry xy obu	
+jesni	jy ebu sy ny ibu	
+jetce	jy ebu ty cy ebu	
+jetnu	jy ebu ty ny ubu	
+jgalu	jy gy abu ly ubu	
+jganu	jy gy abu ny ubu	
+jgari	jy gy abu ry ibu	
+jgena	jy gy ebu ny abu	
+jgina	jy gy ibu ny abu	
+jgira	jy gy ibu ry abu	
+jgita	jy gy ibu ty abu	
+jibni	jy ibu by ny ibu	
+jibri	jy ibu by ry ibu	
+jicla	jy ibu cy ly abu	
+jicmu	jy ibu cy my ubu	
+jijnu	jy ibu jy ny ubu	
+jikca	jy ibu ky cy abu	
+jikru	jy ibu ky ry ubu	
+jilka	jy ibu ly ky abu	
+jilra	jy ibu ly ry abu	
+jimca	jy ibu my cy abu	
+jimpe	jy ibu my py ebu	
+jimte	jy ibu my ty ebu	
+jinci	jy ibu ny cy ibu	
+jinga	jy ibu ny gy abu	
+jinku	jy ibu ny ky ubu	
+jinme	jy ibu ny my ebu	
+jinru	jy ibu ny ry ubu	
+jinsa	jy ibu ny sy abu	
+jinto	jy ibu ny ty obu	
+jinvi	jy ibu ny vy ibu	
+jinzi	jy ibu ny zy ibu	
+jipci	jy ibu py cy ibu	
+jipno	jy ibu py ny obu	
+jirna	jy ibu ry ny abu	
+jisra	jy ibu sy ry abu	
+jitfa	jy ibu ty fy abu	
+jitro	jy ibu ty ry obu	
+jivbu	jy ibu vy by ubu	
+jivna	jy ibu vy ny abu	
+jmaji	jy my abu jy ibu	
+jmifa	jy my ibu fy abu	
+jmina	jy my ibu ny abu	
+jmive	jy my ibu vy ebu	
+jordo	jy obu ry dy obu	
+jorne	jy obu ry ny ebu	
+jubme	jy ubu by my ebu	
+judri	jy ubu dy ry ibu	
+jufra	jy ubu fy ry abu	
+jukni	jy ubu ky ny ibu	
+jukpa	jy ubu ky py abu	
+julne	jy ubu ly ny ebu	
+jundi	jy ubu ny dy ibu	
+jungo	jy ubu ny gy obu	
+junla	jy ubu ny ly abu	
+junri	jy ubu ny ry ibu	
+junta	jy ubu ny ty abu	
+jurme	jy ubu ry my ebu	
+jursa	jy ubu ry sy abu	
+jutsi	jy ubu ty sy ibu	
+juxre	jy ubu xy ry ebu	
+jvinu	jy vy ibu ny ubu	
+kabri	ky abu by ry ibu	
+kacma	ky abu cy my abu	
+kadno	ky abu dy ny obu	
+kafke	ky abu fy ky ebu	
+kagni	ky abu gy ny ibu	
+kajde	ky abu jy dy ebu	
+kajna	ky abu jy ny abu	
+kakne	ky abu ky ny ebu	
+kakpa	ky abu ky py abu	
+kalci	ky abu ly cy ibu	
+kalri	ky abu ly ry ibu	
+kalsa	ky abu ly sy abu	
+kalte	ky abu ly ty ebu	
+kamju	ky abu my jy ubu	
+kamni	ky abu my ny ibu	
+kampu	ky abu my py ubu	
+kanba	ky abu ny by abu	
+kancu	ky abu ny cy ubu	
+kandi	ky abu ny dy ibu	
+kanji	ky abu ny jy ibu	
+kanla	ky abu ny ly abu	
+kanro	ky abu ny ry obu	
+kansa	ky abu ny sy abu	
+kantu	ky abu ny ty ubu	
+kanxe	ky abu ny xy ebu	
+karbi	ky abu ry by ibu	
+karce	ky abu ry cy ebu	
+karda	ky abu ry dy abu	
+kargu	ky abu ry gy ubu	
+karli	ky abu ry ly ibu	
+karni	ky abu ry ny ibu	
+katna	ky abu ty ny abu	
+kavbu	ky abu vy by ubu	
+kecti	ky ebu cy ty ibu	
+kelci	ky ebu ly cy ibu	
+kelvo	ky ebu ly vy obu	
+kenra	ky ebu ny ry abu	
+kensa	ky ebu ny sy abu	
+kerfa	ky ebu ry fy abu	
+kerlo	ky ebu ry ly obu	
+ketco	ky ebu ty cy obu	
+kevna	ky ebu vy ny abu	
+kicne	ky ibu cy ny ebu	
+kijno	ky ibu jy ny obu	
+kilto	ky ibu ly ty obu	
+kinli	ky ibu ny ly ibu	
+kisto	ky ibu sy ty obu	
+klaji	ky ly abu jy ibu	
+klaku	ky ly abu ky ubu	
+klama	ky ly abu my abu	
+klani	ky ly abu ny ibu	
+klesi	ky ly ebu sy ibu	
+klina	ky ly ibu ny abu	
+kliru	ky ly ibu ry ubu	
+kliti	ky ly ibu ty ibu	
+klupe	ky ly ubu py ebu	
+kluza	ky ly ubu zy abu	
+kobli	ky obu by ly ibu	
+kojna	ky obu jy ny abu	
+kolme	ky obu ly my ebu	
+komcu	ky obu my cy ubu	
+konju	ky obu ny jy ubu	
+korbi	ky obu ry by ibu	
+korcu	ky obu ry cy ubu	
+korka	ky obu ry ky abu	
+kosta	ky obu sy ty abu	
+kramu	ky ry abu my ubu	
+krasi	ky ry abu sy ibu	
+krati	ky ry abu ty ibu	
+krefu	ky ry ebu fy ubu	
+krici	ky ry ibu cy ibu	
+krili	ky ry ibu ly ibu	
+krinu	ky ry ibu ny ubu	
+krixa	ky ry ibu xy abu	
+kruca	ky ry ubu cy abu	
+kruji	ky ry ubu jy ibu	
+kruvi	ky ry ubu vy ibu	
+kubli	ky ubu by ly ibu	
+kucli	ky ubu cy ly ibu	
+kufra	ky ubu fy ry abu	
+kukte	ky ubu ky ty ebu	
+kulnu	ky ubu ly ny ubu	
+kumfa	ky ubu my fy abu	
+kumte	ky ubu my ty ebu	
+kunra	ky ubu ny ry abu	
+kunti	ky ubu ny ty ibu	
+kurfa	ky ubu ry fy abu	
+kurji	ky ubu ry jy ibu	
+kurki	ky ubu ry ky ibu	
+kuspe	ky ubu sy py ebu	
+kusru	ky ubu sy ry ubu	
+labno	ly abu by ny obu	
+lacpu	ly abu cy py ubu	
+lacri	ly abu cy ry ibu	
+ladru	ly abu dy ry ubu	
+lafti	ly abu fy ty ibu	
+lakne	ly abu ky ny ebu	
+lakse	ly abu ky sy ebu	
+lalxu	ly abu ly xy ubu	
+lamji	ly abu my jy ibu	
+lanbi	ly abu ny by ibu	
+lanci	ly abu ny cy ibu	
+lanka	ly abu ny ky abu	
+lanli	ly abu ny ly ibu	
+lanme	ly abu ny my ebu	
+lante	ly abu ny ty ebu	
+lanxe	ly abu ny xy ebu	
+lanzu	ly abu ny zy ubu	
+larcu	ly abu ry cy ubu	
+lasna	ly abu sy ny abu	
+lastu	ly abu sy ty ubu	
+latmo	ly abu ty my obu	
+latna	ly abu ty ny abu	
+lazni	ly abu zy ny ibu	
+lebna	ly ebu by ny abu	
+lenjo	ly ebu ny jy obu	
+lenku	ly ebu ny ky ubu	
+lerci	ly ebu ry cy ibu	
+lerfu	ly ebu ry fy ubu	
+libjo	ly ibu by jy obu	
+lidne	ly ibu dy ny ebu	
+lifri	ly ibu fy ry ibu	
+lijda	ly ibu jy dy abu	
+limna	ly ibu my ny abu	
+lindi	ly ibu ny dy ibu	
+linji	ly ibu ny jy ibu	
+linsi	ly ibu ny sy ibu	
+linto	ly ibu ny ty obu	
+lisri	ly ibu sy ry ibu	
+liste	ly ibu sy ty ebu	
+litce	ly ibu ty cy ebu	
+litki	ly ibu ty ky ibu	
+litru	ly ibu ty ry ubu	
+livga	ly ibu vy gy abu	
+livla	ly ibu vy ly abu	
+logji	ly obu gy jy ibu	
+lojbo	ly obu jy by obu	
+loldi	ly obu ly dy ibu	
+lorxu	ly obu ry xy ubu	
+lubno	ly ubu by ny obu	
+lujvo	ly ubu jy vy obu	
+lumci	ly ubu my cy ibu	
+lunbe	ly ubu ny by ebu	
+lunra	ly ubu ny ry abu	
+lunsa	ly ubu ny sy abu	
+mabla	my abu by ly abu	
+mabru	my abu by ry ubu	
+macnu	my abu cy ny ubu	
+makcu	my abu ky cy ubu	
+makfa	my abu ky fy abu	
+maksi	my abu ky sy ibu	
+malsi	my abu ly sy ibu	
+mamta	my abu my ty abu	
+manci	my abu ny cy ibu	
+manfo	my abu ny fy obu	
+manku	my abu ny ky ubu	
+manri	my abu ny ry ibu	
+mansa	my abu ny sy abu	
+manti	my abu ny ty ibu	
+mapku	my abu py ky ubu	
+mapni	my abu py ny ibu	
+mapti	my abu py ty ibu	
+marbi	my abu ry by ibu	
+marce	my abu ry cy ebu	
+marde	my abu ry dy ebu	
+margu	my abu ry gy ubu	
+marji	my abu ry jy ibu	
+marna	my abu ry ny abu	
+marxa	my abu ry xy abu	
+masno	my abu sy ny obu	
+masti	my abu sy ty ibu	
+matci	my abu ty cy ibu	
+matli	my abu ty ly ibu	
+matne	my abu ty ny ebu	
+matra	my abu ty ry abu	
+mavji	my abu vy jy ibu	
+maxri	my abu xy ry ibu	
+mebri	my ebu by ry ibu	
+megdo	my ebu gy dy obu	
+mekso	my ebu ky sy obu	
+melbi	my ebu ly by ibu	
+meljo	my ebu ly jy obu	
+menli	my ebu ny ly ibu	
+mensi	my ebu ny sy ibu	
+mentu	my ebu ny ty ubu	
+merko	my ebu ry ky obu	
+merli	my ebu ry ly ibu	
+mexno	my ebu xy ny obu	
+midju	my ibu dy jy ubu	
+mifra	my ibu fy ry abu	
+mikce	my ibu ky cy ebu	
+mikri	my ibu ky ry ibu	
+milti	my ibu ly ty ibu	
+milxe	my ibu ly xy ebu	
+minde	my ibu ny dy ebu	
+minji	my ibu ny jy ibu	
+minli	my ibu ny ly ibu	
+minra	my ibu ny ry abu	
+mintu	my ibu ny ty ubu	
+mipri	my ibu py ry ibu	
+mirli	my ibu ry ly ibu	
+misno	my ibu sy ny obu	
+misro	my ibu sy ry obu	
+mitre	my ibu ty ry ebu	
+mixre	my ibu xy ry ebu	
+mlana	my ly abu ny abu	
+mlatu	my ly abu ty ubu	
+mleca	my ly ebu cy abu	
+mledi	my ly ebu dy ibu	
+mluni	my ly ubu ny ibu	
+mokca	my obu ky cy abu	
+moklu	my obu ky ly ubu	
+molki	my obu ly ky ibu	
+molro	my obu ly ry obu	
+morji	my obu ry jy ibu	
+morko	my obu ry ky obu	
+morna	my obu ry ny abu	
+morsi	my obu ry sy ibu	
+mosra	my obu sy ry abu	
+mraji	my ry abu jy ibu	
+mrilu	my ry ibu ly ubu	
+mruli	my ry ubu ly ibu	
+mucti	my ubu cy ty ibu	
+mudri	my ubu dy ry ibu	
+mukti	my ubu ky ty ibu	
+mulno	my ubu ly ny obu	
+munje	my ubu ny jy ebu	
+mupli	my ubu py ly ibu	
+murse	my ubu ry sy ebu	
+murta	my ubu ry ty abu	
+muslo	my ubu sy ly obu	
+mutce	my ubu ty cy ebu	
+muvdu	my ubu vy dy ubu	
+muzga	my ubu zy gy abu	
+nabmi	ny abu by my ibu	
+nakni	ny abu ky ny ibu	
+nalci	ny abu ly cy ibu	
+namcu	ny abu my cy ubu	
+nanba	ny abu ny by abu	
+nanca	ny abu ny cy abu	
+nandu	ny abu ny dy ubu	
+nanla	ny abu ny ly abu	
+nanmu	ny abu ny my ubu	
+nanvi	ny abu ny vy ibu	
+narge	ny abu ry gy ebu	
+narju	ny abu ry jy ubu	
+natfe	ny abu ty fy ebu	
+natmi	ny abu ty my ibu	
+navni	ny abu vy ny ibu	
+naxle	ny abu xy ly ebu	
+nazbi	ny abu zy by ibu	
+nejni	ny ebu jy ny ibu	
+nelci	ny ebu ly cy ibu	
+nenri	ny ebu ny ry ibu	
+nibli	ny ibu by ly ibu	
+nicte	ny ibu cy ty ebu	
+nikle	ny ibu ky ly ebu	
+nilce	ny ibu ly cy ebu	
+nimre	ny ibu my ry ebu	
+ninmu	ny ibu ny my ubu	
+nirna	ny ibu ry ny abu	
+nitcu	ny ibu ty cy ubu	
+nivji	ny ibu vy jy ibu	
+nixli	ny ibu xy ly ibu	
+nobli	ny obu by ly ibu	
+notci	ny obu ty cy ibu	
+nukni	ny ubu ky ny ibu	
+nupre	ny ubu py ry ebu	
+nurma	ny ubu ry my abu	
+nutli	ny ubu ty ly ibu	
+nuzba	ny ubu zy by abu	
+pacna	py abu cy ny abu	
+pagbu	py abu gy by ubu	
+pagre	py abu gy ry ebu	
+pajni	py abu jy ny ibu	
+palci	py abu ly cy ibu	
+palku	py abu ly ky ubu	
+palne	py abu ly ny ebu	
+palta	py abu ly ty abu	
+pambe	py abu my by ebu	
+panci	py abu ny cy ibu	
+pandi	py abu ny dy ibu	
+panje	py abu ny jy ebu	
+panka	py abu ny ky abu	
+panlo	py abu ny ly obu	
+panpi	py abu ny py ibu	
+panra	py abu ny ry abu	
+pante	py abu ny ty ebu	
+panzi	py abu ny zy ibu	
+papri	py abu py ry ibu	
+parbi	py abu ry by ibu	
+pastu	py abu sy ty ubu	
+patfu	py abu ty fy ubu	
+patlu	py abu ty ly ubu	
+patxu	py abu ty xy ubu	
+pelji	py ebu ly jy ibu	
+pelxu	py ebu ly xy ubu	
+pemci	py ebu my cy ibu	
+penbi	py ebu ny by ibu	
+pencu	py ebu ny cy ubu	
+pendo	py ebu ny dy obu	
+penmi	py ebu ny my ibu	
+pensi	py ebu ny sy ibu	
+perli	py ebu ry ly ibu	
+pesxu	py ebu sy xy ubu	
+petso	py ebu ty sy obu	
+pezli	py ebu zy ly ibu	
+picti	py ibu cy ty ibu	
+pijne	py ibu jy ny ebu	
+pikci	py ibu ky cy ibu	
+pikta	py ibu ky ty abu	
+pilji	py ibu ly jy ibu	
+pilka	py ibu ly ky abu	
+pilno	py ibu ly ny obu	
+pimlu	py ibu my ly ubu	
+pinca	py ibu ny cy abu	
+pindi	py ibu ny dy ibu	
+pinfu	py ibu ny fy ubu	
+pinji	py ibu ny jy ibu	
+pinka	py ibu ny ky abu	
+pinsi	py ibu ny sy ibu	
+pinta	py ibu ny ty abu	
+pinxe	py ibu ny xy ebu	
+pipno	py ibu py ny obu	
+pixra	py ibu xy ry abu	
+plana	py ly abu ny abu	
+platu	py ly abu ty ubu	
+pleji	py ly ebu jy ibu	
+plibu	py ly ibu by ubu	
+plini	py ly ibu ny ibu	
+plipe	py ly ibu py ebu	
+plise	py ly ibu sy ebu	
+plita	py ly ibu ty abu	
+plixa	py ly ibu xy abu	
+pluja	py ly ubu jy abu	
+pluka	py ly ubu ky abu	
+pluta	py ly ubu ty abu	
+polje	py obu ly jy ebu	
+polno	py obu ly ny obu	
+ponjo	py obu ny jy obu	
+ponse	py obu ny sy ebu	
+porpi	py obu ry py ibu	
+porsi	py obu ry sy ibu	
+porto	py obu ry ty obu	
+prali	py ry abu ly ibu	
+prami	py ry abu my ibu	
+prane	py ry abu ny ebu	
+preja	py ry ebu jy abu	
+prenu	py ry ebu ny ubu	
+preti	py ry ebu ty ibu	
+prije	py ry ibu jy ebu	
+prina	py ry ibu ny abu	
+pritu	py ry ibu ty ubu	
+prosa	py ry obu sy abu	
+pruce	py ry ubu cy ebu	
+pruni	py ry ubu ny ibu	
+pruxi	py ry ubu xy ibu	
+pulce	py ubu ly cy ebu	
+pulji	py ubu ly jy ibu	
+pulni	py ubu ly ny ibu	
+punji	py ubu ny jy ibu	
+punli	py ubu ny ly ibu	
+purci	py ubu ry cy ibu	
+purdi	py ubu ry dy ibu	
+purmo	py ubu ry my obu	
+racli	ry abu cy ly ibu	
+ractu	ry abu cy ty ubu	
+radno	ry abu dy ny obu	
+rafsi	ry abu fy sy ibu	
+ragve	ry abu gy vy ebu	
+rakso	ry abu ky sy obu	
+raktu	ry abu ky ty ubu	
+ralci	ry abu ly cy ibu	
+ralju	ry abu ly jy ubu	
+ralte	ry abu ly ty ebu	
+randa	ry abu ny dy abu	
+rango	ry abu ny gy obu	
+ranji	ry abu ny jy ibu	
+ranmi	ry abu ny my ibu	
+ransu	ry abu ny sy ubu	
+ranti	ry abu ny ty ibu	
+ranxi	ry abu ny xy ibu	
+rapli	ry abu py ly ibu	
+rarna	ry abu ry ny abu	
+ratcu	ry abu ty cy ubu	
+ratni	ry abu ty ny ibu	
+rebla	ry ebu by ly abu	
+rectu	ry ebu cy ty ubu	
+remna	ry ebu my ny abu	
+renro	ry ebu ny ry obu	
+renvi	ry ebu ny vy ibu	
+respa	ry ebu sy py abu	
+ricfu	ry ibu cy fy ubu	
+rigni	ry ibu gy ny ibu	
+rijno	ry ibu jy ny obu	
+rilti	ry ibu ly ty ibu	
+rimni	ry ibu my ny ibu	
+rinci	ry ibu ny cy ibu	
+rinju	ry ibu ny jy ubu	
+rinka	ry ibu ny ky abu	
+rinsa	ry ibu ny sy abu	
+rirci	ry ibu ry cy ibu	
+rirni	ry ibu ry ny ibu	
+rirxe	ry ibu ry xy ebu	
+rismi	ry ibu sy my ibu	
+risna	ry ibu sy ny abu	
+ritli	ry ibu ty ly ibu	
+rivbi	ry ibu vy by ibu	
+rokci	ry obu ky cy ibu	
+romge	ry obu my gy ebu	
+ropno	ry obu py ny obu	
+rorci	ry obu ry cy ibu	
+rotsu	ry obu ty sy ubu	
+rozgu	ry obu zy gy ubu	
+ruble	ry ubu by ly ebu	
+rufsu	ry ubu fy sy ubu	
+runme	ry ubu ny my ebu	
+runta	ry ubu ny ty abu	
+rupnu	ry ubu py ny ubu	
+rusko	ry ubu sy ky obu	
+rutni	ry ubu ty ny ibu	
+sabji	sy abu by jy ibu	
+sabnu	sy abu by ny ubu	
+sacki	sy abu cy ky ibu	
+saclu	sy abu cy ly ubu	
+sadjo	sy abu dy jy obu	
+sakci	sy abu ky cy ibu	
+sakli	sy abu ky ly ibu	
+sakta	sy abu ky ty abu	
+salci	sy abu ly cy ibu	
+salpo	sy abu ly py obu	
+salta	sy abu ly ty abu	
+samcu	sy abu my cy ubu	
+sampu	sy abu my py ubu	
+sance	sy abu ny cy ebu	
+sanga	sy abu ny gy abu	
+sanji	sy abu ny jy ibu	
+sanli	sy abu ny ly ibu	
+sanmi	sy abu ny my ibu	
+sanso	sy abu ny sy obu	
+santa	sy abu ny ty abu	
+sarcu	sy abu ry cy ubu	
+sarji	sy abu ry jy ibu	
+sarlu	sy abu ry ly ubu	
+sarxe	sy abu ry xy ebu	
+saske	sy abu sy ky ebu	
+satci	sy abu ty cy ibu	
+satre	sy abu ty ry ebu	
+savru	sy abu vy ry ubu	
+sazri	sy abu zy ry ibu	
+sefta	sy ebu fy ty abu	
+selci	sy ebu ly cy ibu	
+selfu	sy ebu ly fy ubu	
+semto	sy ebu my ty obu	
+senci	sy ebu ny cy ibu	
+senpi	sy ebu ny py ibu	
+senta	sy ebu ny ty abu	
+senva	sy ebu ny vy abu	
+sepli	sy ebu py ly ibu	
+serti	sy ebu ry ty ibu	
+setca	sy ebu ty cy abu	
+sevzi	sy ebu vy zy ibu	
+sfani	sy fy abu ny ibu	
+sfasa	sy fy abu sy abu	
+sfofa	sy fy obu fy abu	
+sfubu	sy fy ubu by ubu	
+siclu	sy ibu cy ly ubu	
+sicni	sy ibu cy ny ibu	
+sidbo	sy ibu dy by obu	
+sidju	sy ibu dy jy ubu	
+sigja	sy ibu gy jy abu	
+silka	sy ibu ly ky abu	
+silna	sy ibu ly ny abu	
+simlu	sy ibu my ly ubu	
+simsa	sy ibu my sy abu	
+simxu	sy ibu my xy ubu	
+since	sy ibu ny cy ebu	
+sinma	sy ibu ny my abu	
+sinso	sy ibu ny sy obu	
+sinxa	sy ibu ny xy abu	
+sipna	sy ibu py ny abu	
+sirji	sy ibu ry jy ibu	
+sirxo	sy ibu ry xy obu	
+sisku	sy ibu sy ky ubu	
+sisti	sy ibu sy ty ibu	
+sitna	sy ibu ty ny abu	
+sivni	sy ibu vy ny ibu	
+skaci	sy ky abu cy ibu	
+skami	sy ky abu my ibu	
+skapi	sy ky abu py ibu	
+skari	sy ky abu ry ibu	
+skicu	sy ky ibu cy ubu	
+skiji	sy ky ibu jy ibu	
+skina	sy ky ibu ny abu	
+skori	sy ky obu ry ibu	
+skoto	sy ky obu ty obu	
+skuro	sy ky ubu ry obu	
+slabu	sy ly abu by ubu	
+slaka	sy ly abu ky abu	
+slami	sy ly abu my ibu	
+slanu	sy ly abu ny ubu	
+slari	sy ly abu ry ibu	
+slasi	sy ly abu sy ibu	
+sligu	sy ly ibu gy ubu	
+slilu	sy ly ibu ly ubu	
+sliri	sy ly ibu ry ibu	
+slovo	sy ly obu vy obu	
+sluji	sy ly ubu jy ibu	
+sluni	sy ly ubu ny ibu	
+smacu	sy my abu cy ubu	
+smadi	sy my abu dy ibu	
+smaji	sy my abu jy ibu	
+smani	sy my abu ny ibu	
+smoka	sy my obu ky abu	
+smuci	sy my ubu cy ibu	
+smuni	sy my ubu ny ibu	
+snada	sy ny abu dy abu	
+snanu	sy ny abu ny ubu	
+snidu	sy ny ibu dy ubu	
+snime	sy ny ibu my ebu	
+snipa	sy ny ibu py abu	
+snuji	sy ny ubu jy ibu	
+snura	sy ny ubu ry abu	
+snuti	sy ny ubu ty ibu	
+sobde	sy obu by dy ebu	
+sodna	sy obu dy ny abu	
+sodva	sy obu dy vy abu	
+softo	sy obu fy ty obu	
+solji	sy obu ly jy ibu	
+solri	sy obu ly ry ibu	
+sombo	sy obu my by obu	
+sonci	sy obu ny cy ibu	
+sorcu	sy obu ry cy ubu	
+sorgu	sy obu ry gy ubu	
+sovda	sy obu vy dy abu	
+spaji	sy py abu jy ibu	
+spali	sy py abu ly ibu	
+spano	sy py abu ny obu	
+spati	sy py abu ty ibu	
+speni	sy py ebu ny ibu	
+spisa	sy py ibu sy abu	
+spita	sy py ibu ty abu	
+spofu	sy py obu fy ubu	
+spoja	sy py obu jy abu	
+spuda	sy py ubu dy abu	
+sputu	sy py ubu ty ubu	
+sraji	sy ry abu jy ibu	
+sraku	sy ry abu ky ubu	
+sralo	sy ry abu ly obu	
+srana	sy ry abu ny abu	
+srasu	sy ry abu sy ubu	
+srera	sy ry ebu ry abu	
+srito	sy ry ibu ty obu	
+sruma	sy ry ubu my abu	
+sruri	sy ry ubu ry ibu	
+stace	sy ty abu cy ebu	
+stagi	sy ty abu gy ibu	
+staku	sy ty abu ky ubu	
+stali	sy ty abu ly ibu	
+stani	sy ty abu ny ibu	
+stapa	sy ty abu py abu	
+stasu	sy ty abu sy ubu	
+stati	sy ty abu ty ibu	
+steba	sy ty ebu by abu	
+steci	sy ty ebu cy ibu	
+stedu	sy ty ebu dy ubu	
+stela	sy ty ebu ly abu	
+stero	sy ty ebu ry obu	
+stici	sy ty ibu cy ibu	
+stidi	sy ty ibu dy ibu	
+stika	sy ty ibu ky abu	
+stizu	sy ty ibu zy ubu	
+stodi	sy ty obu dy ibu	
+stuna	sy ty ubu ny abu	
+stura	sy ty ubu ry abu	
+stuzi	sy ty ubu zy ibu	
+sucta	sy ubu cy ty abu	
+sudga	sy ubu dy gy abu	
+sufti	sy ubu fy ty ibu	
+suksa	sy ubu ky sy abu	
+sumji	sy ubu my jy ibu	
+sumne	sy ubu my ny ebu	
+sumti	sy ubu my ty ibu	
+sunga	sy ubu ny gy abu	
+sunla	sy ubu ny ly abu	
+surla	sy ubu ry ly abu	
+sutra	sy ubu ty ry abu	
+tabno	ty abu by ny obu	
+tabra	ty abu by ry abu	
+tadji	ty abu dy jy ibu	
+tadni	ty abu dy ny ibu	
+tagji	ty abu gy jy ibu	
+talsa	ty abu ly sy abu	
+tamca	ty abu my cy abu	
+tamji	ty abu my jy ibu	
+tamne	ty abu my ny ebu	
+tanbo	ty abu ny by obu	
+tance	ty abu ny cy ebu	
+tanjo	ty abu ny jy obu	
+tanko	ty abu ny ky obu	
+tanru	ty abu ny ry ubu	
+tansi	ty abu ny sy ibu	
+tanxe	ty abu ny xy ebu	
+tapla	ty abu py ly abu	
+tarbi	ty abu ry by ibu	
+tarci	ty abu ry cy ibu	
+tarla	ty abu ry ly abu	
+tarmi	ty abu ry my ibu	
+tarti	ty abu ry ty ibu	
+taske	ty abu sy ky ebu	
+tatpi	ty abu ty py ibu	
+tatru	ty abu ty ry ubu	
+tavla	ty abu vy ly abu	
+taxfu	ty abu xy fy ubu	
+tcaci	ty cy abu cy ibu	
+tcadu	ty cy abu dy ubu	
+tcana	ty cy abu ny abu	
+tcati	ty cy abu ty ibu	
+tcena	ty cy ebu ny abu	
+tcica	ty cy ibu cy abu	
+tcidu	ty cy ibu dy ubu	
+tcika	ty cy ibu ky abu	
+tcila	ty cy ibu ly abu	
+tcima	ty cy ibu my abu	
+tcini	ty cy ibu ny ibu	
+tcita	ty cy ibu ty abu	
+temci	ty ebu my cy ibu	
+tenfa	ty ebu ny fy abu	
+tengu	ty ebu ny gy ubu	
+terdi	ty ebu ry dy ibu	
+terpa	ty ebu ry py abu	
+terto	ty ebu ry ty obu	
+tigni	ty ibu gy ny ibu	
+tikpa	ty ibu ky py abu	
+tilju	ty ibu ly jy ubu	
+tinbe	ty ibu ny by ebu	
+tinci	ty ibu ny cy ibu	
+tinsa	ty ibu ny sy abu	
+tirna	ty ibu ry ny abu	
+tirse	ty ibu ry sy ebu	
+tirxu	ty ibu ry xy ubu	
+tisna	ty ibu sy ny abu	
+titla	ty ibu ty ly abu	
+tivni	ty ibu vy ny ibu	
+tixnu	ty ibu xy ny ubu	
+toknu	ty obu ky ny ubu	
+toldi	ty obu ly dy ibu	
+tonga	ty obu ny gy abu	
+tordu	ty obu ry dy ubu	
+torni	ty obu ry ny ibu	
+traji	ty ry abu jy ibu	
+trano	ty ry abu ny obu	
+trati	ty ry abu ty ibu	
+trene	ty ry ebu ny ebu	
+tricu	ty ry ibu cy ubu	
+trina	ty ry ibu ny abu	
+trixe	ty ry ibu xy ebu	
+troci	ty ry obu cy ibu	
+tsali	ty sy abu ly ibu	
+tsani	ty sy abu ny ibu	
+tsapi	ty sy abu py ibu	
+tsiju	ty sy ibu jy ubu	
+tsina	ty sy ibu ny abu	
+tubnu	ty ubu by ny ubu	
+tugni	ty ubu gy ny ibu	
+tujli	ty ubu jy ly ibu	
+tumla	ty ubu my ly abu	
+tunba	ty ubu ny by abu	
+tunka	ty ubu ny ky abu	
+tunlo	ty ubu ny ly obu	
+tunta	ty ubu ny ty abu	
+tuple	ty ubu py ly ebu	
+turni	ty ubu ry ny ibu	
+tutci	ty ubu ty cy ibu	
+tutra	ty ubu ty ry abu	
+vacri	vy abu cy ry ibu	
+vajni	vy abu jy ny ibu	
+valsi	vy abu ly sy ibu	
+vamji	vy abu my jy ibu	
+vamtu	vy abu my ty ubu	
+vanbi	vy abu ny by ibu	
+vanci	vy abu ny cy ibu	
+vanju	vy abu ny jy ubu	
+vasru	vy abu sy ry ubu	
+vasxu	vy abu sy xy ubu	
+vecnu	vy ebu cy ny ubu	
+venfu	vy ebu ny fy ubu	
+vensa	vy ebu ny sy abu	
+verba	vy ebu ry by abu	
+vibna	vy ibu by ny abu	
+vidni	vy ibu dy ny ibu	
+vidru	vy ibu dy ry ubu	
+vifne	vy ibu fy ny ebu	
+vikmi	vy ibu ky my ibu	
+viknu	vy ibu ky ny ubu	
+vimcu	vy ibu my cy ubu	
+vindu	vy ibu ny dy ubu	
+vinji	vy ibu ny jy ibu	
+vipsi	vy ibu py sy ibu	
+virnu	vy ibu ry ny ubu	
+viska	vy ibu sy ky abu	
+vitci	vy ibu ty cy ibu	
+vitke	vy ibu ty ky ebu	
+vitno	vy ibu ty ny obu	
+vlagi	vy ly abu gy ibu	
+vlile	vy ly ibu ly ebu	
+vlina	vy ly ibu ny abu	
+vlipa	vy ly ibu py abu	
+vofli	vy obu fy ly ibu	
+voksa	vy obu ky sy abu	
+vorme	vy obu ry my ebu	
+vraga	vy ry abu gy abu	
+vreji	vy ry ebu jy ibu	
+vreta	vy ry ebu ty abu	
+vrici	vy ry ibu cy ibu	
+vrude	vy ry ubu dy ebu	
+vrusi	vy ry ubu sy ibu	
+vukro	vy ubu ky ry obu	
+xabju	xy abu by jy ubu	
+xadba	xy abu dy by abu	
+xadni	xy abu dy ny ibu	
+xagji	xy abu gy jy ibu	
+xagri	xy abu gy ry ibu	
+xajmi	xy abu jy my ibu	
+xaksu	xy abu ky sy ubu	
+xalbo	xy abu ly by obu	
+xalka	xy abu ly ky abu	
+xalni	xy abu ly ny ibu	
+xamgu	xy abu my gy ubu	
+xampo	xy abu my py obu	
+xamsi	xy abu my sy ibu	
+xance	xy abu ny cy ebu	
+xanka	xy abu ny ky abu	
+xanri	xy abu ny ry ibu	
+xanto	xy abu ny ty obu	
+xarci	xy abu ry cy ibu	
+xarju	xy abu ry jy ubu	
+xarnu	xy abu ry ny ubu	
+xasli	xy abu sy ly ibu	
+xasne	xy abu sy ny ebu	
+xatra	xy abu ty ry abu	
+xatsi	xy abu ty sy ibu	
+xazdo	xy abu zy dy obu	
+xebni	xy ebu by ny ibu	
+xebro	xy ebu by ry obu	
+xecto	xy ebu cy ty obu	
+xedja	xy ebu dy jy abu	
+xekri	xy ebu ky ry ibu	
+xelso	xy ebu ly sy obu	
+xendo	xy ebu ny dy obu	
+xenru	xy ebu ny ry ubu	
+xexso	xy ebu xy sy obu	
+xindo	xy ibu ny dy obu	
+xinmo	xy ibu ny my obu	
+xirma	xy ibu ry my abu	
+xislu	xy ibu sy ly ubu	
+xispo	xy ibu sy py obu	
+xlali	xy ly abu ly ibu	
+xlura	xy ly ubu ry abu	
+xotli	xy obu ty ly ibu	
+xrabo	xy ry abu by obu	
+xrani	xy ry abu ny ibu	
+xriso	xy ry ibu sy obu	
+xruba	xy ry ubu by abu	
+xruki	xy ry ubu ky ibu	
+xrula	xy ry ubu ly abu	
+xruti	xy ry ubu ty ibu	
+xukmi	xy ubu ky my ibu	
+xunre	xy ubu ny ry ebu	
+xurdo	xy ubu ry dy obu	
+xusra	xy ubu sy ry abu	
+xutla	xy ubu ty ly abu	
+zabna	zy abu by ny abu	
+zajba	zy abu jy by abu	
+zalvi	zy abu ly vy ibu	
+zanru	zy abu ny ry ubu	
+zarci	zy abu ry cy ibu	
+zargu	zy abu ry gy ubu	
+zasni	zy abu sy ny ibu	
+zasti	zy abu sy ty ibu	
+zbabu	zy by abu by ubu	
+zbani	zy by abu ny ibu	
+zbasu	zy by abu sy ubu	
+zbepi	zy by ebu py ibu	
+zdani	zy dy abu ny ibu	
+zdile	zy dy ibu ly ebu	
+zekri	zy ebu ky ry ibu	
+zenba	zy ebu ny by abu	
+zepti	zy ebu py ty ibu	
+zetro	zy ebu ty ry obu	
+zgana	zy gy abu ny abu	
+zgike	zy gy ibu ky ebu	
+zifre	zy ibu fy ry ebu	
+zinki	zy ibu ny ky ibu	
+zirpu	zy ibu ry py ubu	
+zivle	zy ibu vy ly ebu	
+zmadu	zy my abu dy ubu	
+zmiku	zy my ibu ky ubu	
+zukte	zy ubu ky ty ebu	
+zumri	zy ubu my ry ibu	
+zungi	zy ubu ny gy ibu	
+zunle	zy ubu ny ly ebu	
+zunti	zy ubu ny ty ibu	
+zutse	zy ubu ty sy ebu	
+zvati	zy vy abu ty ibu	
+ba'usle	by abu yhy ubu sy ly ebu	
+bacyxunre	by abu cy ybu xy ubu ny ry ebu	
+balsai	by abu ly sy aibu	
+barme'e	by abu ry my ebu yhy ebu	
+basyzumfau	by abu sy ybu zy ubu my fy aubu	
+bauske	by aubu sy ky ebu	
+bavlamcte	by abu vy ly abu my cy ty ebu	
+bavmojnalka'e	by abu vy my obu jy ny abu ly ky abu yhy ebu	
+bebgei	by ebu by gy eibu	
+bebzunpre	by ebu by zy ubu ny py ry ebu	
+benbogda'i	by ebu ny by obu gy dy abu yhy ibu	
+bi'amlu	by ibu yhy abu my ly ubu	
+bicysakta	by ibu cy ybu sy abu ky ty abu	
+biftoknu	by ibu fy ty obu ky ny ubu	
+bigmoi	by ibu gy my oibu	
+birjanke'a	by ibu ry jy abu ny ky ebu yhy abu	
+birtafpau	by ibu ry ty abu fy py aubu	
+bisycalku	by ibu sy ybu cy abu ly ky ubu	
+bivjgatai	by ibu vy jy gy abu ty aibu	
+blasodna	by ly abu sy obu dy ny abu	
+blomatryga'a	by ly obu my abu ty ry ybu gy abu yhy abu	
+bogjimro'i	by obu gy jy ibu my ry obu yhy ibu	
+boirlokra	by oibu ry ly obu ky ry abu	
+bolgrijvi	by obu ly gy ry ibu jy vy ibu	
+boltipyboi	by obu ly ty ibu py ybu by oibu	
+bonkori'ygu'e	by obu ny ky obu ry ibu yhy ybu gy ubu yhy ebu	
+brafi'a	by ry abu fy ibu yhy abu	
+brajamblo	by ry abu jy abu my by ly obu	
+braplu	by ry abu py ly ubu	
+braxamsi	by ry abu xy abu my sy ibu	
+broralmalsi	by ry obu ry abu ly my abu ly sy ibu	
+bukfe'a	by ubu ky fy ebu yhy abu	
+ca'orgreku	cy abu yhy obu ry gy ry ebu ky ubu	
+cabma'i	cy abu by my abu yhy ibu	
+cacryra'o	cy abu cy ry ybu ry abu yhy obu	
+cadysti	cy abu dy ybu sy ty ibu	
+cafygapci	cy abu fy ybu gy abu py cy ibu	
+cagygundi	cy abu gy ybu gy ubu ny dy ibu	
+cajgundi	cy abu jy gy ubu ny dy ibu	
+campa'i	cy abu my py abu yhy ibu	
+carkeitci	cy abu ry ky eibu ty cy ibu	
+cavysezlu'i	cy abu vy ybu sy ebu zy ly ubu yhy ibu	
+celgau	cy ebu ly gy aubu	
+cimcimra	cy ibu my cy ibu my ry abu	
+cinxei	cy ibu ny xy eibu	
+ckupra	cy ky ubu py ry abu	
+ckuzai	cy ky ubu zy aibu	
+clajbatamca	cy ly abu jy by abu ty abu my cy abu	
+clakeryractu	cy ly abu ky ebu ry ybu ry abu cy ty ubu	
+clavaxsku	cy ly abu vy abu xy sy ky ubu	
+cmazve	cy my abu zy vy ebu	
+cmibi'o	cy my ibu by ibu yhy obu	
+cmigau	cy my ibu gy aubu	
+cmiveigau	cy my ibu vy eibu gy aubu	
+cnimanci	cy ny ibu my abu ny cy ibu	
+cnixai	cy ny ibu xy aibu	
+cpinytsapi	cy py ibu ny ybu ty sy abu py ibu	
+crebi'o	cy ry ebu by ibu yhy obu	
+crejibri	cy ry ebu jy ibu by ry ibu	
+crezenzu'e	cy ry ebu zy ebu ny zy ubu yhy ebu	
+cubycti	cy ubu by ybu cy ty ibu	
+cucydegji	cy ubu cy ybu dy ebu gy jy ibu	
+cumgau	cy ubu my gy aubu	
+cutyti'e	cy ubu ty ybu ty ibu yhy ebu	
+dadja'i	dy abu dy jy abu yhy ibu	
+daltyda'u	dy abu ly ty ybu dy abu yhy ubu	
+darctatci	dy abu ry cy ty abu ty cy ibu	
+daskemxarpresmitra	dy abu sy ky ebu my xy abu ry py ry ebu sy my ibu ty ry abu	
+daskybu'u	dy abu sy ky ybu by ubu yhy ubu	
+dasysni	dy abu sy ybu sy ny ibu	
+datyto'aku'e	dy abu ty ybu ty obu yhy abu ky ubu yhy ebu	
+dekyki'ogra	dy ebu ky ybu ky ibu yhy obu gy ry abu	
+depyjdari	dy ebu py ybu jy dy abu ry ibu	
+detci'e	dy ebu ty cy ibu yhy ebu	
+detke'u	dy ebu ty ky ebu yhy ubu	
+dibmle	dy ibu by my ly ebu	
+dicygu'a	dy ibu cy ybu gy ubu yhy abu	
+dijycra	dy ibu jy ybu cy ry abu	
+dinra'e	dy ibu ny ry abu yhy ebu	
+dinsro	dy ibu ny sy ry obu	
+djecacrytcika	dy jy ebu cy abu cy ry ybu ty cy ibu ky abu	
+djoru'u	dy jy obu ry ubu yhy ubu	
+djugei	dy jy ubu gy eibu	
+dorlurfau	dy obu ry ly ubu ry fy aubu	
+dotygu'e	dy obu ty ybu gy ubu yhy ebu	
+dubma'o	dy ubu by my abu yhy obu	
+dutsinso	dy ubu ty sy ibu ny sy obu	
+dzalenypi'i	dy zy abu ly ebu ny ybu py ibu yhy ibu	
+dzejbo	dy zy ebu jy by obu	
+dzictaru	dy zy ibu cy ty abu ry ubu	
+dzito'a	dy zy ibu ty obu yhy abu	
+dzudagypli	dy zy ubu dy abu gy ybu py ly ibu	
+fagro'i	fy abu gy ry obu yhy ibu	
+farcri	fy abu ry cy ry ibu	
+felma'i	fy ebu ly my abu yhy ibu	
+fespli	fy ebu sy py ly ibu	
+fesyseigau	fy ebu sy ybu sy eibu gy aubu	
+filta'a	fy ibu ly ty abu yhy abu	
+fipyrebla	fy ibu py ybu ry ebu by ly abu	
+fletroca'a	fy ly ebu ty ry obu cy abu yhy abu	
+fonjo'e	fy obu ny jy obu yhy ebu	
+frigau	fy ry ibu gy aubu	
+frikyxasli	fy ry ibu ky ybu xy abu sy ly ibu	
+ganto'a	gy abu ny ty obu yhy abu	
+gantycaunakybakni	gy abu ny ty ybu cy aubu ny abu ky ybu by abu ky ny ibu	
+ginlazmi'u	gy ibu ny ly abu zy my ibu yhy ubu	
+glaba'a	gy ly abu by abu yhy abu	
+gliglibau	gy ly ibu gy ly ibu by aubu	
+guntrusi'o	gy ubu ny ty ry ubu sy ibu yhy obu	
+ja'urxe'a	jy abu yhy ubu ry xy ebu yhy abu	
+jacna'i	jy abu cy ny abu yhy ibu	
+jactoldi	jy abu cy ty obu ly dy ibu	
+jagri'a	jy abu gy ry ibu yhy abu	
+jaksna	jy abu ky sy ny abu	
+jamji'a	jy abu my jy ibu yhy abu	
+jaurdirgo	jy aubu ry dy ibu ry gy obu	
+jaxnunco'e	jy abu xy ny ubu ny cy obu yhy ebu	
+jbobadna	jy by obu by abu dy ny abu	
+jbojevysofkemsuzgugje'ake'eborkemfaipaltrusi'oke'ekemgubyseltru	jy by obu jy ebu vy ybu sy obu fy ky ebu my sy ubu zy gy ubu gy jy ebu yhy abu ky ebu yhy ebu by obu ry ky ebu my fy aibu py abu ly ty ry ubu sy ibu yhy obu ky ebu yhy ebu ky ebu my gy ubu by ybu sy ebu ly ty ry ubu	
+jboju'i	jy by obu jy ubu yhy ibu	
+jbopli	jy by obu py ly ibu	
+jbosofto	jy by obu sy obu fy ty obu	
+jdaselsku	jy dy abu sy ebu ly sy ky ubu	
+jdikygau	jy dy ibu ky ybu gy aubu	
+jefke'u	jy ebu fy ky ebu yhy ubu	
+jerle'i	jy ebu ry ly ebu yhy ibu	
+jespambe	jy ebu sy py abu my by ebu	
+jifmalfu'esku	jy ibu fy my abu ly fy ubu yhy ebu sy ky ubu	
+jikce'u	jy ibu ky cy ebu yhy ubu	
+jimdei	jy ibu my dy eibu	
+jinynanba	jy ibu ny ybu ny abu ny by abu	
+jmezai	jy my ebu zy aibu	
+judgau	jy ubu dy gy aubu	
+julra'o	jy ubu ly ry abu yhy obu	
+jupku'a	jy ubu py ky ubu yhy abu	
+jutske	jy ubu ty sy ky ebu	
+jvacmu	jy vy abu cy my ubu	
+ka'arda'i	ky abu yhy abu ry dy abu yhy ibu	
+kajnyta'e	ky abu jy ny ybu ty abu yhy ebu	
+kapterbi'a	ky abu py ty ebu ry by ibu yhy abu	
+kapyzi'u	ky abu py ybu zy ibu yhy ubu	
+karcymra	ky abu ry cy ybu my ry abu	
+karnyke'u	ky abu ry ny ybu ky ebu yhy ubu	
+kasygau	ky abu sy ybu gy aubu	
+ki'asku	ky ibu yhy abu sy ky ubu	
+ki'icne	ky ibu yhy ibu cy ny ebu	
+ki'irxu'a	ky ibu yhy ibu ry xy ubu yhy abu	
+kibyka'ixra	ky ibu by ybu ky abu yhy ibu xy ry abu	
+kigru'u	ky ibu gy ry ubu yhy ubu	
+kijytoldustersabji	ky ibu jy ybu ty obu ly dy ubu sy ty ebu ry sy abu by jy ibu	
+kisyglibau	ky ibu sy ybu gy ly ibu by aubu	
+klami'e	ky ly abu my ibu yhy ebu	
+konde'i	ky obu ny dy ebu yhy ibu	
+kovycmo	ky obu vy ybu cy my obu	
+krafamtei	ky ry abu fy abu my ty eibu	
+krori'a	ky ry obu ry ibu yhy abu	
+kujycaumansa	ky ubu jy ybu cy aubu my abu ny sy abu	
+kulvelru'e	ky ubu ly vy ebu ly ry ubu yhy ebu	
+kurdakfu	ky ubu ry dy abu ky fy ubu	
+kutyuenzi	ky ubu ty ybu uy ebu ny zy ibu	
+la'orko'i	ly abu yhy obu ry ky obu yhy ibu	
+labyska	ly abu by ybu sy ky abu	
+lairka'e	ly aibu ry ky abu yhy ebu	
+laldybi'a	ly abu ly dy ybu by ibu yhy abu	
+larlarborterdau	ly abu ry ly abu ry by obu ry ty ebu ry dy aubu	
+laurselylai	ly aubu ry sy ebu ly ybu ly aibu	
+laxydjine	ly abu xy ybu dy jy ibu ny ebu	
+lecyvelfavne'i	ly ebu cy ybu vy ebu ly fy abu vy ny ebu yhy ibu	
+lektu'a	ly ebu ky ty ubu yhy abu	
+lespei	ly ebu sy py eibu	
+ligyfebvi	ly ibu gy ybu fy ebu by vy ibu	
+likykrilyvidni	ly ibu ky ybu ky ry ibu ly ybu vy ibu dy ny ibu	
+lisysku	ly ibu sy ybu sy ky ubu	
+lixfarci'a	ly ibu xy fy abu ry cy ibu yhy abu	
+ma'ersazyjaspu	my abu yhy ebu ry sy abu zy ybu jy abu sy py ubu	
+magyxre	my abu gy ybu xy ry ebu	
+malfu'a	my abu ly fy ubu yhy abu	
+malselfu'a	my abu ly sy ebu ly fy ubu yhy abu	
+mansyrai	my abu ny sy ybu ry aibu	
+mapybalni	my abu py ybu by abu ly ny ibu	
+marnyjoitankysigja	my abu ry ny ybu jy oibu ty abu ny ky ybu sy ibu gy jy abu	
+matybi'o	my abu ty ybu by ibu yhy obu	
+mejgu'e	my ebu jy gy ubu yhy ebu	
+memkai	my ebu my ky aibu	
+memymau	my ebu my ybu my aubu	
+mertru	my ebu ry ty ry ubu	
+mexri'osanso	my ebu xy ry ibu yhy obu sy abu ny sy obu	
+mi'ecpe	my ibu yhy ebu cy py ebu	
+mi'ercpesku	my ibu yhy ebu ry cy py ebu sy ky ubu	
+mijdo'i	my ibu jy dy obu yhy ibu	
+mijgresirji	my ibu jy gy ry ebu sy ibu ry jy ibu	
+mijma'o	my ibu jy my abu yhy obu	
+misrybau	my ibu sy ry ybu by aubu	
+mitcinse	my ibu ty cy ibu ny sy ebu	
+molmarxa	my obu ly my abu ry xy abu	
+molselpu'u	my obu ly sy ebu ly py ubu yhy ubu	
+molvelylu'i	my obu ly vy ebu ly ybu ly ubu yhy ibu	
+mrenilglamlu	my ry ebu ny ibu ly gy ly abu my ly ubu	
+mrodri	my ry obu dy ry ibu	
+mroru'i	my ry obu ry ubu yhy ibu	
+mulna'usle	my ubu ly ny abu yhy ubu sy ly ebu	
+nabzai	ny abu by zy aibu	
+nalceiju'o	ny abu ly cy eibu jy ubu yhy obu	
+nalcycinki	ny abu ly cy ybu cy ibu ny ky ibu	
+naldjica	ny abu ly dy jy ibu cy abu	
+nalselzu'i	ny abu ly sy ebu ly zy ubu yhy ibu	
+nelcymau	ny ebu ly cy ybu my aubu	
+nenymivyslerango	ny ebu ny ybu my ibu vy ybu sy ly ebu ry abu ny gy obu	
+nerjelmatra	ny ebu ry jy ebu ly my abu ty ry abu	
+ni'ablo	ny ibu yhy abu by ly obu	
+nilselgre	ny ibu ly sy ebu ly gy ry ebu	
+nilylau	ny ibu ly ybu ly aubu	
+nimryjdu	ny ibu my ry ybu jy dy ubu	
+nipkenka	ny ibu py ky ebu ny ky abu	
+nipsri	ny ibu py sy ry ibu	
+nirka'aborvelmikce	ny ibu ry ky abu yhy abu by obu ry vy ebu ly my ibu ky cy ebu	
+nitlijbu'i	ny ibu ty ly ibu jy by ubu yhy ibu	
+nolse'u	ny obu ly sy ebu yhy ubu	
+nolzda	ny obu ly zy dy abu	
+nondei	ny obu ny dy eibu	
+nukyzilska	ny ubu ky ybu zy ibu ly sy ky abu	
+nunblopo'ugau	ny ubu ny by ly obu py obu yhy ubu gy aubu	
+nunjo'e	ny ubu ny jy obu yhy ebu	
+nunmu'i	ny ubu ny my ubu yhy ibu	
+nunseltickri	ny ubu ny sy ebu ly ty ibu cy ky ry ibu	
+nunsoidji	ny ubu ny sy oibu dy jy ibu	
+nunynunflapaikezmi'e	ny ubu ny ybu ny ubu ny fy ly abu py aibu ky ebu zy my ibu yhy ebu	
+pacpanra	py abu cy py abu ny ry abu	
+pairnu'i	py aibu ry ny ubu yhy ibu	
+pampe'i	py abu my py ebu yhy ibu	
+parkla	py abu ry ky ly abu	
+pavmoicu'e	py abu vy my oibu cy ubu yhy ebu	
+pavrelma'i	py abu vy ry ebu ly my abu yhy ibu	
+pavykalcrida	py abu vy ybu ky abu ly cy ry ibu dy abu	
+pavykamre	py abu vy ybu ky abu my ry ebu	
+pegyuenzi	py ebu gy ybu uy ebu ny zy ibu	
+peldei	py ebu ly dy eibu	
+pemcku	py ebu my cy ky ubu	
+pentoi	py ebu ny ty oibu	
+pevjifpedvla	py ebu vy jy ibu fy py ebu dy vy ly abu	
+pincyre'o	py ibu ny cy ybu ry ebu yhy obu	
+pipmu'u	py ibu py my ubu yhy ubu	
+pirlarfi'i	py ibu ry ly abu ry fy ibu yhy ibu	
+pixmapti	py ibu xy my abu py ty ibu	
+plodakfu	py ly obu dy abu ky fy ubu	
+pojbregau	py obu jy by ry ebu gy aubu	
+ponbau	py obu ny by aubu	
+posycerda	py obu sy ybu cy ebu ry dy abu	
+prusoi	py ry ubu sy oibu	
+pruspe	py ry ubu sy py ebu	
+pudlu'a	py ubu dy ly ubu yhy abu	
+purlamke'u	py ubu ry ly abu my ky ebu yhy ubu	
+puvytarga'i	py ubu vy ybu ty abu ry gy abu yhy ibu	
+rajyji'u	ry abu jy ybu jy ibu yhy ubu	
+rakcro	ry abu ky cy ry obu	
+raltca	ry abu ly ty cy abu	
+rarjelgau	ry abu ry jy ebu ly gy aubu	
+raspalma	ry abu sy py abu ly my abu	
+ratske	ry abu ty sy ky ebu	
+remvisyska	ry ebu my vy ibu sy ybu sy ky abu	
+ri'urkrali	ry ibu yhy ubu ry ky ry abu ly ibu	
+ricyratcu	ry ibu cy ybu ry abu ty cy ubu	
+risnyrilti	ry ibu sy ny ybu ry ibu ly ty ibu	
+ro'irbi'o	ry obu yhy ibu ry by ibu yhy obu	
+rulralpezli	ry ubu ly ry abu ly py ebu zy ly ibu	
+rumfli	ry ubu my fy ly ibu	
+sabmi'i	sy abu by my ibu yhy ibu	
+sakcinki	sy abu ky cy ibu ny ky ibu	
+samnarca'igau	sy abu my ny abu ry cy abu yhy ibu gy aubu	
+sasycimtu'a	sy abu sy ybu cy ibu my ty ubu yhy abu	
+sedykrecau	sy ebu dy ybu ky ry ebu cy aubu	
+sedypunli	sy ebu dy ybu py ubu ny ly ibu	
+seicni	sy eibu cy ny ibu	
+selbanfi	sy ebu ly by abu ny fy ibu	
+selbasti	sy ebu ly by abu sy ty ibu	
+selbeifonxa	sy ebu ly by eibu fy obu ny xy abu	
+selbirje	sy ebu ly by ibu ry jy ebu	
+selcanci	sy ebu ly cy abu ny cy ibu	
+seldjukemdatygu'e	sy ebu ly dy jy ubu ky ebu my dy abu ty ybu gy ubu yhy ebu	
+selju'i	sy ebu ly jy ubu yhy ibu	
+selka'e	sy ebu ly ky abu yhy ebu	
+selke'i	sy ebu ly ky ebu yhy ibu	
+selkluxei	sy ebu ly ky ly ubu xy eibu	
+selni'i	sy ebu ly ny ibu yhy ibu	
+selnilglasto	sy ebu ly ny ibu ly gy ly abu sy ty obu	
+selpa'i	sy ebu ly py abu yhy ibu	
+selpo'acunmi	sy ebu ly py obu yhy abu cy ubu ny my ibu	
+selsei	sy ebu ly sy eibu	
+selsmudukti	sy ebu ly sy my ubu dy ubu ky ty ibu	
+selve'u	sy ebu ly vy ebu yhy ubu	
+selxa'u	sy ebu ly xy abu yhy ubu	
+selzgaka'erfau	sy ebu ly zy gy abu ky abu yhy ebu ry fy aubu	
+selzgigau	sy ebu ly zy gy ibu gy aubu	
+sezme'e	sy ebu zy my ebu yhy ebu	
+sipygai	sy ibu py ybu gy aibu	
+sipyva'u	sy ibu py ybu vy abu yhy ubu	
+sivyta'u	sy ibu vy ybu ty abu yhy ubu	
+sivytinytci	sy ibu vy ybu ty ibu ny ybu ty cy ibu	
+skufli	sy ky ubu fy ly ibu	
+snafu'ivla	sy ny abu fy ubu yhy ibu vy ly abu	
+snalubma	sy ny abu ly ubu by my abu	
+snisimsumji	sy ny ibu sy ibu my sy ubu my jy ibu	
+sorgle	sy obu ry gy ly ebu	
+sorjgatai	sy obu ry jy gy abu ty aibu	
+sormau	sy obu ry my aubu	
+spadja	sy py abu dy jy abu	
+spemamta	sy py ebu my abu my ty abu	
+srebadbi'a	sy ry ebu by abu dy by ibu yhy abu	
+srumu'u	sy ry ubu my ubu yhy ubu	
+srupunji	sy ry ubu py ubu ny jy ibu	
+stagau	sy ty abu gy aubu	
+sudjaxri'a	sy ubu dy jy abu xy ry ibu yhy abu	
+surdei	sy ubu ry dy eibu	
+sutyterjvi	sy ubu ty ybu ty ebu ry jy vy ibu	
+suzmeidza	sy ubu zy my eibu dy zy abu	
+tarbyvau	ty abu ry by ybu vy aubu	
+targri	ty abu ry gy ry ibu	
+tcabriju	ty cy abu by ry ibu jy ubu	
+tcepru	ty cy ebu py ry ubu	
+tcotu'a	ty cy obu ty ubu yhy abu	
+tebjoide'i	ty ebu by jy oibu dy ebu yhy ibu	
+tefsujme'o	ty ebu fy sy ubu jy my ebu yhy obu	
+tegyga'e	ty ebu gy ybu gy abu yhy ebu	
+tepcau	ty ebu py cy aubu	
+tepybi'a	ty ebu py ybu by ibu yhy abu	
+terberti	ty ebu ry by ebu ry ty ibu	
+terbripaubri	ty ebu ry by ry ibu py aubu by ry ibu	
+terfagri	ty ebu ry fy abu gy ry ibu	
+terfra	ty ebu ry fy ry abu	
+terjvi	ty ebu ry jy vy ibu	
+terkubli	ty ebu ry ky ubu by ly ibu	
+ternuzba	ty ebu ry ny ubu zy by abu	
+togysmajmavra	ty obu gy ybu sy my abu jy my abu vy ry abu	
+togystika	ty obu gy ybu sy ty ibu ky abu	
+tolbandu	ty obu ly by abu ny dy ubu	
+tolferti	ty obu ly fy ebu ry ty ibu	
+tolkri	ty obu ly ky ry ibu	
+tolsi'a	ty obu ly sy ibu yhy abu	
+torsipna	ty obu ry sy ibu py ny abu	
+treicytunba	ty ry eibu cy ybu ty ubu ny by abu	
+tsispa	ty sy ibu sy py abu	
+tu'urfi'e	ty ubu yhy ubu ry fy ibu yhy ebu	
+tutpaupau	ty ubu ty py aubu py aubu	
+vabnalzgage'a	vy abu by ny abu ly zy gy abu gy ebu yhy abu	
+vajme'eze'a	vy abu jy my ebu yhy ebu zy ebu yhy abu	
+vauvla	vy aubu vy ly abu	
+ve'urzvocma	vy ebu yhy ubu ry zy vy obu cy my abu	
+velsfa	vy ebu ly sy fy abu	
+veltivjoividni	vy ebu ly ty ibu vy jy oibu vy ibu dy ny ibu	
+venci'e	vy ebu ny cy ibu yhy ebu	
+vijysazyku'a	vy ibu jy ybu sy abu zy ybu ky ubu yhy abu	
+viktsispa	vy ibu ky ty sy ibu sy py abu	
+vincukla	vy ibu ny cy ubu ky ly abu	
+virparji	vy ibu ry py abu ry jy ibu	
+vlaba'u	vy ly abu by abu yhy ubu	
+vlaturge'a	vy ly abu ty ubu ry gy ebu yhy abu	
+voikla	vy oibu ky ly abu	
+voksna	vy obu ky sy ny abu	
+volsu'u	vy obu ly sy ubu yhy ubu	
+vonfu'ivla	vy obu ny fy ubu yhy ibu vy ly abu	
+vrejai	vy ry ebu jy aibu	
+vrojendu	vy ry obu jy ebu ny dy ubu	
+vu'izga	vy ubu yhy ibu zy gy abu	
+vusyga'e	vy ubu sy ybu gy abu yhy ebu	
+xaby'efku	xy abu by ybu yhy ebu fy ky ubu	
+xagyga'i	xy abu gy ybu gy abu yhy ibu	
+xalbebna	xy abu ly by ebu by ny abu	
+xamsku	xy abu my sy ky ubu	
+xantamji	xy abu ny ty abu my jy ibu	
+xaudja	xy aubu dy jy abu	
+xeldi'afriti	xy ebu ly dy ibu yhy abu fy ry ibu ty ibu	
+xlacru	xy ly abu cy ry ubu	
+xu'unrymutcrai	xy ubu yhy ubu ny ry ybu my ubu ty cy ry aibu	
+xulbu'u	xy ubu ly by ubu yhy ubu	
+zasrirni	zy abu sy ry ibu ry ny ibu	
+zbibo'u	zy by ibu by obu yhy ubu	
+zbibu'u	zy by ibu by ubu yhy ubu	
+zdoxasli	zy dy obu xy abu sy ly ibu	
+zelma'i	zy ebu ly my abu yhy ibu	
+zelplini	zy ebu ly py ly ibu ny ibu	
+zencpa	zy ebu ny cy py abu	
+zerxaizu'e	zy ebu ry xy aibu zy ubu yhy ebu	
+zgamuvjga	zy gy abu my ubu vy jy gy abu	
+zgitcisri	zy gy ibu ty cy ibu sy ry ibu	
+zgitigni	zy gy ibu ty ibu gy ny ibu	
+zgito'apoi	zy gy ibu ty obu yhy abu py oibu	
+zifcru	zy ibu fy cy ry ubu	
+zilfi'i	zy ibu ly fy ibu yhy ibu	
+zilkanxe	zy ibu ly ky abu ny xy ebu	
+zilsno	zy ibu ly sy ny obu	
+zmicu'a	zy my ibu cy ubu yhy abu	
+zmujalna	zy my ubu jy abu ly ny abu	
+zonkla	zy obu ny ky ly abu	
+zugyxu'a	zy ubu gy ybu xy ubu yhy abu	
+zukpei	zy ubu ky py eibu	
+zulbirka	zy ubu ly by ibu ry ky abu	
+zuljma	zy ubu ly jy my abu	
+zumji'ezvi	zy ubu my jy ibu yhy ebu zy vy ibu	
+zunsnagri	zy ubu ny sy ny abu gy ry ibu	
+zvacpe	zy vy abu cy py ebu	
+a'udji	denpabu.cas abu yhy.cas ubu dy jy ibu	
+aftosemere	denpabu abu fy ty obu sy ebu my ebu ry ebu	
+afxano	denpabu abu fy xy abu ny obu	
+agbakate	denpabu abu gy by abu ky abu ty ebu	
+aitco	denpabu aibu ty cy obu	
+aldeia	denpabu abu ly dy ebu iy abu	
+altamru	denpabu abu ly ty abu my ry ubu	
+ampigravle	denpabu abu my py ibu gy ry abu vy ly ebu	
+andona	denpabu abu ny dy obu ny abu	
+anji	denpabu abu ny jy ibu	
+ankabuta	denpabu abu ny ky abu by ubu ty abu	
+anxinga	denpabu abu ny xy ibu ny gy abu	
+aptci	denpabu abu py ty cy ibu	
+arkada	denpabu abu ry ky abu dy abu	
+arkasa	denpabu abu ry ky abu sy abu	
+arteri	denpabu abu ry ty ebu ry ibu	
+arxetipo	denpabu abu ry xy ebu ty ibu py obu	
+arxokuna	denpabu abu ry xy obu ky ubu ny abu	
+asfalte	denpabu abu sy fy abu ly ty ebu	
+atmosfe	denpabu abu ty my obu sy fy ebu	
+ba'alvi	by abu yhy abu ly vy ibu	
+bainri	by aibu ny ry ibu	
+banbu'ebu	by abu ny by ubu yhy ebu by ubu	
+banbucuje	by abu ny by ubu cy ubu jy ebu	
+banbucuzu	by abu ny by ubu cy ubu zy ubu	
+bancuruxe	by abu ny cy ubu ry ubu xy ebu	
+bandu'ipu	by abu ny dy ubu yhy ibu py ubu	
+bange'enege	by abu ny gy ebu yhy ebu ny ebu gy ebu	
+bangidu'o	by abu ny gy ibu dy ubu yhy obu	
+bangilu'e	by abu ny gy ibu ly ubu yhy ebu	
+bangitu'a	by abu ny gy ibu ty ubu yhy abu	
+bangojebu	by abu ny gy obu jy ebu by ubu	
+bangrsu'omi	by abu ny gy ry sy ubu yhy obu my ibu	
+banje'obu	by abu ny jy ebu yhy obu by ubu	
+banlu'uzu	by abu ny ly ubu yhy ubu zy ubu	
+banmubuju	by abu ny my ubu by ubu jy ubu	
+bantu'oku	by abu ny ty ubu yhy obu ky ubu	
+banturumu	by abu ny ty ubu ry ubu my ubu	
+banxe'a'u	by abu ny xy ebu yhy abu yhy ubu	
+banxulu'e	by abu ny xy ubu ly ubu yhy ebu	
+banxulucu	by abu ny xy ubu ly ubu cy ubu	
+banxumucu	by abu ny xy ubu my ubu cy ubu	
+baurnusu'e	by aubu ry ny ubu sy ubu yhy ebu	
+bebna'ive	by ebu by ny abu yhy ibu vy ebu	
+belrili	by ebu ly ry ibu ly ibu	
+berberi	by ebu ry by ebu ry ibu	
+bicrbombu	by ibu cy ry by obu my by ubu	
+bilduranga	by ibu ly dy ubu ry abu ny gy abu	
+bla'ei	by ly abu yhy eibu	
+blandisori	by ly abu ny dy ibu sy obu ry ibu	
+blanketi	by ly abu ny ky ebu ty ibu	
+blonare	by ly obu ny abu ry ebu	
+bolrbasketo	by obu ly ry by abu sy ky ebu ty obu	
+bolrblardo	by obu ly ry by ly abu ry dy obu	
+brauzero	by ry aubu zy ebu ry obu	
+brididu	by ry ibu dy ibu dy ubu	
+bundukiia	by ubu ny dy ubu ky ibu iy abu	
+caksova	cy abu ky sy obu vy abu	
+casnce	cy abu sy ny cy ebu	
+caxmati	cy abu xy my abu ty ibu	
+cidjrbento	cy ibu dy jy ry by ebu ny ty obu	
+cidjrletcone	cy ibu dy jy ry ly ebu ty cy obu ny ebu	
+cidjrsapinsapini	cy ibu dy jy ry sy abu py ibu ny sy abu py ibu ny ibu	
+cidjrspasolo	cy ibu dy jy ry sy py abu sy obu ly obu	
+cinkrtenebri	cy ibu ny ky ry ty ebu ny ebu by ry ibu	
+cipnrsagitari'idai	cy ibu py ny ry sy abu gy ibu ty abu ry ibu yhy ibu dy aibu	
+cirlrfeta	cy ibu ry ly ry fy ebu ty abu	
+citfigamei	cy ibu ty fy ibu gy abu my eibu	
+ckafrxiski	cy ky abu fy ry xy ibu sy ky ibu	
+ckakauo	cy ky abu ky abu uy obu	
+ckinoje	cy ky ibu ny obu jy ebu	
+cmavrcu'e	cy my abu vy ry cy ubu yhy ebu	
+cmavrfu'o	cy my abu vy ry fy ubu yhy obu	
+cmavrlau	cy my abu vy ry ly aubu	
+cmavrna'e	cy my abu vy ry ny abu yhy ebu	
+cmavrte'u	cy my abu vy ry ty ebu yhy ubu	
+cmavrxavo	cy my abu vy ry xy abu vy obu	
+cmavrzi	cy my abu vy ry zy ibu	
+cmo'ono	cy my obu yhy obu ny obu	
+cpeirigordi	cy py eibu ry ibu gy obu ry dy ibu	
+cpirkasari	cy py ibu ry ky abu sy abu ry ibu	
+cpirnotura	cy py ibu ry ny obu ty ubu ry abu	
+crimprau	cy ry ibu my py ry aubu	
+ctanuki	cy ty abu ny ubu ky ibu	
+ctokage	cy ty obu ky abu gy ebu	
+da'avni	dy abu yhy abu vy ny ibu	
+dakrmatcete	dy abu ky ry my abu ty cy ebu ty ebu	
+dalrodente	dy abu ly ry obu dy ebu ny ty ebu	
+danjnkroli	dy abu ny jy ny ky ry obu ly ibu	
+datnrzbaselpla	dy abu ty ny ry zy by abu sy ebu ly py ly abu	
+debrpakirizu	dy ebu by ry py abu ky ibu ry ibu zy ubu	
+debrpisu	dy ebu by ry py ibu sy ubu	
+decrbeli	dy ebu cy ry by ebu ly ibu	
+delfinu	dy ebu ly fy ibu ny ubu	
+denrikuti'e	dy ebu ny ry ibu ky ubu ty ibu yhy ebu	
+djekole	dy jy ebu ky obu ly ebu	
+draiaki	dy ry abu iy abu ky ibu	
+drauni	dy ry aubu ny ibu	
+dunlini	dy ubu ny ly ibu ny ibu	
+dzauvi	dy zy aubu vy ibu	
+dzibili	dy zy ibu by ibu ly ibu	
+eilga	denpabu eibu ly gy abu	
+einvi	denpabu eibu ny vy ibu	
+embiiodi	denpabu ebu my by ibu iy obu dy ibu	
+empati	denpabu ebu my py abu ty ibu	
+enklave	denpabu ebu ny ky ly abu vy ebu	
+ensemsku	denpabu ebu ny sy ebu my sy ky ubu	
+enzebra	denpabu ebu ny zy ebu by ry abu	
+ermenefti	denpabu ebu ry my ebu ny ebu fy ty ibu	
+ermine	denpabu ebu ry my ibu ny ebu	
+erpi	denpabu ebu ry py ibu	
+ersokso	denpabu ebu ry sy obu ky sy obu	
+estorni	denpabu ebu sy ty obu ry ny ibu	
+etkuni	denpabu ebu ty ky ubu ny ibu	
+etmoi	denpabu ebu ty my oibu	
+ezli	denpabu ebu zy ly ibu	
+famsatodi	fy abu my sy abu ty obu dy ibu	
+farnadu	fy abu ry ny abu dy ubu	
+fatmeko	fy abu ty my ebu ky obu	
+fatnetika	fy abu ty ny ebu ty ibu ky abu	
+faukne	fy aubu ky ny ebu	
+faunjdikpe	fy aubu ny jy dy ibu ky py ebu	
+fenxeli	fy ebu ny xy ebu ly ibu	
+fikrfantasi	fy ibu ky ry fy abu ny ty abu sy ibu	
+finprcifomiru	fy ibu ny py ry cy ibu fy obu my ibu ry ubu	
+finprkampilomormiru	fy ibu ny py ry ky abu my py ibu ly obu my obu ry my ibu ry ubu	
+freskeio	fy ry ebu sy ky ebu iy obu	
+galprurci	gy abu ly py ry ubu ry cy ibu	
+gambiia	gy abu my by ibu iy abu	
+ge'embetsi	gy ebu yhy ebu my by ebu ty sy ibu	
+glumamela	gy ly ubu my abu my ebu ly abu	
+gonxeguuo	gy obu ny xy ebu gy ubu uy obu	
+grasrtagete	gy ry abu sy ry ty abu gy ebu ty ebu	
+gravnutnoia	gy ry abu vy ny ubu ty ny obu iy abu	
+groceri	gy ry obu cy ebu ry ibu	
+gugde'e'u	gy ubu gy dy ebu yhy ebu yhy ubu	
+gugde'idu	gy ubu gy dy ebu yhy ibu dy ubu	
+gugde'ike	gy ubu gy dy ebu yhy ibu ky ebu	
+gugde'ukere	gy ubu gy dy ebu yhy ubu ky ebu ry ebu	
+gugdedau	gy ubu gy dy ebu dy aubu	
+gugdefuru	gy ubu gy dy ebu fy ubu ry ubu	
+gugdemuxu	gy ubu gy dy ebu my ubu xy ubu	
+gugdesuku	gy ubu gy dy ebu sy ubu ky ubu	
+gurnrbulguru	gy ubu ry ny ry by ubu ly gy ubu ry ubu	
+gurnrtefi	gy ubu ry ny ry ty ebu fy ibu	
+iarda	iy abu ry dy abu	
+ifka'e	denpabu ibu fy ky abu yhy ebu	
+iicmo	iy ibu cy my obu	
+imla	denpabu ibu my ly abu	
+indice	denpabu ibu ny dy ibu cy ebu	
+indigo	denpabu ibu ny dy ibu gy obu	
+inpociburu	denpabu ibu ny py obu cy ibu by ubu ry ubu	
+integrale	denpabu ibu ny ty ebu gy ry abu ly ebu	
+iolna	iy obu ly ny abu	
+itka	denpabu ibu ty ky abu	
+itlgu'e	denpabu ibu ty ly gy ubu yhy ebu	
+iuctcouo	iy ubu cy ty cy obu uy obu	
+iumre	iy ubu my ry ebu	
+jarnezi	jy abu ry ny ebu zy ibu	
+jbarjuniperu	jy by abu ry jy ubu ny ibu py ebu ry ubu	
+jboia	jy by obu iy abu	
+je'unse	jy ebu yhy ubu ny sy ebu	
+jednci	jy ebu dy ny cy ibu	
+jerjelino	jy ebu ry jy ebu ly ibu ny obu	
+jgitrnikelarpa	jy gy ibu ty ry ny ibu ky ebu ly abu ry py abu	
+jicmrboro	jy ibu cy my ry by obu ry obu	
+jinmrberkeli	jy ibu ny my ry by ebu ry ky ebu ly ibu	
+jinmrlorensi	jy ibu ny my ry ly obu ry ebu ny sy ibu	
+jinmrmendelevi	jy ibu ny my ry my ebu ny dy ebu ly ebu vy ibu	
+jinmrne'odimi	jy ibu ny my ry ny ebu yhy obu dy ibu my ibu	
+jinmrskandi	jy ibu ny my ry sy ky abu ny dy ibu	
+jinmrtali	jy ibu ny my ry ty abu ly ibu	
+jinmrterbi	jy ibu ny my ry ty ebu ry by ibu	
+jinmrvanadi	jy ibu ny my ry vy abu ny abu dy ibu	
+ju'umcu	jy ubu yhy ubu my cy ubu	
+jukrtomisi	jy ubu ky ry ty obu my ibu sy ibu	
+jungosunu	jy ubu ny gy obu sy ubu ny ubu	
+jungosuxe	jy ubu ny gy obu sy ubu xy ebu	
+jungoxeku	jy ubu ny gy obu xy ebu ky ubu	
+jungoxuju	jy ubu ny gy obu xy ubu jy ubu	
+jungozuju	jy ubu ny gy obu zy ubu jy ubu	
+junkace	jy ubu ny ky abu cy ebu	
+juntoua	jy ubu ny ty obu uy abu	
+jvaiso	jy vy aibu sy obu	
+ka'akce	ky abu yhy abu ky cy ebu	
+kafrvo'otka	ky abu fy ry vy obu yhy obu ty ky abu	
+kansele	ky abu ny sy ebu ly ebu	
+kantalupa	ky abu ny ty abu ly ubu py abu	
+kantrfermini	ky abu ny ty ry fy ebu ry my ibu ny ibu	
+karkino	ky abu ry ky ibu ny obu	
+karmine	ky abu ry my ibu ny ebu	
+karna'ano	ky abu ry ny abu yhy abu ny obu	
+karnauba	ky abu ry ny aubu by abu	
+kartamo	ky abu ry ty abu my obu	
+kelcrfidjetspina	ky ebu ly cy ry fy ibu dy jy ebu ty sy py ibu ny abu	
+keltrmanvano	ky ebu ly ty ry my abu ny vy abu ny obu	
+kernauke	ky ebu ry ny aubu ky ebu	
+ketslau	ky ebu ty sy ly aubu	
+ki'irsi	ky ibu yhy ibu ry sy ibu	
+kimbali	ky ibu my by abu ly ibu	
+kirbasi	ky ibu ry by abu sy ibu	
+klamatsile	ky ly abu my abu ty sy ibu ly ebu	
+klikeia	ky ly ibu ky ebu iy abu	
+klikeru'i	ky ly ibu ky ebu ry ubu yhy ibu	
+klirnflori	ky ly ibu ry ny fy ly obu ry ibu	
+kobrtaraksaku	ky obu by ry ty abu ry abu ky sy abu ky ubu	
+konkatena	ky obu ny ky abu ty ebu ny abu	
+krataigo	ky ry abu ty aibu gy obu	
+kricili	ky ry ibu cy ibu ly ibu	
+krilami	ky ry ibu ly abu my ibu	
+krotene	ky ry obu ty ebu ny ebu	
+ku'adranta	ky ubu yhy abu dy ry abu ny ty abu	
+kulnrselbi	ky ubu ly ny ry sy ebu ly by ibu	
+kulnrsomali	ky ubu ly ny ry sy obu my abu ly ibu	
+kulnrxanadolu	ky ubu ly ny ry xy abu ny abu dy obu ly ubu	
+kumtrganako	ky ubu my ty ry gy abu ny abu ky obu	
+kunduzi	ky ubu ny dy ubu zy ibu	
+kunrkartso	ky ubu ny ry ky abu ry ty sy obu	
+latmrfriko	ly abu ty my ry fy ry ibu ky obu	
+le'onmo	ly ebu yhy obu ny my obu	
+leksiko	ly ebu ky sy ibu ky obu	
+lepsauru	ly ebu py sy aubu ry ubu	
+lesrxapsurde	ly ebu sy ry xy abu py sy ubu ry dy ebu	
+li'ante	ly ibu yhy abu ny ty ebu	
+lormani	ly obu ry my abu ny ibu	
+lu'erfu	ly ubu yhy ebu ry fy ubu	
+mabrtenreci	my abu by ry ty ebu ny ry ebu cy ibu	
+malsilvusi	my abu ly sy ibu ly vy ubu sy ibu	
+marbela	my abu ry by ebu ly abu	
+marmelo	my abu ry my ebu ly obu	
+marmetrike	my abu ry my ebu ty ry ibu ky ebu	
+maulne	my aubu ly ny ebu	
+maxrnspelta	my abu xy ry ny sy py ebu ly ty abu	
+me'andi	my ebu yhy abu ny dy ibu	
+mi'obmoi	my ibu yhy obu by my oibu	
+mirsnarzvafa'i	my ibu ry sy ny abu ry zy vy abu fy abu yhy ibu	
+mlaino	my ly aibu ny obu	
+mlokumu	my ly obu ky ubu my ubu	
+mocrlagranje	my obu cy ry ly abu gy ry abu ny jy ebu	
+mudrbri'a	my ubu dy ry by ry ibu yhy abu	
+nanrkafkaso	ny abu ny ry ky abu fy ky abu sy obu	
+natficima	ny abu ty fy ibu cy ibu my abu	
+natrdispora	ny abu ty ry dy ibu sy py obu ry abu	
+navnrargo	ny abu vy ny ry abu ry gy obu	
+ni'utni	ny ibu yhy ubu ty ny ibu	
+nirkogo	ny ibu ry ky obu gy obu	
+nirvana	ny ibu ry vy abu ny abu	
+nokseva	ny obu ky sy ebu vy abu	
+nu'ansa	ny ubu yhy abu ny sy abu	
+nudnrameni	ny ubu dy ny ry abu my ebu ny ibu	
+odnata	denpabu obu dy ny abu ty abu	
+oltce	denpabu obu ly ty cy ebu	
+panratetfusi	py abu ny ry abu ty ebu ty fy ubu sy ibu	
+pantera	py abu ny ty ebu ry abu	
+pastrsari	py abu sy ty ry sy abu ry ibu	
+pegnpe	py ebu gy ny py ebu	
+pemxaiku	py ebu my xy aibu ky ubu	
+pitrklaine	py ibu ty ry ky ly aibu ny ebu	
+pixrlate	py ibu xy ry ly abu ty ebu	
+plaina	py ly aibu ny abu	
+plasimi	py ly abu sy ibu my ibu	
+platipu	py ly abu ty ibu py ubu	
+polniiu	py obu ly ny ibu iy ubu	
+pornternrai	py obu ry ny ty ebu ry ny ry aibu	
+pornvaije'i	py obu ry ny vy aibu jy ebu yhy ibu	
+prama'eru	py ry abu my abu yhy ebu ry ubu	
+pru'uxfri	py ry ubu yhy ubu xy fy ry ibu	
+ragrmalpigi	ry abu gy ry my abu ly py ibu gy ibu	
+rambutane	ry abu my by ubu ty abu ny ebu	
+ramdana	ry abu my dy abu ny abu	
+remnkimi	ry ebu my ny ky ibu my ibu	
+ricrbetula	ry ibu cy ry by ebu ty ubu ly abu	
+ricrcerci	ry ibu cy ry cy ebu ry cy ibu	
+ricrgleditsa	ry ibu cy ry gy ly ebu dy ibu ty sy abu	
+ricrkaciia	ry ibu cy ry ky abu cy ibu iy abu	
+ricrkastanospermu	ry ibu cy ry ky abu sy ty abu ny obu sy py ebu ry my ubu	
+ricrmango	ry ibu cy ry my abu ny gy obu	
+ricrparaserante	ry ibu cy ry py abu ry abu sy ebu ry abu ny ty ebu	
+ricrperikopsi	ry ibu cy ry py ebu ry ibu ky obu py sy ibu	
+ricrterokarpu	ry ibu cy ry ty ebu ry obu ky abu ry py ubu	
+ridgobeli	ry ibu dy gy obu by ebu ly ibu	
+rilnari	ry ibu ly ny abu ry ibu	
+ro'engu'i	ry obu yhy ebu ny gy ubu yhy ibu	
+roznrugosa	ry obu zy ny ry ubu gy obu sy abu	
+rozrmajali	ry obu zy ry my abu jy abu ly ibu	
+rozrvicura	ry obu zy ry vy ibu cy ubu ry abu	
+ru'urcunuje	ry ubu yhy ubu ry cy ubu ny ubu jy ebu	
+runtngasnrproni	ry ubu ny ty ny gy abu sy ny ry py ry obu ny ibu	
+rutrglabra	ry ubu ty ry gy ly abu by ry abu	
+rutrle'ukena	ry ubu ty ry ly ebu yhy ubu ky ebu ny abu	
+samcrkasava	sy abu my cy ry ky abu sy abu vy abu	
+sansrxolandese	sy abu ny sy ry xy obu ly abu ny dy ebu sy ebu	
+selkleigau	sy ebu ly ky ly eibu gy aubu	
+sernino	sy ebu ry ny ibu ny obu	
+sfu'utu	sy fy ubu yhy ubu ty ubu	
+sifnaptera	sy ibu fy ny abu py ty ebu ry abu	
+singeni	sy ibu ny gy ebu ny ibu	
+sinxala	sy ibu ny xy abu ly abu	
+skiueli	sy ky ibu uy ebu ly ibu	
+skogace	sy ky obu gy abu cy ebu	
+sku'ili	sy ky ubu yhy ibu ly ibu	
+slamrmiristika	sy ly abu my ry my ibu ry ibu sy ty ibu ky abu	
+smirema	sy my ibu ry ebu my abu	
+snapisa	sy ny abu py ibu sy abu	
+snidari'a	sy ny ibu dy abu ry ibu yhy abu	
+so'inba	sy obu yhy ibu ny by abu	
+spageti	sy py abu gy ebu ty ibu	
+sparalo'e	sy py abu ry abu ly obu yhy ebu	
+sparaltaia	sy py abu ry abu ly ty abu iy abu	
+spararnika	sy py abu ry abu ry ny ibu ky abu	
+spararunku	sy py abu ry abu ry ubu ny ky ubu	
+sparbrasidi	sy py abu ry by ry abu sy ibu dy ibu	
+sparcicerbita	sy py abu ry cy ibu cy ebu ry by ibu ty abu	
+sparcicnoke	sy py abu ry cy ibu cy ny obu ky ebu	
+sparderi	sy py abu ry dy ebu ry ibu	
+sparelikrisu	sy py abu ry ebu ly ibu ky ry ibu sy ubu	
+sparemerokali	sy py abu ry ebu my ebu ry obu ky abu ly ibu	
+sparepipremnu	sy py abu ry ebu py ibu py ry ebu my ny ubu	
+spargastrokilu	sy py abu ry gy abu sy ty ry obu ky ibu ly ubu	
+sparnopordu	sy py abu ry ny obu py obu ry dy ubu	
+sparpipera	sy py abu ry py ibu py ebu ry abu	
+sparpoligonatu	sy py abu ry py obu ly ibu gy obu ny abu ty ubu	
+sparsambukusi	sy py abu ry sy abu my by ubu ky ubu sy ibu	
+sparseratula	sy py abu ry sy ebu ry abu ty ubu ly abu	
+spartrimezi'a	sy py abu ry ty ry ibu my ebu zy ibu yhy abu	
+spatrcrepi	sy py abu ty ry cy ry ebu py ibu	
+spatrkamomili	sy py abu ty ry ky abu my obu my ibu ly ibu	
+spatrmenta	sy py abu ty ry my ebu ny ty abu	
+stekoni	sy ty ebu ky obu ny ibu	
+strimgau	sy ty ry ibu my gy aubu	
+ta'algo	ty abu yhy abu ly gy obu	
+tafrjerzi	ty abu fy ry jy ebu ry zy ibu	
+takside	ty abu ky sy ibu dy ebu	
+talpide	ty abu ly py ibu dy ebu	
+tanzaina	ty abu ny zy aibu ny abu	
+tcanaba	ty cy abu ny abu by abu	
+tcatrlape	ty cy abu ty ry ly abu py ebu	
+tcatrmasala	ty cy abu ty ry my abu sy abu ly abu	
+tcavaca	ty cy abu vy abu cy abu	
+tceremuxa	ty cy ebu ry ebu my ubu xy abu	
+tcevapi	ty cy ebu vy abu py ibu	
+tcikona	ty cy ibu ky obu ny abu	
+tefteli	ty ebu fy ty ebu ly ibu	
+tenbriio	ty ebu ny by ry ibu iy obu	
+tentaku	ty ebu ny ty abu ky ubu	
+terjoma	ty ebu ry jy obu my abu	
+tincile	ty ibu ny cy ibu ly ebu	
+tortiia	ty obu ry ty ibu iy abu	
+tricrbetula	ty ry ibu cy ry by ebu ty ubu ly abu	
+tricrsiringa	ty ry ibu cy ry sy ibu ry ibu ny gy abu	
+triserato	ty ry ibu sy ebu ry abu ty obu	
+trixexo	ty ry ibu xy ebu xy obu	
+trostiseji	ty ry obu sy ty ibu sy ebu jy ibu	
+tsa'anu	ty sy abu yhy abu ny ubu	
+tsamoua	ty sy abu my obu uy abu	
+tsauga	ty sy aubu gy abu	
+turbaro	ty ubu ry by abu ry obu	
+u'ivla	denpabu.cas ubu yhy.cas ibu vy ly abu	
+uargali	uy abu ry gy abu ly ibu	
+uatmala	uy abu ty my abu ly abu	
+ue'inmo	uy ebu yhy ibu ny my obu	
+uenvei	uy ebu ny vy eibu	
+uespi	uy ebu sy py ibu	
+uirveno	uy ibu ry vy ebu ny obu	
+uitki	uy ibu ty ky ibu	
+uitkipediia	uy ibu ty ky ibu py ebu dy ibu iy abu	
+uivda	uy ibu vy dy abu	
+unma	denpabu ubu ny my abu	
+uoldespisa	uy obu ly dy ebu sy py ibu sy abu	
+utclu	denpabu ubu ty cy ly ubu	
+vajlani	vy abu jy ly abu ny ibu	
+valrfa'a	vy abu ly ry fy abu yhy abu	
+vampire	vy abu my py ibu ry ebu	
+vanrtaraksaku	vy abu ny ry ty abu ry abu ky sy abu ky ubu	
+vi'etnama	vy ibu yhy ebu ty ny abu my abu	
+vi'olbaso	vy ibu yhy obu ly by abu sy obu	
+virveidi	vy ibu ry vy eibu dy ibu	
+volbolo	vy obu ly by obu ly obu	
+volmna	vy obu ly my ny abu	
+xa'anze	xy abu yhy abu ny zy ebu	
+xa'anzu	xy abu yhy abu ny zy ubu	
+xekcedipasopa	xy ebu ky cy ebu dy ibu py abu sy obu py abu	
+xomxeci	xy obu my xy ebu cy ibu	
+xoxnainmo	xy obu xy ny aibu ny my obu	
+xromicraixe	xy ry obu my ibu cy ry aibu xy ebu	
+xukmranoni	xy ubu ky my ry abu ny obu ny ibu	
+xumrkonkreto	xy ubu my ry ky obu ny ky ry ebu ty obu	
+xumrnapalmi	xy ubu my ry ny abu py abu ly my ibu	
+xunsauai	xy ubu ny sy abu uy aibu	
+zdaxogani	zy dy abu xy obu gy abu ny ibu	
+zduriiane	zy dy ubu ry ibu iy abu ny ebu	
+zilzena	zy ibu ly zy ebu ny abu	
+zimbabu	zy ibu my by abu by ubu	
+zmaile	zy my aibu ly ebu	
+zmaumce	zy my aubu my cy ebu	
+zorpate	zy obu ry py abu ty ebu	
+zukte'obi	zy ubu ky ty ebu yhy obu by ibu	
+zvuzuzu	zy vy ubu zy ubu zy ubu	
+.abata'adj.	denpabu seplimeabu by seplimeabu ty seplimeabu yhy seplimeabu dy jy denpabu	
+.abeced.	denpabu seplimeabu by seplimeebu cy seplimeebu dy denpabu	
+.abgad.	denpabu seplimeabu by gy seplimeabu dy denpabu	
+.abvanas.	denpabu seplimeabu by vy seplimeabu ny seplimeabu sy denpabu	
+.abycyd.	denpabu seplimeabu by seplimeybu cy seplimeybu dy denpabu	
+.abyvyg.	denpabu seplimeabu by seplimeybu vy seplimeybu gy denpabu	
+.acaman.	denpabu seplimeabu cy seplimeabu my seplimeabu ny denpabu	
+.agvaskaldjentes.	denpabu seplimeabu gy vy seplimeabu sy ky seplimeabu ly dy jy seplimeebu ny ty seplimeebu sy denpabu	
+.akrobat.	denpabu seplimeabu ky ry seplimeobu by seplimeabu ty denpabu	
+.akuuas.	denpabu seplimeabu ky seplimeubu uy seplimeabu sy denpabu	
+.alfabetagam.	denpabu seplimeabu ly fy seplimeabu by seplimeebu ty seplimeabu gy seplimeabu my denpabu	
+.altfor.	denpabu seplimeabu ly ty fy seplimeobu ry denpabu	
+.andiuorxol.	denpabu seplimeabu ny dy seplimeibu uy seplimeobu ry xy seplimeobu ly denpabu	
+.andor.	denpabu seplimeabu ny dy seplimeobu ry denpabu	
+.anitos.	denpabu seplimeabu ny seplimeibu ty seplimeobu sy denpabu	
+.antinantin.	denpabu seplimeabu ny ty seplimeibu ny seplimeabu ny ty seplimeibu ny denpabu	
+.arakis.	denpabu seplimeabu ry seplimeabu ky seplimeibu sy denpabu	
+.araxant.	denpabu seplimeabu ry seplimeabu xy seplimeabu ny ty denpabu	
+.arktik.	denpabu seplimeabu ry ky ty seplimeibu ky denpabu	
+.arokotf.	denpabu seplimeabu ry seplimeobu ky seplimeobu ty fy denpabu	
+.arokotftul.	denpabu seplimeabu ry seplimeobu ky seplimeobu ty fy ty seplimeubu ly denpabu	
+.arokotfxultim.	denpabu seplimeabu ry seplimeobu ky seplimeobu ty fy xy seplimeubu ly ty seplimeibu my denpabu	
+.asycy'i'is.	denpabu seplimeabu sy seplimeybu cy seplimeybu yhy seplimeibu yhy seplimeibu sy denpabu	
+.atinas.	denpabu seplimeabu ty seplimeibu ny seplimeabu sy denpabu	
+.auskalerik.	denpabu seplimeaubu sy ky seplimeabu ly seplimeebu ry seplimeibu ky denpabu	
+.babilon.	denpabu by seplimeabu by seplimeibu ly seplimeobu ny denpabu	
+.bacilus.	denpabu by seplimeabu cy seplimeibu ly seplimeubu sy denpabu	
+.baionet.	denpabu by seplimeabu iy seplimeobu ny seplimeebu ty denpabu	
+.baknis.	denpabu by seplimeabu ky ny seplimeibu sy denpabu	
+.balplin.	denpabu by seplimeabu ly py ly seplimeibu ny denpabu	
+.ban.	denpabu by seplimeabu ny denpabu	
+.banfingirz.	denpabu by seplimeabu ny fy seplimeibu ny gy seplimeibu ry zy denpabu	
+.bankok.	denpabu by seplimeabu ny ky seplimeobu ky denpabu	
+.barat.	denpabu by seplimeabu ry seplimeabu ty denpabu	
+.bardoz.	denpabu by seplimeabu ry dy seplimeobu zy denpabu	
+.barselonas.	denpabu by seplimeabu ry sy seplimeebu ly seplimeobu ny seplimeabu sy denpabu	
+.beitlaxum.	denpabu by seplimeeibu ty ly seplimeabu xy seplimeubu my denpabu	
+.belta'em.	denpabu by seplimeebu ly ty seplimeabu yhy seplimeebu my denpabu	
+.belta'ort.	denpabu by seplimeebu ly ty seplimeabu yhy seplimeobu ry ty denpabu	
+.beltakaiper.	denpabu by seplimeebu ly ty seplimeabu ky seplimeaibu py seplimeebu ry denpabu	
+.benjymyn.	denpabu by seplimeebu ny jy seplimeybu my seplimeybu ny denpabu	
+.bes.	denpabu by seplimeebu sy denpabu	
+.betovn.	denpabu by seplimeebu ty seplimeobu vy ny denpabu	
+.bickek.	denpabu by seplimeibu cy ky seplimeebu ky denpabu	
+.bidgug.	denpabu by seplimeibu dy gy seplimeubu gy denpabu	
+.bitcan.	denpabu by seplimeibu ty cy seplimeabu ny denpabu	
+.bivmast.	denpabu by seplimeibu vy my seplimeabu sy ty denpabu	
+.bivyplin.	denpabu by seplimeibu vy seplimeybu py ly seplimeibu ny denpabu	
+.blabruk.	denpabu by ly seplimeabu by ry seplimeubu ky denpabu	
+.blez.	denpabu by ly seplimeebu zy denpabu	
+.bobas.	denpabu by seplimeobu by seplimeabu sy denpabu	
+.bodisadvas.	denpabu by seplimeobu dy seplimeibu sy seplimeabu dy vy seplimeabu sy denpabu	
+.boldymor.	denpabu by seplimeobu ly dy seplimeybu my seplimeobu ry denpabu	
+.borxes.	denpabu by seplimeobu ry xy seplimeebu sy denpabu	
+.bosnan.	denpabu by seplimeobu sy ny seplimeabu ny denpabu	
+.braxas.	denpabu by ry seplimeabu xy seplimeabu sy denpabu	
+.bryklyn.	denpabu by ry seplimeybu ky ly seplimeybu ny denpabu	
+.bun.	denpabu by seplimeubu ny denpabu	
+.camgusmis.	denpabu cy seplimeabu my gy seplimeubu sy my seplimeibu sy denpabu	
+.cangan.	denpabu cy seplimeabu ny gy seplimeabu ny denpabu	
+.canxais.	denpabu cy seplimeabu ny xy seplimeaibu sy denpabu	
+.carpacib.	denpabu cy seplimeabu ry py seplimeabu cy seplimeibu by denpabu	
+.caxmat.	denpabu cy seplimeabu xy my seplimeabu ty denpabu	
+.ce'ol.	denpabu cy seplimeebu yhy seplimeobu ly denpabu	
+.cein.	denpabu cy seplimeeibu ny denpabu	
+.celguntas.	denpabu cy seplimeebu ly gy seplimeubu ny ty seplimeabu sy denpabu	
+.cesyjvedotla'okemsorgugject.	denpabu cy seplimeebu sy seplimeybu jy vy seplimeebu dy seplimeobu ty ly seplimeabu yhy seplimeobu ky seplimeebu my sy seplimeobu ry gy seplimeubu gy jy seplimeebu cy ty denpabu	
+.cev.	denpabu cy seplimeebu vy denpabu	
+.cibmast.	denpabu cy seplimeibu by my seplimeabu sy ty denpabu	
+.cikagos.	denpabu cy seplimeibu ky seplimeabu gy seplimeobu sy denpabu	
+.cilkan.	denpabu cy seplimeibu ly ky seplimeabu ny denpabu	
+.cimborskas.	denpabu cy seplimeibu my by seplimeobu ry sy ky seplimeabu sy denpabu	
+.cinfos.	denpabu cy seplimeibu ny fy seplimeobu sy denpabu	
+.cmalyris.	denpabu cy my seplimeabu ly seplimeybu ry seplimeibu sy denpabu	
+.cmeclax.	denpabu cy my seplimeebu cy ly seplimeabu xy denpabu	
+.coilojban.	denpabu cy seplimeoibu ly seplimeobu jy by seplimeabu ny denpabu	
+.cre'udingar.	denpabu cy ry seplimeebu yhy seplimeubu dy seplimeibu ny gy seplimeabu ry denpabu	
+.cternalmat.	denpabu cy ty seplimeebu ry ny seplimeabu ly my seplimeabu ty denpabu	
+.cuvmuj.	denpabu cy seplimeubu vy my seplimeubu jy denpabu	
+.cy'i'am.	denpabu cy seplimeybu yhy seplimeibu yhy seplimeabu my denpabu	
+.daiic.	denpabu dy seplimeabu iy seplimeibu cy denpabu	
+.dakas.	denpabu dy seplimeabu ky seplimeabu sy denpabu	
+.dangos.	denpabu dy seplimeabu ny gy seplimeobu sy denpabu	
+.danmark.	denpabu dy seplimeabu ny my seplimeabu ry ky denpabu	
+.datkytcas.	denpabu dy seplimeabu ty ky seplimeybu ty cy seplimeabu sy denpabu	
+.dencaupin.	denpabu dy seplimeebu ny cy seplimeaubu py seplimeibu ny denpabu	
+.dilis.	denpabu dy seplimeibu ly seplimeibu sy denpabu	
+.dinalit.	denpabu dy seplimeibu ny seplimeabu ly seplimeibu ty denpabu	
+.diuatas.	denpabu dy seplimeibu uy seplimeabu ty seplimeabu sy denpabu	
+.djakartas.	denpabu dy jy seplimeabu ky seplimeabu ry ty seplimeabu sy denpabu	
+.djankixadas.	denpabu dy jy seplimeabu ny ky seplimeibu xy seplimeabu dy seplimeabu sy denpabu	
+.djeikyb.	denpabu dy jy seplimeeibu ky seplimeybu by denpabu	
+.djein.	denpabu dy jy seplimeeibu ny denpabu	
+.djenyfyr.	denpabu dy jy seplimeebu ny seplimeybu fy seplimeybu ry denpabu	
+.djeremibensym.	denpabu dy jy seplimeebu ry seplimeebu my seplimeibu by seplimeebu ny sy seplimeybu my denpabu	
+.djerymibentym.	denpabu dy jy seplimeebu ry seplimeybu my seplimeibu by seplimeebu ny ty seplimeybu my denpabu	
+.djes.	denpabu dy jy seplimeebu sy denpabu	
+.djesikys.	denpabu dy jy seplimeebu sy seplimeibu ky seplimeybu sy denpabu	
+.djordj.	denpabu dy jy seplimeobu ry dy jy denpabu	
+.djosefin.	denpabu dy jy seplimeobu sy seplimeebu fy seplimeibu ny denpabu	
+.doitclan.	denpabu dy seplimeoibu ty cy ly seplimeabu ny denpabu	
+.doris.	denpabu dy seplimeobu ry seplimeibu sy denpabu	
+.drezdn.	denpabu dy ry seplimeebu zy dy ny denpabu	
+.dunav.	denpabu dy seplimeubu ny seplimeabu vy denpabu	
+.dylez.	denpabu dy seplimeybu ly seplimeebu zy denpabu	
+.dzip.	denpabu dy zy seplimeibu py denpabu	
+.e'elxam.	denpabu seplimeebu yhy seplimeebu ly xy seplimeabu my denpabu	
+.ednbryx.	denpabu seplimeebu dy ny by ry seplimeybu xy denpabu	
+.elei'anor.	denpabu seplimeebu ly seplimeeibu yhy seplimeabu ny seplimeobu ry denpabu	
+.elois.	denpabu seplimeebu ly seplimeoibu sy denpabu	
+.elotes.	denpabu seplimeebu ly seplimeobu ty seplimeebu sy denpabu	
+.eris.	denpabu seplimeebu ry seplimeibu sy denpabu	
+.esperanton.	denpabu seplimeebu sy py seplimeebu ry seplimeabu ny ty seplimeobu ny denpabu	
+.estraix.	denpabu seplimeebu sy ty ry seplimeaibu xy denpabu	
+.faidon.	denpabu fy seplimeaibu dy seplimeobu ny denpabu	
+.ferengis.	denpabu fy seplimeebu ry seplimeebu ny gy seplimeibu sy denpabu	
+.fertis.	denpabu fy seplimeebu ry ty seplimeibu sy denpabu	
+.firenzes.	denpabu fy seplimeibu ry seplimeebu ny zy seplimeebu sy denpabu	
+.fnord.	denpabu fy ny seplimeobu ry dy denpabu	
+.franskafkas.	denpabu fy ry seplimeabu ny sy ky seplimeabu fy ky seplimeabu sy denpabu	
+.gliban.	denpabu gy ly seplimeibu by seplimeabu ny denpabu	
+.gugl.	denpabu gy seplimeubu gy ly denpabu	
+.guglbon.	denpabu gy seplimeubu gy ly by seplimeobu ny denpabu	
+.gugyl.	denpabu gy seplimeubu gy seplimeybu ly denpabu	
+.iagis.	denpabu iy seplimeabu gy seplimeibu sy denpabu	
+.ian.	denpabu iy seplimeabu ny denpabu	
+.iangon.	denpabu iy seplimeabu ny gy seplimeobu ny denpabu	
+.iaves.	denpabu iy seplimeabu vy seplimeebu sy denpabu	
+.ibymym.	denpabu seplimeibu by seplimeybu my seplimeybu my denpabu	
+.iesys.	denpabu iy seplimeebu sy seplimeybu sy denpabu	
+.ike'as.	denpabu seplimeibu ky seplimeebu yhy seplimeabu sy denpabu	
+.in.	denpabu seplimeibu ny denpabu	
+.infernus.	denpabu seplimeibu ny fy seplimeebu ry ny seplimeubu sy denpabu	
+.internet.	denpabu seplimeibu ny ty seplimeebu ry ny seplimeebu ty denpabu	
+.intranet.	denpabu seplimeibu ny ty ry seplimeabu ny seplimeebu ty denpabu	
+.iokais.	denpabu iy seplimeobu ky seplimeaibu sy denpabu	
+.irk.	denpabu seplimeibu ry ky denpabu	
+.iskuuil.	denpabu seplimeibu sy ky seplimeubu uy seplimeibu ly denpabu	
+.islam.	denpabu seplimeibu sy ly seplimeabu my denpabu	
+.island.	denpabu seplimeibu sy ly seplimeabu ny dy denpabu	
+.istanbul.	denpabu seplimeibu sy ty seplimeabu ny by seplimeubu ly denpabu	
+.itiiopiias.	denpabu seplimeibu ty seplimeibu iy seplimeobu py seplimeibu iy seplimeabu sy denpabu	
+.izyng.	denpabu seplimeibu zy seplimeybu ny gy denpabu	
+.ja'urjuknis.	denpabu jy seplimeabu yhy seplimeubu ry jy seplimeubu ky ny seplimeibu sy denpabu	
+.jakob.	denpabu jy seplimeabu ky seplimeobu by denpabu	
+.jan.	denpabu jy seplimeabu ny denpabu	
+.jaurbarflegaus.	denpabu jy seplimeaubu ry by seplimeabu ry fy ly seplimeebu gy seplimeaubu sy denpabu	
+.jegvon.	denpabu jy seplimeebu gy vy seplimeobu ny denpabu	
+.jukremnas.	denpabu jy seplimeubu ky ry seplimeebu my ny seplimeabu sy denpabu	
+.juxres.	denpabu jy seplimeubu xy ry seplimeebu sy denpabu	
+.jycybyb.	denpabu jy seplimeybu cy seplimeybu by seplimeybu by denpabu	
+.kabestan.	denpabu ky seplimeabu by seplimeebu sy ty seplimeabu ny denpabu	
+.kafkas.	denpabu ky seplimeabu fy ky seplimeabu sy denpabu	
+.kairdid.	denpabu ky seplimeaibu ry dy seplimeibu dy denpabu	
+.kaiyxogys.	denpabu ky seplimeabu iy seplimeybu xy seplimeobu gy seplimeybu sy denpabu	
+.kamis.	denpabu ky seplimeabu my seplimeibu sy denpabu	
+.kanbas.	denpabu ky seplimeabu ny by seplimeabu sy denpabu	
+.katajinas.	denpabu ky seplimeabu ty seplimeabu jy seplimeibu ny seplimeabu sy denpabu	
+.kerestf.	denpabu ky seplimeebu ry seplimeebu sy ty fy denpabu	
+.kezonsitis.	denpabu ky seplimeebu zy seplimeobu ny sy seplimeibu ty seplimeibu sy denpabu	
+.kicotes.	denpabu ky seplimeibu cy seplimeobu ty seplimeebu sy denpabu	
+.kirilits.	denpabu ky seplimeibu ry seplimeibu ly seplimeibu ty sy denpabu	
+.klivlynd.	denpabu ky ly seplimeibu vy ly seplimeybu ny dy denpabu	
+.kmir.	denpabu ky my seplimeibu ry denpabu	
+.kocon.	denpabu ky seplimeobu cy seplimeobu ny denpabu	
+.kofimitcidus.	denpabu ky seplimeobu fy seplimeibu my seplimeibu ty cy seplimeibu dy seplimeubu sy denpabu	
+.kokain.	denpabu ky seplimeobu ky seplimeaibu ny denpabu	
+.kolonel.	denpabu ky seplimeobu ly seplimeobu ny seplimeebu ly denpabu	
+.komitcidus.	denpabu ky seplimeobu my seplimeibu ty cy seplimeibu dy seplimeubu sy denpabu	
+.konamorjis.	denpabu ky seplimeobu ny seplimeabu my seplimeobu ry jy seplimeibu sy denpabu	
+.kraislr.	denpabu ky ry seplimeaibu sy ly ry denpabu	
+.krakuf.	denpabu ky ry seplimeabu ky seplimeubu fy denpabu	
+.krtis.	denpabu ky ry ty seplimeibu sy denpabu	
+.kruntep.	denpabu ky ry seplimeubu ny ty seplimeebu py denpabu	
+.kucycuk.	denpabu ky seplimeubu cy seplimeybu cy seplimeubu ky denpabu	
+.kuualalumpur.	denpabu ky seplimeubu uy seplimeabu ly seplimeabu ly seplimeubu my py seplimeubu ry denpabu	
+.kylombys.	denpabu ky seplimeybu ly seplimeobu my by seplimeybu sy denpabu	
+.kyrym.	denpabu ky seplimeybu ry seplimeybu my denpabu	
+.lat.	denpabu ly seplimeabu ty denpabu	
+.laus.	denpabu ly seplimeaubu sy denpabu	
+.leigos.	denpabu ly seplimeeibu gy seplimeobu sy denpabu	
+.liiaunin.	denpabu ly seplimeibu iy seplimeaubu ny seplimeibu ny denpabu	
+.lindar.	denpabu ly seplimeibu ny dy seplimeabu ry denpabu	
+.linuks.	denpabu ly seplimeibu ny seplimeubu ky sy denpabu	
+.loglan.	denpabu ly seplimeobu gy ly seplimeabu ny denpabu	
+.lojbab.	denpabu ly seplimeobu jy by seplimeabu by denpabu	
+.lojban.	denpabu ly seplimeobu jy by seplimeabu ny denpabu	
+.lojbangirz.	denpabu ly seplimeobu jy by seplimeabu ny gy seplimeibu ry zy denpabu	
+.lor.	denpabu ly seplimeobu ry denpabu	
+.losanjylys.	denpabu ly seplimeobu sy seplimeabu ny jy seplimeybu ly seplimeybu sy denpabu	
+.losupan.	denpabu ly seplimeobu sy seplimeubu py seplimeabu ny denpabu	
+.lunmes.	denpabu ly seplimeubu ny my seplimeebu sy denpabu	
+.lunraj.	denpabu ly seplimeubu ny ry seplimeabu jy denpabu	
+.lymagrib.	denpabu ly seplimeybu my seplimeabu gy ry seplimeibu by denpabu	
+.lyndyn.	denpabu ly seplimeybu ny dy seplimeybu ny denpabu	
+.madagasikar.	denpabu my seplimeabu dy seplimeabu gy seplimeabu sy seplimeibu ky seplimeabu ry denpabu	
+.madinas.	denpabu my seplimeabu dy seplimeibu ny seplimeabu sy denpabu	
+.magrib.	denpabu my seplimeabu gy ry seplimeibu by denpabu	
+.maiaimit.	denpabu my seplimeabu iy seplimeaibu my seplimeibu ty denpabu	
+.maiamis.	denpabu my seplimeabu iy seplimeabu my seplimeibu sy denpabu	
+.makas.	denpabu my seplimeabu ky seplimeabu sy denpabu	
+.makintoc.	denpabu my seplimeabu ky seplimeibu ny ty seplimeobu cy denpabu	
+.maknas.	denpabu my seplimeabu ky ny seplimeabu sy denpabu	
+.malmys.	denpabu my seplimeabu ly my seplimeybu sy denpabu	
+.malyris.	denpabu my seplimeabu ly seplimeybu ry seplimeibu sy denpabu	
+.mam.	denpabu my seplimeabu my denpabu	
+.mambyl.	denpabu my seplimeabu my by seplimeybu ly denpabu	
+.manapuuas.	denpabu my seplimeabu ny seplimeabu py seplimeubu uy seplimeabu sy denpabu	
+.mantos.	denpabu my seplimeabu ny ty seplimeobu sy denpabu	
+.mariias.	denpabu my seplimeabu ry seplimeibu iy seplimeabu sy denpabu	
+.mein.	denpabu my seplimeeibu ny denpabu	
+.meiris.	denpabu my seplimeeibu ry seplimeibu sy denpabu	
+.meko'es.	denpabu my seplimeebu ky seplimeobu yhy seplimeebu sy denpabu	
+.mekrot.	denpabu my seplimeebu ky ry seplimeobu ty denpabu	
+.melplin.	denpabu my seplimeebu ly py ly seplimeibu ny denpabu	
+.merpe'ajitstic.	denpabu my seplimeebu ry py seplimeebu yhy seplimeabu jy seplimeibu ty sy ty seplimeibu cy denpabu	
+.mers.	denpabu my seplimeebu ry sy denpabu	
+.mes.	denpabu my seplimeebu sy denpabu	
+.mic.	denpabu my seplimeibu cy denpabu	
+.miiamip.	denpabu my seplimeibu iy seplimeabu my seplimeibu py denpabu	
+.miiaumis.	denpabu my seplimeibu iy seplimeaubu my seplimeibu sy denpabu	
+.minbaris.	denpabu my seplimeibu ny by seplimeabu ry seplimeibu sy denpabu	
+.mlat.	denpabu my ly seplimeabu ty denpabu	
+.morbil.	denpabu my seplimeobu ry by seplimeibu ly denpabu	
+.morlok.	denpabu my seplimeobu ry ly seplimeobu ky denpabu	
+.mors.	denpabu my seplimeobu ry sy denpabu	
+.mort.	denpabu my seplimeobu ry ty denpabu	
+.mortimr.	denpabu my seplimeobu ry ty seplimeibu my ry denpabu	
+.moskov.	denpabu my seplimeobu sy ky seplimeobu vy denpabu	
+.motcikos.	denpabu my seplimeobu ty cy seplimeibu ky seplimeobu sy denpabu	
+.motcis.	denpabu my seplimeobu ty cy seplimeibu sy denpabu	
+.mranmar.	denpabu my ry seplimeabu ny my seplimeabu ry denpabu	
+.mtsxetas.	denpabu my ty sy xy seplimeebu ty seplimeabu sy denpabu	
+.mugdic.	denpabu my seplimeubu gy dy seplimeibu cy denpabu	
+.mugdicos.	denpabu my seplimeubu gy dy seplimeibu cy seplimeobu sy denpabu	
+.mumbais.	denpabu my seplimeubu my by seplimeaibu sy denpabu	
+.mumplin.	denpabu my seplimeubu my py ly seplimeibu ny denpabu	
+.mumymast.	denpabu my seplimeubu my seplimeybu my seplimeabu sy ty denpabu	
+.muxamad.	denpabu my seplimeubu xy seplimeabu my seplimeabu dy denpabu	
+.nailon.	denpabu ny seplimeaibu ly seplimeobu ny denpabu	
+.namus.	denpabu ny seplimeabu my seplimeubu sy denpabu	
+.nanjoisunzdoxas.	denpabu ny seplimeabu ny jy seplimeoibu sy seplimeubu ny zy dy seplimeobu xy seplimeabu sy denpabu	
+.nanl.	denpabu ny seplimeabu ny ly denpabu	
+.nanm.	denpabu ny seplimeabu ny my denpabu	
+.natadekokos.	denpabu ny seplimeabu ty seplimeabu dy seplimeebu ky seplimeobu ky seplimeobu sy denpabu	
+.nauas.	denpabu ny seplimeabu uy seplimeabu sy denpabu	
+.naun.	denpabu ny seplimeaubu ny denpabu	
+.nepidos.	denpabu ny seplimeebu py seplimeibu dy seplimeobu sy denpabu	
+.nim.	denpabu ny seplimeibu my denpabu	
+.nix.	denpabu ny seplimeibu xy denpabu	
+.no'ordo'yxas.	denpabu ny seplimeobu yhy seplimeobu ry dy seplimeobu yhy seplimeybu xy seplimeabu sy denpabu	
+.nol.	denpabu ny seplimeobu ly denpabu	
+.nolnaum.	denpabu ny seplimeobu ly ny seplimeaubu my denpabu	
+.nolnim.	denpabu ny seplimeobu ly ny seplimeibu my denpabu	
+.noras.	denpabu ny seplimeobu ry seplimeabu sy denpabu	
+.nord.	denpabu ny seplimeobu ry dy denpabu	
+.noreg.	denpabu ny seplimeobu ry seplimeebu gy denpabu	
+.noxtcin.	denpabu ny seplimeobu xy ty cy seplimeibu ny denpabu	
+.osakas.	denpabu seplimeobu sy seplimeabu ky seplimeabu sy denpabu	
+.osteraix.	denpabu seplimeobu sy ty seplimeebu ry seplimeaibu xy denpabu	
+.otan.	denpabu seplimeobu ty seplimeabu ny denpabu	
+.otcas.	denpabu seplimeobu ty cy seplimeabu sy denpabu	
+.oxaios.	denpabu seplimeobu xy seplimeabu iy seplimeobu sy denpabu	
+.paf.	denpabu py seplimeabu fy denpabu	
+.paletas.	denpabu py seplimeabu ly seplimeebu ty seplimeabu sy denpabu	
+.palkan.	denpabu py seplimeabu ly ky seplimeabu ny denpabu	
+.paludizm.	denpabu py seplimeabu ly seplimeubu dy seplimeibu zy my denpabu	
+.parfit.	denpabu py seplimeabu ry fy seplimeibu ty denpabu	
+.pasifik.	denpabu py seplimeabu sy seplimeibu fy seplimeibu ky denpabu	
+.paumanxak.	denpabu py seplimeaubu my seplimeabu ny xy seplimeabu ky denpabu	
+.pav.	denpabu py seplimeabu vy denpabu	
+.pavmast.	denpabu py seplimeabu vy my seplimeabu sy ty denpabu	
+.pavyplin.	denpabu py seplimeabu vy seplimeybu py ly seplimeibu ny denpabu	
+.pazn.	denpabu py seplimeabu zy ny denpabu	
+.pekin.	denpabu py seplimeebu ky seplimeibu ny denpabu	
+.pelglar.	denpabu py seplimeebu ly gy ly seplimeabu ry denpabu	
+.pinplin.	denpabu py seplimeibu ny py ly seplimeibu ny denpabu	
+.pipis.	denpabu py seplimeibu py seplimeibu sy denpabu	
+.pireines.	denpabu py seplimeibu ry seplimeeibu ny seplimeebu sy denpabu	
+.piter.	denpabu py seplimeibu ty seplimeebu ry denpabu	
+.piton.	denpabu py seplimeibu ty seplimeobu ny denpabu	
+.plank.	denpabu py ly seplimeabu ny ky denpabu	
+.pluton.	denpabu py ly seplimeubu ty seplimeobu ny denpabu	
+.pluxaron.	denpabu py ly seplimeubu xy seplimeabu ry seplimeobu ny denpabu	
+.pnompin.	denpabu py ny seplimeobu my py seplimeibu ny denpabu	
+.pois.	denpabu py seplimeoibu sy denpabu	
+.polskas.	denpabu py seplimeobu ly sy ky seplimeabu sy denpabu	
+.pren.	denpabu py ry seplimeebu ny denpabu	
+.prer.	denpabu py ry seplimeebu ry denpabu	
+.putos.	denpabu py seplimeubu ty seplimeobu sy denpabu	
+.pyd.	denpabu py seplimeybu dy denpabu	
+.pytykyf.	denpabu py seplimeybu ty seplimeybu ky seplimeybu fy denpabu	
+.raias.	denpabu ry seplimeabu iy seplimeabu sy denpabu	
+.ralj.	denpabu ry seplimeabu ly jy denpabu	
+.ramadan.	denpabu ry seplimeabu my seplimeabu dy seplimeabu ny denpabu	
+.redit.	denpabu ry seplimeebu dy seplimeibu ty denpabu	
+.relcibjolmib.	denpabu ry seplimeebu ly cy seplimeibu by jy seplimeobu ly my seplimeibu by denpabu	
+.relkanol.	denpabu ry seplimeebu ly ky seplimeabu ny seplimeobu ly denpabu	
+.relmast.	denpabu ry seplimeebu ly my seplimeabu sy ty denpabu	
+.relplin.	denpabu ry seplimeebu ly py ly seplimeibu ny denpabu	
+.relyfi'es.	denpabu ry seplimeebu ly seplimeybu fy seplimeibu yhy seplimeebu sy denpabu	
+.rem.	denpabu ry seplimeebu my denpabu	
+.remlur.	denpabu ry seplimeebu my ly seplimeubu ry denpabu	
+.remsol.	denpabu ry seplimeebu my sy seplimeobu ly denpabu	
+.remted.	denpabu ry seplimeebu my ty seplimeebu dy denpabu	
+.remxeb.	denpabu ry seplimeebu my xy seplimeebu by denpabu	
+.rirx.	denpabu ry seplimeibu ry xy denpabu	
+.robin.	denpabu ry seplimeobu by seplimeibu ny denpabu	
+.roblik.	denpabu ry seplimeobu by ly seplimeibu ky denpabu	
+.romas.	denpabu ry seplimeobu my seplimeabu sy denpabu	
+.rsrs.	denpabu ry sy ry sy denpabu	
+.sa'ydar.	denpabu sy seplimeabu yhy seplimeybu dy seplimeabu ry denpabu	
+.sa'ydin.	denpabu sy seplimeabu yhy seplimeybu dy seplimeibu ny denpabu	
+.sabis.	denpabu sy seplimeabu by seplimeibu sy denpabu	
+.sailon.	denpabu sy seplimeaibu ly seplimeobu ny denpabu	
+.sakartulos.	denpabu sy seplimeabu ky seplimeabu ry ty seplimeubu ly seplimeobu sy denpabu	
+.sakartuvelos.	denpabu sy seplimeabu ky seplimeabu ry ty seplimeubu vy seplimeebu ly seplimeobu sy denpabu	
+.sakartyvelos.	denpabu sy seplimeabu ky seplimeabu ry ty seplimeybu vy seplimeebu ly seplimeobu sy denpabu	
+.sakatekas.	denpabu sy seplimeabu ky seplimeabu ty seplimeebu ky seplimeabu sy denpabu	
+.samlat.	denpabu sy seplimeabu my ly seplimeabu ty denpabu	
+.samyuan.	denpabu sy seplimeabu my seplimeybu uy seplimeabu ny denpabu	
+.sars.	denpabu sy seplimeabu ry sy denpabu	
+.satoris.	denpabu sy seplimeabu ty seplimeobu ry seplimeibu sy denpabu	
+.sauin.	denpabu sy seplimeabu uy seplimeibu ny denpabu	
+.saupaulos.	denpabu sy seplimeaubu py seplimeaubu ly seplimeobu sy denpabu	
+.saxaras.	denpabu sy seplimeabu xy seplimeabu ry seplimeabu sy denpabu	
+.sedais.	denpabu sy seplimeebu dy seplimeaibu sy denpabu	
+.sevan.	denpabu sy seplimeebu vy seplimeabu ny denpabu	
+.sidjvik.	denpabu sy seplimeibu dy jy vy seplimeibu ky denpabu	
+.sindus.	denpabu sy seplimeibu ny dy seplimeubu sy denpabu	
+.sinsynatis.	denpabu sy seplimeibu ny sy seplimeybu ny seplimeabu ty seplimeibu sy denpabu	
+.sitcuuan.	denpabu sy seplimeibu ty cy seplimeubu uy seplimeabu ny denpabu	
+.skaip.	denpabu sy ky seplimeaibu py denpabu	
+.slovensk.	denpabu sy ly seplimeobu vy seplimeebu ny sy ky denpabu	
+.smacmaut.	denpabu sy my seplimeabu cy my seplimeaubu ty denpabu	
+.snecrofant.	denpabu sy ny seplimeebu cy ry seplimeobu fy seplimeabu ny ty denpabu	
+.snitc.	denpabu sy ny seplimeibu ty cy denpabu	
+.solcist.	denpabu sy seplimeobu ly cy seplimeibu sy ty denpabu	
+.solris.	denpabu sy seplimeobu ly ry seplimeibu sy denpabu	
+.soran.	denpabu sy seplimeobu ry seplimeabu ny denpabu	
+.sozmast.	denpabu sy seplimeobu zy my seplimeabu sy ty denpabu	
+.stakolm.	denpabu sy ty seplimeabu ky seplimeobu ly my denpabu	
+.steksas.	denpabu sy ty seplimeebu ky sy seplimeabu sy denpabu	
+.stogvor.	denpabu sy ty seplimeobu gy vy seplimeobu ry denpabu	
+.stoplin.	denpabu sy ty seplimeobu py ly seplimeibu ny denpabu	
+.su'omis.	denpabu sy seplimeubu yhy seplimeobu my seplimeibu sy denpabu	
+.suzyn.	denpabu sy seplimeubu zy seplimeybu ny denpabu	
+.t.	denpabu ty denpabu	
+.taibeis.	denpabu ty seplimeaibu by seplimeeibu sy denpabu	
+.tarbykansas.	denpabu ty seplimeabu ry by seplimeybu ky seplimeabu ny sy seplimeabu sy denpabu	
+.tartarus.	denpabu ty seplimeabu ry ty seplimeabu ry seplimeubu sy denpabu	
+.tcarlis.	denpabu ty cy seplimeabu ry ly seplimeibu sy denpabu	
+.tcebamaus.	denpabu ty cy seplimeebu by seplimeabu my seplimeaubu sy denpabu	
+.tcendol.	denpabu ty cy seplimeebu ny dy seplimeobu ly denpabu	
+.tcesk.	denpabu ty cy seplimeebu sy ky denpabu	
+.tcingys.	denpabu ty cy seplimeibu ny gy seplimeybu sy denpabu	
+.tcomolunmas.	denpabu ty cy seplimeobu my seplimeobu ly seplimeubu ny my seplimeabu sy denpabu	
+.tcuros.	denpabu ty cy seplimeubu ry seplimeobu sy denpabu	
+.tedyxas.	denpabu ty seplimeebu dy seplimeybu xy seplimeabu sy denpabu	
+.tenguuar.	denpabu ty seplimeebu ny gy seplimeubu uy seplimeabu ry denpabu	
+.terd.	denpabu ty seplimeebu ry dy denpabu	
+.terdlun.	denpabu ty seplimeebu ry dy ly seplimeubu ny denpabu	
+.tetris.	denpabu ty seplimeebu ty ry seplimeibu sy denpabu	
+.tigbalan.	denpabu ty seplimeibu gy by seplimeabu ly seplimeabu ny denpabu	
+.tix.	denpabu ty seplimeibu xy denpabu	
+.tolvut.	denpabu ty seplimeobu ly vy seplimeubu ty denpabu	
+.touan.	denpabu ty seplimeobu uy seplimeabu ny denpabu	
+.troneim.	denpabu ty ry seplimeobu ny seplimeeibu my denpabu	
+.tsar.	denpabu ty sy seplimeabu ry denpabu	
+.tu'iter.	denpabu ty seplimeubu yhy seplimeibu ty seplimeebu ry denpabu	
+.tur.	denpabu ty seplimeubu ry denpabu	
+.tylidos.	denpabu ty seplimeybu ly seplimeibu dy seplimeobu sy denpabu	
+.tyrontos.	denpabu ty seplimeybu ry seplimeobu ny ty seplimeobu sy denpabu	
+.uabis.	denpabu uy seplimeabu by seplimeibu sy denpabu	
+.uabisabis.	denpabu uy seplimeabu by seplimeibu sy seplimeabu by seplimeibu sy denpabu	
+.uacintyn.	denpabu uy seplimeabu cy seplimeibu ny ty seplimeybu ny denpabu	
+.uan.	denpabu uy seplimeabu ny denpabu	
+.uaransis.	denpabu uy seplimeabu ry seplimeabu ny sy seplimeibu sy denpabu	
+.ueb.	denpabu uy seplimeebu by denpabu	
+.uikis.	denpabu uy seplimeibu ky seplimeibu sy denpabu	
+.uindos.	denpabu uy seplimeibu ny dy seplimeobu sy denpabu	
+.unikodypors.	denpabu seplimeubu ny seplimeibu ky seplimeobu dy seplimeybu py seplimeobu ry sy denpabu	
+.uniks.	denpabu seplimeubu ny seplimeibu ky sy denpabu	
+.uorf.	denpabu uy seplimeobu ry fy denpabu	
+.uorxol.	denpabu uy seplimeobu ry xy seplimeobu ly denpabu	
+.urguuandas.	denpabu seplimeubu ry gy seplimeubu uy seplimeabu ny dy seplimeabu sy denpabu	
+.utc.	denpabu seplimeubu ty cy denpabu	
+.uudj.	denpabu uy seplimeubu dy jy denpabu	
+.uutc.	denpabu uy seplimeubu ty cy denpabu	
+.uxanes.	denpabu seplimeubu xy seplimeabu ny seplimeebu sy denpabu	
+.vanxox.	denpabu vy seplimeabu ny xy seplimeobu xy denpabu	
+.varcavas.	denpabu vy seplimeabu ry cy seplimeabu vy seplimeabu sy denpabu	
+.vidyplin.	denpabu vy seplimeibu dy seplimeybu py ly seplimeibu ny denpabu	
+.vin.	denpabu vy seplimeibu ny denpabu	
+.vislas.	denpabu vy seplimeibu sy ly seplimeabu sy denpabu	
+.vislavacimborskas.	denpabu vy seplimeibu sy ly seplimeabu vy seplimeabu cy seplimeibu my by seplimeobu ry sy ky seplimeabu sy denpabu	
+.vislavas.	denpabu vy seplimeibu sy ly seplimeabu vy seplimeabu sy denpabu	
+.volapuk.	denpabu vy seplimeobu ly seplimeabu py seplimeubu ky denpabu	
+.vonmast.	denpabu vy seplimeobu ny my seplimeabu sy ty denpabu	
+.vonplin.	denpabu vy seplimeobu ny py ly seplimeibu ny denpabu	
+.vorlon.	denpabu vy seplimeobu ry ly seplimeobu ny denpabu	
+.votcan.	denpabu vy seplimeobu ty cy seplimeabu ny denpabu	
+.votkil.	denpabu vy seplimeobu ty ky seplimeibu ly denpabu	
+.vulkan.	denpabu vy seplimeubu ly ky seplimeabu ny denpabu	
+.xalitc.	denpabu xy seplimeabu ly seplimeibu ty cy denpabu	
+.xaluxalos.	denpabu xy seplimeabu ly seplimeubu xy seplimeabu ly seplimeobu sy denpabu	
+.xarares.	denpabu xy seplimeabu ry seplimeabu ry seplimeebu sy denpabu	
+.xas.	denpabu xy seplimeabu sy denpabu	
+.xatcepsut.	denpabu xy seplimeabu ty cy seplimeebu py sy seplimeubu ty denpabu	
+.xaupiias.	denpabu xy seplimeaubu py seplimeibu iy seplimeabu sy denpabu	
+.xavmast.	denpabu xy seplimeabu vy my seplimeabu sy ty denpabu	
+.xavyplin.	denpabu xy seplimeabu vy seplimeybu py ly seplimeibu ny denpabu	
+.xeilunytcan.	denpabu xy seplimeeibu ly seplimeubu ny seplimeybu ty cy seplimeabu ny denpabu	
+.xel.	denpabu xy seplimeebu ly denpabu	
+.xelvet.	denpabu xy seplimeebu ly vy seplimeebu ty denpabu	
+.xelvetik.	denpabu xy seplimeebu ly vy seplimeebu ty seplimeibu ky denpabu	
+.xesos.	denpabu xy seplimeebu sy seplimeobu sy denpabu	
+.xin.	denpabu xy seplimeibu ny denpabu	
+.xiuas.	denpabu xy seplimeibu uy seplimeabu sy denpabu	
+.xm.	denpabu xy my denpabu	
+.xod.	denpabu xy seplimeobu dy denpabu	
+.xomeros.	denpabu xy seplimeobu my seplimeebu ry seplimeobu sy denpabu	
+.xonkon.	denpabu xy seplimeobu ny ky seplimeobu ny denpabu	
+.xorban.	denpabu xy seplimeobu ry by seplimeabu ny denpabu	
+.xortas.	denpabu xy seplimeobu ry ty seplimeabu sy denpabu	
+.xorxes.	denpabu xy seplimeobu ry xy seplimeebu sy denpabu	
+.xrison.	denpabu xy ry seplimeibu sy seplimeobu ny denpabu	
+.xrvatsk.	denpabu xy ry vy seplimeabu ty sy ky denpabu	
+.xunplin.	denpabu xy seplimeubu ny py ly seplimeibu ny denpabu	
+.xusar.	denpabu xy seplimeubu sy seplimeabu ry denpabu	
+.xybeis.	denpabu xy seplimeybu by seplimeeibu sy denpabu	
+.xynan.	denpabu xy seplimeybu ny seplimeabu ny denpabu	
+.xyngon.	denpabu xy seplimeybu ny gy seplimeobu ny denpabu	
+.zelmast.	denpabu zy seplimeebu ly my seplimeabu sy ty denpabu	
+.zelplin.	denpabu zy seplimeebu ly py ly seplimeibu ny denpabu	
+.zgipor.	denpabu zy gy seplimeibu py seplimeobu ry denpabu	
+.zilselfat.	denpabu zy seplimeibu ly sy seplimeebu ly fy seplimeabu ty denpabu	
+.zimbabves.	denpabu zy seplimeibu my by seplimeabu by vy seplimeebu sy denpabu	
+.i mi klama le zarci	denpabu ibu space my ibu space ky ly abu my abu space ly ebu space zy abu ry cy ibu	    
+.ii .o'i mu xagji sofybakni cu zvati le purdi	denpabu iy ibu space denpabu.cas obu yhy.cas ibu space my ubu space xy abu gy jy ibu space sy obu fy ybu by abu ky ny ibu space cy ubu space zy vy abu ty ibu space ly ebu space py ubu ry dy ibu	        
+coi .i mi'e la .djan.	cy oibu space denpabu ibu space my ibu yhy ebu space ly abu space denpabu dy jy seplimeabu ny denpabu	    
+.ui do zvati ma	denpabu uy ibu space dy obu space zy vy abu ty ibu space my abu	   
+.e'u do troci tu'a dei	denpabu.cas ebu yhy.cas ubu space dy obu space ty ry obu cy ibu space ty ubu yhy abu space dy eibu	    
+la .alis. cu tavla la .bab. lo nu kanro	ly abu space denpabu seplimeabu ly seplimeibu sy denpabu space cy ubu space ty abu vy ly abu space ly abu space denpabu by seplimeabu by denpabu space ly obu space ny ubu space ky abu ny ry obu	        
+.oi .i ti karce .i ti pendo	denpabu oibu space denpabu ibu space ty ibu space ky abu ry cy ebu space denpabu ibu space ty ibu space py ebu ny dy obu	      
+.uai mi ba klama .i'e	denpabu uy aibu space my ibu space by abu space ky ly abu my abu space denpabu.cas ibu yhy.cas ebu	    
+.ua mi facki	denpabu uy abu space my ibu space fy abu cy ky ibu	  
+.iu mi prami do	denpabu iy ubu space my ibu space py ry abu my ibu space dy obu	   
+.au ko sidju mi	denpabu aubu space ky obu space sy ibu dy jy ubu space my ibu	   
+.a'o mi ba'o gendragau	denpabu.cas abu yhy.cas obu space my ibu space by abu yhy obu space gy ebu ny dy ry abu gy aubu	   
+lo gerku poi blabi cu bajra fi lo tumla	ly obu space gy ebu ry ky ubu space py oibu space by ly abu by ibu space cy ubu space by abu jy ry abu space fy ibu space ly obu space ty ubu my ly abu	        
+ko'a goi le nanmu cu citka lo plise	ky obu yhy abu space gy oibu space ly ebu space ny abu ny my ubu space cy ubu space cy ibu ty ky abu space ly obu space py ly ibu sy ebu	       
+.i ji'a le mlatu cu sipna ca lo cabdei	denpabu ibu space jy ibu yhy abu space ly ebu space my ly abu ty ubu space cy ubu space sy ibu py ny abu space cy abu space ly obu space cy abu by dy eibu	        
+do djica lo ka klama ma	dy obu space dy jy ibu cy abu space ly obu space ky abu space ky ly abu my abu space my abu	     
+mi na djuno lo du'u xu kau do ba klama	my ibu space ny abu space dy jy ubu ny obu space ly obu space dy ubu yhy ubu space xy ubu space ky aubu space dy obu space by abu space ky ly abu my abu	         
+la .lojban. cu bangu .i ku'i lo'e prenu na ba'e se bangu ri	ly abu space denpabu ly seplimeobu jy by seplimeabu ny denpabu space cy ubu space by abu ny gy ubu space denpabu ibu space ky ubu yhy ibu space ly obu yhy ebu space py ry ebu ny ubu space ny abu space by abu yhy ebu space sy ebu space by abu ny gy ubu space ry ibu	            
+.i ca lo nu la .djeimz. cusku cu ku'i mi na tirna	denpabu ibu space cy abu space ly obu space ny ubu space ly abu space denpabu dy jy seplimeeibu my zy denpabu space cy ubu sy ky ubu space cy ubu space ky ubu yhy ibu space my ibu space ny abu space ty ibu ry ny abu	           
+.ianai mi na tugni	denpabu iy abu ny aibu space my ibu space ny abu space ty ubu gy ny ibu	   
+.uo mi mulgau le selzu'e	denpabu uy obu space my ibu space my ubu ly gy aubu space ly ebu space sy ebu ly zy ubu yhy ebu	    
+.ieru'e .ei mi klama	denpabu iy ebu ry ubu yhy ebu space denpabu eibu space my ibu space ky ly abu my abu	   
+.oiro'u mi kakne	denpabu oibu ry obu yhy ubu space my ibu space ky abu ky ny ebu	  
+ma pu ba'o fasnu	my abu space py ubu space by abu yhy obu space fy abu sy ny ubu	   
+le ninkla cu simlu co xendo	ly ebu space ny ibu ny ky ly abu space cy ubu space sy ibu my ly ubu space cy obu space xy ebu ny dy obu	     
+.i lo vanju cu se pinxe mi	denpabu ibu space ly obu space vy abu ny jy ubu space cy ubu space sy ebu space py ibu ny xy ebu space my ibu	      

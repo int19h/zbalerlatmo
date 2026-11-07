@@ -25,6 +25,11 @@ la diAN,uoryk.	ly abu space dy iy seplimeabu bahebu ny slakabu uy seplimeobu ry 
 la maikl.djaksyn.	ly abu space my seplimeaibu ky ly denpabu dy jy seplimeabu ky sy seplimeybu ny denpabu	two names joined by a period
 .fyl.	denpabu fy seplimeybu ly denpabu	a lerfu-shaped name is still a name
 ly.	ly ybu denpabu	a vowel-final word before a period is not a name
+la .sabin	ly abu space denpabu sy seplimeabu by seplimeibu ny	a name without its closing period
+la .sabin!	ly abu space denpabu sy seplimeabu by seplimeibu ny exclam	a name followed by punctuation
+.i lif	denpabu ibu space ly seplimeibu fy	a consonant-final word is a name
+.mariias.	denpabu my seplimeabu ry seplimeibu iy seplimeabu sy denpabu	of two i/u before a vowel only the second is a glide
+.uu	denpabu uy ubu	glide before u
 la .djan. .i	ly abu space denpabu dy jy seplimeabu ny denpabu space denpabu ibu	name delimited on both sides
 
 # Apostrophe: ' ’ h between vowels; elsewhere ' and ’ are quotation marks

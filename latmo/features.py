@@ -123,25 +123,33 @@ def generate() -> str:
     w(f"    sub @latLeftL {lat('comma')}' lookup latToSep @latLetter;")
     w("} latPunct;\n")
 
-    # 3. Names. A cmevla is the only kind of word that ends in a consonant,
-    #    and it is always followed by a period. Mark that consonant, then
-    #    propagate the mark leftwards letter by letter. Reverse chaining
-    #    lookups run right to left, so each substitution is visible as
-    #    lookahead to the glyph on its left.
+    # 3. Names. A cmevla is the only kind of word that ends in a consonant.
+    #    Mark a consonant that no Lojban letter follows (normally the period
+    #    after the name; also a space, punctuation or the end of the text,
+    #    so a forgotten trailing period does no harm), then propagate the
+    #    mark leftwards letter by letter. Reverse chaining lookups run right
+    #    to left, so each substitution is visible as lookahead to the glyph
+    #    on its left. The first matching rule wins; the middle rule leaves a
+    #    word-internal consonant unchanged.
     w("lookup latNames {")
-    w(f"    rsub @latCons' {lat('period')} by @latConsNm;")
     w(f"    rsub @latPlain' @latNamed by @latNamed;")
+    w(f"    rsub @latCons' @latPlain by @latCons;")
+    w(f"    rsub @latCons' by @latConsNm;")
     w("} latNames;\n")
 
     # 4. Glides: i or u before a vowel. This must precede diphthong
-    #    formation: .maias. is ma-ias, not mai-as.
+    #    formation: .maias. is ma-ias, not mai-as. Of two i/u before a
+    #    vowel only the second is a glide: .mariias. is ma-ri-ias.
     w("lookup latToGlide {")
     w(f"    sub {cls([lat('i'), lat('u'), nm('i'), nm('u')])} by "
       f"{cls([lat('i.gl'), lat('u.gl'), lat('i.gl'), lat('u.gl')])};")
     w("} latToGlide;")
+    iu, iu_nm = cls([lat("i"), lat("u")]), cls([nm("i"), nm("u")])
     w("lookup latGlides {")
-    w(f"    sub {cls([lat('i'), lat('u')])}' lookup latToGlide @latVowel;")
-    w(f"    sub {cls([nm('i'), nm('u')])}' lookup latToGlide @latVowelNm;")
+    w(f"    ignore sub {iu}' {iu} @latVowel;")
+    w(f"    ignore sub {iu_nm}' {iu_nm} @latVowelNm;")
+    w(f"    sub {iu}' lookup latToGlide @latVowel;")
+    w(f"    sub {iu_nm}' lookup latToGlide @latVowelNm;")
     w("} latGlides;\n")
 
     # 5. Stress on the first vowel of a diphthong: move the stress mark after

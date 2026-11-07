@@ -48,14 +48,15 @@ tooltips, should be wrapped in an element that keeps the Latin font:
 
 The input is well-formed Latin Lojban. In particular:
 
-- **Names (cmevla)** must be followed by a period, as in `la .djan.`. A name
-  is recognised by its final consonant before that period; its vowels are
-  written as full vowels. Other words, including fu'ivla, use vowel
-  diacritics.
+- **Names (cmevla)** are recognised by their final consonant: no other kind
+  of Lojban word ends in one. Their vowels are written as full vowels. Write
+  names with periods (`la .djan.`); a forgotten closing period does no harm.
+  Other words, including fu'ivla, use vowel diacritics.
 - **Vowel-initial words** should start with a period (`.i`, `.ui`). A bare
   vowel still gets the period radical.
 - **Glides**: `i` and `u` before a vowel become the glide radicals, which take
-  precedence over diphthongs (`.maias.` is ma-ias). The four diphthongs `ai`,
+  precedence over diphthongs (`.maias.` is ma-ias); of two before a vowel,
+  only the second is a glide (`.mariias.` is ma-ri-ias). The four diphthongs `ai`,
   `ei`, `oi`, `au` become single diphthong diacritics, or single full-vowel
   letters in names.
 - **Apostrophe**: `'`, `’` (U+2019) or `h`. Between vowels `'` and `’` are the
