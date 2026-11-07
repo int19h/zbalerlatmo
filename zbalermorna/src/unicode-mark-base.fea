@@ -1,0 +1,102 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+lookup zlmTops {
+  lookupflag 0;
+  markClass [\abu ] <anchor 0 615> @Top;
+  markClass [\ebu ] <anchor 1 608> @Top;
+  markClass [\ibu ] <anchor 3 602> @Top;
+  markClass [\obu ] <anchor 1 601> @Top;
+  markClass [\ubu ] <anchor 0 622> @Top;
+  markClass [\ybu ] <anchor 0 614> @Top;
+  markClass [\aibu ] <anchor 0 645> @Top;
+  markClass [\eibu ] <anchor 0 643> @Top;
+  markClass [\oibu ] <anchor 0 634> @Top;
+  markClass [\aubu ] <anchor 1 625> @Top;
+  pos base [\py ] <anchor 353 620> mark @Top;
+  pos base [\ty ] <anchor 343 618> mark @Top;
+  pos base [\ky ] <anchor 353 608> mark @Top;
+  pos base [\fy ] <anchor 300 647> mark @Top;
+  pos base [\ly ] <anchor 333 633> mark @Top;
+  pos base [\sy ] <anchor 240 620> mark @Top;
+  pos base [\cy ] <anchor 253 633> mark @Top;
+  pos base [\my ] <anchor 313 633> mark @Top;
+  pos base [\xy ] <anchor 313 647> mark @Top;
+  pos base [\denpabu ] <anchor 142 608> mark @Top;
+  pos base [\yhy ] <anchor 153 660> mark @Top;
+  pos base [\by ] <anchor 498 651> mark @Top;
+  pos base [\dy ] <anchor 320 660> mark @Top;
+  pos base [\gy ] <anchor 313 620> mark @Top;
+  pos base [\vy ] <anchor 307 653> mark @Top;
+  pos base [\ry ] <anchor 293 646> mark @Top;
+  pos base [\zy ] <anchor 298 658> mark @Top;
+  pos base [\jy ] <anchor 307 647> mark @Top;
+  pos base [\ny ] <anchor 307 660> mark @Top;
+  pos base [\iy ] <anchor 313 660> mark @Top;
+  pos base [\uy ] <anchor 299 616> mark @Top;
+  pos base [\abu_yhy ] <anchor 457 619> mark @Top;
+  pos base [\ebu_yhy ] <anchor 460 622> mark @Top;
+  pos base [\ibu_yhy ] <anchor 459 619> mark @Top;
+  pos base [\obu_yhy ] <anchor 463 616> mark @Top;
+  pos base [\ubu_yhy ] <anchor 459 617> mark @Top;
+  pos base [\ybu_yhy ] <anchor 461 618> mark @Top;
+  pos base [\aibu_yhy ] <anchor 459 620> mark @Top;
+  pos base [\eibu_yhy ] <anchor 453 620> mark @Top;
+  pos base [\oibu_yhy ] <anchor 455 618> mark @Top;
+  pos base [\aubu_yhy ] <anchor 461 619> mark @Top;
+} zlmTops;
+
+lookup zlmBottoms {
+  lookupflag 0;
+  markClass [\patonga \retonga \citonga \votonga \tcenabu ] <anchor 0 0> @Bottom;
+  markClass [\bahebu \bahebu_bahebu \bahebu_bahebu_bahebu ] <anchor 0 0> @Bottom;
+  pos base [\py ] <anchor 322 0> mark @Bottom;
+  pos base [\ty \ky \cy ] <anchor 295 0> mark @Bottom;
+  pos base [\fy ] <anchor 299 0> mark @Bottom;
+  pos base [\ly ] <anchor 332 0> mark @Bottom;
+  pos base [\sy ] <anchor 292 0> mark @Bottom;
+  pos base [\my ] <anchor 301 0> mark @Bottom;
+  pos base [\xy ] <anchor 294 0> mark @Bottom;
+  pos base [\denpabu ] <anchor 148 0> mark @Bottom;
+  pos base [\yhy ] <anchor 157 0> mark @Bottom;
+  pos base [\by ] <anchor 265 0> mark @Bottom;
+  pos base [\dy ] <anchor 226 0> mark @Bottom;
+  pos base [\gy ] <anchor 241 0> mark @Bottom;
+  pos base [\vy \ny ] <anchor 304 0> mark @Bottom;
+  pos base [\ry ] <anchor 265 0> mark @Bottom;
+  pos base [\zy ] <anchor 368 0> mark @Bottom;
+  pos base [\jy ] <anchor 338 0> mark @Bottom;
+  pos base [\iy ] <anchor 298 0> mark @Bottom;
+  pos base [\uy ] <anchor 299 0> mark @Bottom;
+} zlmBottoms;
+
+feature mark {
+
+ script DFLT;
+     language dflt ;
+      lookup zlmTops;
+      lookup zlmBottoms;
+
+ script latn;
+     language dflt ;
+      lookup zlmTops;
+      lookup zlmBottoms;
+} mark;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\py \ty \ky \fy \ly \sy \cy \my \xy \denpabu \yhy \cnimahobu \by \dy \gy 
+	\vy \ry \zy \jy \ny \smajibu \slakabu \uniED9C \uniED9D \uniED9E \uniED9F \iy \uy 
+	\uniEDAC \uniEDAD \uniEDAE \uniEDAF \uniEDBA \uniEDBB \uniEDBC \uniEDBD \uniEDBE 
+	\uniEDBF \smajibu.init \smajibu.medi \smajibu.fina \space \abu.dot \ebu.dot 
+	\ibu.dot \obu.dot \ubu.dot \ybu.dot \aibu.dot \eibu.dot \oibu.dot \aubu.dot ];
+@GDEF_Ligature = [\seplimeabu \seplimeebu \seplimeibu \seplimeobu \seplimeubu 
+	\seplimeybu \seplimeaibu \seplimeeibu \seplimeoibu \seplimeaubu \abu_yhy 
+	\ebu_yhy \ibu_yhy \obu_yhy \ubu_yhy \ybu_yhy \aibu_yhy \eibu_yhy \oibu_yhy 
+	\aubu_yhy ];
+@GDEF_Mark = [\patonga \retonga \citonga \votonga \bahebu \tcenabu \abu \ebu \ibu 
+	\obu \ubu \ybu \aibu \eibu \oibu \aubu \bahebu_bahebu \bahebu_bahebu_bahebu ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
+} GDEF;

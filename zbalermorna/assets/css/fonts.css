@@ -1,0 +1,81 @@
+@font-face { 
+	font-family: 'crisa'; 
+	src: local('Crisa Regular'), url('../../fonts/crisa-regular.otf');
+	font-weight: 400;
+}
+@font-face { 
+	font-family: 'crisa'; 
+	src: local('Crisa Light'), url('../../fonts/crisa-light.otf');
+	font-weight: 200;
+}
+@font-face { 
+	font-family: "crisa-light";
+	src: local('Crisa Light'), url('../../fonts/crisa-light.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "crisa-regular";
+	src: local('Crisa Regular'), url('../../fonts/crisa-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "vrude-regular";
+	src: local('Vrude Regular'), url('../../fonts/vrude-regular.otf');
+	font-style: normal;
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "vrude-regular";
+	src: local('Vrude Italic Regular'), url('../../fonts/vrude-italic-regular.otf');
+	font-style: italic;
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "ritli-regular";
+	src: local('Ritli Regular'), url('../../fonts/ritli-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "primihi-regular";
+	src: local('Primihi Regular'), url('../../fonts/primihi-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "balvi-regular";
+	src: local('Balvi Regular'), url('../../fonts/balvi-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "dunda-regular";
+	src: local('Dunda Regular'), url('../../fonts/dunda-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "nerfopi-regular";
+	src: local('Nerfopi Regular'), url('../../fonts/nerfopi-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "tanbo-regular";
+	src: local('Tanbo Regular'), url('../../fonts/tanbo-regular.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: 'fira-code-zlm'; 
+	src: local('Fira Code Zbalermorna'), url('../../fonts/fira-code-zlm.otf');
+}
+@font-face { 
+	font-family: "manri";
+	src: local('Manri'), url('../../fonts/unicode-manri.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "drakono";
+	src: local('Drakono'), url('../../fonts/unicode-drakono.otf');
+	font-weight: normal; 
+}
+@font-face { 
+	font-family: "piper-karot";
+	src: local('Piper Karot'), url('../../fonts/piper-karot.otf');
+	font-weight: normal; 
+}

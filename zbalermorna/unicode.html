@@ -1,0 +1,16 @@
+---
+title: Zbalermorna Unicode Space
+permalink: /unicode/
+---
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      {% capture md %}{% include_relative doc/unicode.md %}{% endcapture %}
+      {{ md | markdownify }}
+      <h2>Encoding</h2>
+      <p>To make it easier to develop fonts, the <a href="https://github.com/{{ site.repository }}/tree/master/tools/zbalermorna.ps"><code>tools/zbalermorna.ps</code></a> encoding can be loaded into FontForge to see all of the characters used in Zbalermrona texts. The optional Latin punctuation is listed first. The order/arrangement here only matters if you use a 16-character-wide display in FontForge. This is really only useful after the names/code points are created - a separate process is needed for that currently.</p>
+      <pre><code>{% include_relative tools/zbalermorna.ps %}</code></pre>
+    </div>
+  </div>
+</div>

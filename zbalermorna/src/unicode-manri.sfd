@@ -1,0 +1,2095 @@
+SplineFontDB: 3.0
+FontName: Untitled1
+FullName: Untitled1
+FamilyName: Untitled1
+Weight: Regular
+Copyright: Copyright (c) 2019, Jack
+UComments: "2019-8-8: Created with FontForge (http://fontforge.org)"
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 800
+Descent: 200
+InvalidEm: 0
+LayerCount: 2
+Layer: 0 0 "Back" 1
+Layer: 1 0 "Fore" 0
+XUID: [1021 647 -312734098 20951]
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1565309361
+ModificationTime: 1565380695
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 0
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+OS2Vendor: 'PfEd'
+Lookup: 4 0 1 "zlmFF" { "zlmFF subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 1 "zlmSFF" { "zlmSFF subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 1 "zlmSF" { "zlmSF subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 6 0 0 "zlmVH" { "zlmVH contextual 0"  "zlmVH contextual 1"  "zlmVH contextual 2"  "zlmVH contextual 3"  "zlmVH contextual 4"  "zlmVH contextual 5"  "zlmVH contextual 6"  "zlmVH contextual 7"  "zlmVH contextual 8"  "zlmVH contextual 9"  "zlmVH contextual 10"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "Ligature Substitution lookup 4" { "Ligature Substitution lookup 4 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 5" { "Ligature Substitution lookup 5 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 6" { "Ligature Substitution lookup 6 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 7" { "Ligature Substitution lookup 7 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 8" { "Ligature Substitution lookup 8 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 9" { "Ligature Substitution lookup 9 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 10" { "Ligature Substitution lookup 10 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 11" { "Ligature Substitution lookup 11 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 12" { "Ligature Substitution lookup 12 subtable"  } []
+Lookup: 4 0 0 "Ligature Substitution lookup 13" { "Ligature Substitution lookup 13 subtable"  } []
+Lookup: 6 0 0 "zlmW" { "zlmW contextual 0"  "zlmW contextual 1"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 15" { "Single Substitution lookup 15 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 16" { "Single Substitution lookup 16 subtable"  } []
+Lookup: 4 0 1 "zlmVV" { "zlmVV subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 4 0 1 "zlmBahebu" { "zlmBahebu subtable"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 6 0 0 "zlmSmajibuInit" { "zlmSmajibuInit contextual 0"  "zlmSmajibuInit contextual 1"  "zlmSmajibuInit contextual 2"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 20" { "Single Substitution lookup 20 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 21" { "Single Substitution lookup 21 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 22" { "Single Substitution lookup 22 subtable"  } []
+Lookup: 6 0 0 "zlmSmajibuMedi" { "zlmSmajibuMedi contextual 0"  "zlmSmajibuMedi contextual 1"  "zlmSmajibuMedi contextual 2"  "zlmSmajibuMedi contextual 3"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 24" { "Single Substitution lookup 24 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 25" { "Single Substitution lookup 25 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 26" { "Single Substitution lookup 26 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 27" { "Single Substitution lookup 27 subtable"  } []
+Lookup: 6 0 0 "zlmSmajibuFina" { "zlmSmajibuFina contextual 0"  "zlmSmajibuFina contextual 1"  "zlmSmajibuFina contextual 2"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 29" { "Single Substitution lookup 29 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 30" { "Single Substitution lookup 30 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 31" { "Single Substitution lookup 31 subtable"  } []
+Lookup: 6 0 0 "zlmSelfDottingVowels" { "zlmSelfDottingVowels contextual 0"  "zlmSelfDottingVowels contextual 1"  "zlmSelfDottingVowels contextual 2"  "zlmSelfDottingVowels contextual 3"  "zlmSelfDottingVowels contextual 4"  "zlmSelfDottingVowels contextual 5"  "zlmSelfDottingVowels contextual 6"  "zlmSelfDottingVowels contextual 7"  "zlmSelfDottingVowels contextual 8"  "zlmSelfDottingVowels contextual 9"  "zlmSelfDottingVowels contextual 10"  "zlmSelfDottingVowels contextual 11"  "zlmSelfDottingVowels contextual 12"  } ['liga' ('latn' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 33" { "Single Substitution lookup 33 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 34" { "Single Substitution lookup 34 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 35" { "Single Substitution lookup 35 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 36" { "Single Substitution lookup 36 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 37" { "Single Substitution lookup 37 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 38" { "Single Substitution lookup 38 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 39" { "Single Substitution lookup 39 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 40" { "Single Substitution lookup 40 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 41" { "Single Substitution lookup 41 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 42" { "Single Substitution lookup 42 subtable"  } []
+Lookup: 260 0 0 "zlmTops" { "zlmTops-1"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "zlmBottoms" { "zlmBottoms-1"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+MarkAttachClasses: 1
+DEI: 91125
+ChainSub2: glyph "zlmSelfDottingVowels contextual 12" 0 0 0 1
+ String: 4 aubu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 42"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 11" 0 0 0 1
+ String: 4 oibu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 41"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 10" 0 0 0 1
+ String: 4 eibu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 40"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 9" 0 0 0 1
+ String: 4 aibu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 39"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 8" 0 0 0 1
+ String: 3 ybu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 38"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 7" 0 0 0 1
+ String: 3 ubu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 37"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 6" 0 0 0 1
+ String: 3 obu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 36"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 5" 0 0 0 1
+ String: 3 ibu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 35"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 4" 0 0 0 1
+ String: 3 ebu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 34"
+EndFPST
+ChainSub2: glyph "zlmSelfDottingVowels contextual 3" 0 0 0 1
+ String: 3 abu
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 33"
+EndFPST
+ChainSub2: coverage "zlmSelfDottingVowels contextual 2" 0 0 0 1
+ 1 0 1
+  Coverage: 43 abu ebu ibu obu ubu ybu aibu eibu oibu aubu
+  FCoverage: 7 slakabu
+ 0
+EndFPST
+ChainSub2: coverage "zlmSelfDottingVowels contextual 1" 0 0 0 1
+ 1 1 0
+  Coverage: 43 abu ebu ibu obu ubu ybu aibu eibu oibu aubu
+  BCoverage: 7 slakabu
+ 0
+EndFPST
+ChainSub2: coverage "zlmSelfDottingVowels contextual 0" 0 0 0 1
+ 1 1 0
+  Coverage: 43 abu ebu ibu obu ubu ybu aibu eibu oibu aubu
+  BCoverage: 104 py ty ky fy ly sy cy my xy by dy gy vy ry zy jy ny yhy iy uy abu ebu ibu obu ubu ybu aibu eibu oibu aubu
+ 0
+EndFPST
+ChainSub2: glyph "zlmSmajibuFina contextual 2" 0 0 0 1
+ String: 7 smajibu
+ BString: 12 smajibu.init
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 31"
+EndFPST
+ChainSub2: glyph "zlmSmajibuFina contextual 1" 0 0 0 1
+ String: 7 smajibu
+ BString: 12 smajibu.medi
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 30"
+EndFPST
+ChainSub2: glyph "zlmSmajibuFina contextual 0" 0 0 0 1
+ String: 7 smajibu
+ BString: 7 smajibu
+ FString: 0 
+ 1
+  SeqLookup: 0 "Single Substitution lookup 29"
+EndFPST
+ChainSub2: glyph "zlmSmajibuMedi contextual 3" 0 0 0 1
+ String: 7 smajibu
+ BString: 12 smajibu.init
+ FString: 7 smajibu
+ 1
+  SeqLookup: 0 "Single Substitution lookup 27"
+EndFPST
+ChainSub2: glyph "zlmSmajibuMedi contextual 2" 0 0 0 1
+ String: 7 smajibu
+ BString: 12 smajibu.init
+ FString: 12 smajibu.fina
+ 1
+  SeqLookup: 0 "Single Substitution lookup 26"
+EndFPST
+ChainSub2: glyph "zlmSmajibuMedi contextual 1" 0 0 0 1
+ String: 7 smajibu
+ BString: 7 smajibu
+ FString: 12 smajibu.fina
+ 1
+  SeqLookup: 0 "Single Substitution lookup 25"
+EndFPST
+ChainSub2: glyph "zlmSmajibuMedi contextual 0" 0 0 0 1
+ String: 7 smajibu
+ BString: 7 smajibu
+ FString: 7 smajibu
+ 1
+  SeqLookup: 0 "Single Substitution lookup 24"
+EndFPST
+ChainSub2: glyph "zlmSmajibuInit contextual 2" 0 0 0 1
+ String: 7 smajibu
+ BString: 0 
+ FString: 12 smajibu.fina
+ 1
+  SeqLookup: 0 "Single Substitution lookup 22"
+EndFPST
+ChainSub2: glyph "zlmSmajibuInit contextual 1" 0 0 0 1
+ String: 7 smajibu
+ BString: 0 
+ FString: 12 smajibu.medi
+ 1
+  SeqLookup: 0 "Single Substitution lookup 21"
+EndFPST
+ChainSub2: glyph "zlmSmajibuInit contextual 0" 0 0 0 1
+ String: 7 smajibu
+ BString: 0 
+ FString: 7 smajibu
+ 1
+  SeqLookup: 0 "Single Substitution lookup 20"
+EndFPST
+ChainSub2: coverage "zlmW contextual 1" 0 0 0 1
+ 1 0 1
+  Coverage: 3 ubu
+  FCoverage: 23 abu ebu ibu obu ubu ybu
+ 1
+  SeqLookup: 0 "Single Substitution lookup 16"
+EndFPST
+ChainSub2: coverage "zlmW contextual 0" 0 0 0 1
+ 1 0 1
+  Coverage: 3 ibu
+  FCoverage: 23 abu ebu ibu obu ubu ybu
+ 1
+  SeqLookup: 0 "Single Substitution lookup 15"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 10" 0 0 0 1
+ String: 8 aubu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 13"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 9" 0 0 0 1
+ String: 8 oibu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 12"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 8" 0 0 0 1
+ String: 8 eibu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 11"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 7" 0 0 0 1
+ String: 8 aibu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 10"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 6" 0 0 0 1
+ String: 7 ybu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 9"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 5" 0 0 0 1
+ String: 7 ubu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 8"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 4" 0 0 0 1
+ String: 7 obu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 7"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 3" 0 0 0 1
+ String: 7 ibu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 6"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 2" 0 0 0 1
+ String: 7 ebu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 5"
+EndFPST
+ChainSub2: glyph "zlmVH contextual 1" 0 0 0 1
+ String: 7 abu yhy
+ BString: 0 
+ FString: 0 
+ 1
+  SeqLookup: 0 "Ligature Substitution lookup 4"
+EndFPST
+ChainSub2: coverage "zlmVH contextual 0" 0 0 0 1
+ 2 1 0
+  Coverage: 43 abu ebu ibu obu ubu ybu aibu eibu oibu aubu
+  Coverage: 3 yhy
+  BCoverage: 60 py ty ky fy ly sy cy my xy by dy gy vy ry zy jy ny yhy iy uy
+ 0
+EndFPST
+Encoding: Original
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -96
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 0 16 4
+BeginPrivate: 0
+EndPrivate
+AnchorClass2: "Top" "zlmTops-1" "Bottom" "zlmBottoms-1"
+BeginChars: 90 90
+
+StartChar: py
+Encoding: 0 60800 0
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50.9724 167.021>
+VStem: 51 99<119 725>
+AnchorPoint: "Top" 343 608 basechar 0
+AnchorPoint: "Bottom" 250 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+550 470 m 1
+ 150 0 l 1
+ 51 0 l 17
+ 50 725 l 17
+ 150 725 l 1
+ 150 119 l 1
+ 450 470 l 1
+ 550 470 l 1
+EndSplineSet
+EndChar
+
+StartChar: ty
+Encoding: 1 60801 1
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50 150 450 550> 400 80<228.671 371.847>
+VStem: 50 100<0 313.49 434 725> 450 100<0 311.21>
+AnchorPoint: "Top" 331 630 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 0 m 1
+ 50 0 l 1
+ 50 725 l 1
+ 150 725 l 1
+ 150 434 l 1
+ 204 472 267 480 304 480 c 0
+ 409 480 550 417 550 234 c 2
+ 550 0 l 1
+ 450 0 l 1
+ 450 235 l 1
+ 449 307 391 400 303 400 c 0
+ 193 400 150 287 150 235 c 0
+ 150 143 150 0 150 0 c 1
+EndSplineSet
+EndChar
+
+StartChar: ky
+Encoding: 2 60802 2
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50 166.901 450 550>
+VStem: 50 101<133 725> 450 100<0 355>
+AnchorPoint: "Top" 334 634 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+50 725 m 21
+ 151 725 l 5
+ 151 133 l 5
+ 450 470 l 5
+ 550 470 l 5
+ 550 0 l 5
+ 450 0 l 5
+ 450 355 l 5
+ 150 0 l 5
+ 50 0 l 21
+ 50 725 l 21
+EndSplineSet
+EndChar
+
+StartChar: fy
+Encoding: 3 60803 3
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 80<52 161.733 253.412 552>
+VStem: 272 100<173.605 470>
+AnchorPoint: "Top" 325 664 basechar 0
+AnchorPoint: "Bottom" 320 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+253.412109375 80 m 1
+ 552 80 l 1
+ 552 0 l 1
+ 52 0 l 1
+ 52 80 l 1
+ 100.762695312 80 272 105.296875 272 237 c 2
+ 272 470 l 1
+ 305.333007812 470 338.666992188 470 372 470 c 1
+ 372 256 l 2
+ 372 177.6640625 319.337890625 114.163085938 253.412109375 80 c 1
+EndSplineSet
+EndChar
+
+StartChar: ly
+Encoding: 4 60804 4
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<229.445 375.827> 400 80<229.445 380.338>
+VStem: 43 110<148.617 321.383>
+AnchorPoint: "Top" 301 630 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+535.762358337 332.147630281 m 1
+ 429.86967936 318.517879522 l 0
+ 403.605130253 379.281996659 351.048828125 400 300 400 c 0
+ 228 400 153 339 153 235 c 0
+ 153 131 228 70 300 70 c 0
+ 356.287109375 70 414.407842121 99.5038587923 437.0948728 170.800139505 c 1
+ 543.763671875 157.598632812 l 1
+ 509.099609375 59.443359375 410.658180202 -10 300 -10 c 0
+ 162 -10 43 98 43 235 c 0
+ 43 372 162 480 300 480 c 0
+ 403.080994236 480 502 431 535.762358337 332.147630281 c 1
+EndSplineSet
+EndChar
+
+StartChar: sy
+Encoding: 5 60805 5
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -9 80<230.445 373.547> 401 80<186.933 278.709>
+VStem: 44 110<149.617 359.406> 290.87 105.893<323.147 389.515> 451 100<157.313 726>
+AnchorPoint: "Top" 248 604 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+451 726 m 1
+ 551 726 l 1
+ 551 292 l 2
+ 551 47.884765625 420.094726562 -9 301 -9 c 0
+ 163 -9 44 99 44 236 c 0
+ 44 373 113 481 221 481 c 0
+ 344.081054688 481 396 422 396.762695312 323.147460938 c 1
+ 290.870117188 309.517578125 l 1
+ 290.60546875 370.282226562 282.048828125 401 231 401 c 0
+ 179 401 154 340 154 236 c 0
+ 154 132 229 71 301 71 c 0
+ 378.626953125 71 450.583007812 140.70703125 451 246 c 2
+ 451 726 l 1
+EndSplineSet
+EndChar
+
+StartChar: cy
+Encoding: 6 60806 6
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50 150 450 550> 400 80<227.223 371.329>
+VStem: 50 100<0 315.47 437.527 470> 450 100<0 313.49 434 725>
+AnchorPoint: "Top" 234 676 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+450 0 m 1
+ 450 0 450 143 450 235 c 0
+ 450 287 407 400 297 400 c 0
+ 209 400 151 307 150 235 c 2
+ 150 71 l 1
+ 150 0 l 1
+ 50 0 l 1
+ 50 71 l 1
+ 50 234 l 1
+ 50 470 l 1
+ 150 470 l 1
+ 150 437.526762753 l 1
+ 195.392826287 467.517874481 249.26273472 480 296 480 c 0
+ 333 480 396 472 450 434 c 1
+ 450 725 l 1
+ 550 725 l 1
+ 550 0 l 1
+ 450 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: my
+Encoding: 7 60807 7
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 80<50 303.953 441.412 550> 400 80<217.241 375.275>
+VStem: 439.997 110.002<186.082 338.106>
+AnchorPoint: "Top" 296 600 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+549.999023438 255.5390625 m 0
+ 549.999023438 177.452148438 491 89 441.412109375 80 c 1
+ 550 80 l 1
+ 550 0 l 1
+ 50 0 l 1
+ 50 80 l 1
+ 210 80 l 2
+ 258.6484375 80 439.244140625 125.131835938 439.997070312 256.07421875 c 0
+ 439.483398438 359.557617188 364.751953125 400 293 400 c 0
+ 237 400 179 370 156 299 c 1
+ 49 312 l 1
+ 84 410 182 480 293 480 c 0
+ 430.818950592 480 549.6875 392.283203125 549.999023438 255.5390625 c 0
+EndSplineSet
+EndChar
+
+StartChar: xy
+Encoding: 8 60808 8
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<229.445 370.555> 400 80<229.445 370.555>
+VStem: 43 110<148.617 321.383> 447 110<148.617 321.383>
+AnchorPoint: "Top" 298 632 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+153 235 m 0
+ 153 131 228 70 300 70 c 4
+ 372 70 447 131 447 235 c 0
+ 447 339 372 400 300 400 c 0
+ 228 400 153 339 153 235 c 0
+43 235 m 0
+ 43 372 162 480 300 480 c 0
+ 438 480 557 372 557 235 c 0
+ 557 98 438 -10 300 -10 c 0
+ 162 -10 43 98 43 235 c 0
+EndSplineSet
+EndChar
+
+StartChar: denpabu
+Encoding: 9 60809 9
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785>
+VStem: 72 156<181.215 288.785>
+AnchorPoint: "Top" 147 672 basechar 0
+AnchorPoint: "Bottom" 150 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+72 235 m 0
+ 72 278 107 313 150 313 c 0
+ 193 313 228 278 228 235 c 0
+ 228 192 193 157 150 157 c 0
+ 107 157 72 192 72 235 c 0
+EndSplineSet
+EndChar
+
+StartChar: yhy
+Encoding: 10 60810 10
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 0 21G<100 200>
+VStem: 100 100<0 470>
+AnchorPoint: "Top" 151 684 basechar 0
+AnchorPoint: "Bottom" 150 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+100 470 m 1
+ 200 470 l 1
+ 200 0 l 1
+ 100 0 l 1
+ 100 470 l 1
+EndSplineSet
+EndChar
+
+StartChar: cnimahobu
+Encoding: 11 60811 11
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32>
+VStem: 330 80<0 350>
+AnchorPoint: "Top" 107 514 basechar 0
+AnchorPoint: "Bottom" 231 -2 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+94 413 m 0
+ 139.323242188 413 161.766741915 388.848677991 163.669921875 337.87109375 c 1
+ 248.669921875 337.87109375 330 470 330 470 c 1
+ 410 470 l 1
+ 410 0 l 1
+ 330 0 l 1
+ 330 350 l 1
+ 330 350 214 246 125 246 c 3
+ 64.8701171875 246 22.0476465836 267.10289089 22.0476465836 327.744384295 c 3
+ 22.0476465836 371.92213801 55.28515625 413 94 413 c 0
+EndSplineSet
+EndChar
+
+StartChar: patonga
+Encoding: 12 60812 12
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -224 168
+VStem: -124 253
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-124 -204 m 1
+ 39 -56 l 1
+ 129 -97 l 1
+ -90 -224 l 1
+ -124 -204 l 1
+EndSplineSet
+EndChar
+
+StartChar: retonga
+Encoding: 13 60813 13
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -238.574 194.574
+VStem: -121 219
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-63 -44 m 1
+ 98 -193 l 1
+ 65.81640625 -238.57421875 l 1
+ -121 -90 l 1
+ -63 -44 l 1
+EndSplineSet
+EndChar
+
+StartChar: citonga
+Encoding: 14 60814 14
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -228 172
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-180 -188 m 1
+ -27 -56 l 1
+ 30 -56 l 1
+ 176 -188 l 1
+ 176 -188 133 -230 129 -228 c 0
+ 125 -226 -1 -111 -1 -111 c 1
+ -142 -226 l 1
+ -180 -188 l 1
+EndSplineSet
+EndChar
+
+StartChar: votonga
+Encoding: 15 60815 15
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -241 191
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-174 -92 m 25
+ -135 -56 l 1
+ 0 -167 l 1
+ 129 -50 l 1
+ 170 -86 l 25
+ 1 -241 l 1
+ -174 -92 l 25
+EndSplineSet
+EndChar
+
+StartChar: by
+Encoding: 16 60816 16
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50 167.094>
+VStem: 450 100<-255 351>
+AnchorPoint: "Top" 477 678 basechar 0
+AnchorPoint: "Bottom" 270 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+50 0 m 1
+ 450 470 l 1
+ 549 470 l 17
+ 550 -255 l 17
+ 450 -255 l 1
+ 450 351 l 1
+ 150 0 l 1
+ 50 0 l 1
+EndSplineSet
+EndChar
+
+StartChar: dy
+Encoding: 17 60817 17
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<228.153 371.329>
+VStem: 50 100<158.79 470> 450 100<-255 36 156.51 470>
+AnchorPoint: "Top" 298 648 basechar 0
+AnchorPoint: "Bottom" 270 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+450 470 m 1
+ 550 470 l 1
+ 550 -255 l 1
+ 450 -255 l 1
+ 450 36 l 1
+ 396 -2 333 -10 296 -10 c 0
+ 191 -10 50 53 50 236 c 2
+ 50 470 l 1
+ 150 470 l 1
+ 150 235 l 1
+ 151 163 209 70 297 70 c 0
+ 407 70 450 183 450 235 c 0
+ 450 327 450 470 450 470 c 1
+EndSplineSet
+EndChar
+
+StartChar: gy
+Encoding: 18 60818 18
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<50 167.745>
+VStem: 50 100<115 470> 449 101<-255 337>
+AnchorPoint: "Top" 295 636 basechar 0
+AnchorPoint: "Bottom" 285 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+550 -255 m 17
+ 449 -255 l 1
+ 449 337 l 1
+ 150 0 l 1
+ 50 0 l 1
+ 50 470 l 1
+ 150 470 l 1
+ 150 115 l 1
+ 450 470 l 1
+ 550 470 l 17
+ 550 -255 l 17
+EndSplineSet
+EndChar
+
+StartChar: vy
+Encoding: 19 60819 19
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<230 330> 390 80<50 348.588 440.267 550>
+VStem: 230 100<0 296.395>
+AnchorPoint: "Top" 281 656 basechar 0
+AnchorPoint: "Bottom" 270 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+348.587890625 390 m 5
+ 50 390 l 5
+ 50 470 l 1
+ 550 470 l 1
+ 550 390 l 5
+ 501.237304688 390 330 364.703125 330 233 c 2
+ 330 0 l 1
+ 296.666992188 0 263.333007812 0 230 0 c 1
+ 230 214 l 2
+ 230 292.33582861 282.662109375 355.836914062 348.587890625 390 c 5
+EndSplineSet
+EndChar
+
+StartChar: ry
+Encoding: 20 60820 20
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<212.594 363.555> 400 80<217.241 363.555>
+VStem: 440 110<148.617 321.383>
+AnchorPoint: "Top" 292 633 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+57 138 m 1
+ 163 151 l 0
+ 189 90 242 70 293 70 c 0
+ 365 70 440 131 440 235 c 0
+ 440 339 365 400 293 400 c 0
+ 237 400 179 370 156 299 c 1
+ 49 312 l 1
+ 84 410 182 480 293 480 c 0
+ 431 480 550 372 550 235 c 0
+ 550 98 431 -10 293 -10 c 0
+ 190 -10 91 39 57 138 c 1
+EndSplineSet
+EndChar
+
+StartChar: zy
+Encoding: 21 60821 21
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<322.291 414.067> 400 80<227.453 370.555>
+VStem: 50 100<-255 313.687> 204.237 105.893<81.4847 147.853> 447 110<111.594 321.383>
+AnchorPoint: "Top" 310 654 basechar 0
+AnchorPoint: "Bottom" 350 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 -255 m 1
+ 50 -255 l 1
+ 50 179 l 2
+ 50 423.115234375 180.905273438 480 300 480 c 0
+ 438 480 557 372 557 235 c 0
+ 557 98 488 -10 380 -10 c 0
+ 256.918945312 -10 205 49 204.237304688 147.852539062 c 1
+ 310.129882812 161.482421875 l 1
+ 310.39453125 100.717773438 318.951171875 70 370 70 c 4
+ 422 70 447 131 447 235 c 0
+ 447 339 372 400 300 400 c 0
+ 222.373046875 400 150.416992188 330.29296875 150 225 c 2
+ 150 -255 l 1
+EndSplineSet
+EndChar
+
+StartChar: jy
+Encoding: 22 60822 22
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<228.671 372.777> 0 21G<450 550>
+VStem: 50 100<-255 36 156.51 470> 450 100<0 32.4736 154.53 470>
+AnchorPoint: "Top" 291 656 basechar 0
+AnchorPoint: "Bottom" 325 -0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 470 m 1xb0
+ 150 470 150 327 150 235 c 0
+ 150 183 193 70 303 70 c 4xb0
+ 391 70 449 163 450 235 c 2
+ 450 399 l 1
+ 450 470 l 1
+ 550 470 l 1
+ 550 399 l 1
+ 550 236 l 1
+ 550 0 l 1
+ 450 0 l 1x70
+ 450 32.4736328125 l 1
+ 404.607421875 2.482421875 350.737304688 -10 304 -10 c 0
+ 267 -10 204 -2 150 36 c 1
+ 150 -255 l 1
+ 50 -255 l 1
+ 50 470 l 1
+ 150 470 l 1xb0
+EndSplineSet
+EndChar
+
+StartChar: ny
+Encoding: 23 60823 23
+Width: 600
+VWidth: 0
+Flags: W
+HStem: -10 80<223.725 381.759> 390 80<49 177.588 308.719 549>
+VStem: 49.001 110.002<131.894 279.803>
+AnchorPoint: "Top" 300 623 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+49.0009765625 214.4609375 m 0
+ 49.0009765625 292.547851562 128 381 177.587890625 390 c 1
+ 49 390 l 1
+ 49 470 l 1
+ 549 470 l 1
+ 549 390 l 1
+ 409 390 l 2
+ 360.3515625 390 159.755859375 344.868164062 159.002929688 213.92578125 c 0
+ 159.516601562 110.442382812 234.248046875 70 306 70 c 0
+ 362 70 420 100 443 171 c 1
+ 550 158 l 1
+ 515 60 417 -10 306 -10 c 0
+ 168.180664062 -10 49.3125 77.716796875 49.0009765625 214.4609375 c 0
+EndSplineSet
+EndChar
+
+StartChar: bahebu
+Encoding: 24 60824 24
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -251 120<-46.2546 46.2546>
+VStem: -60 120<-237.255 -144.745>
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-60 -191 m 0
+ -60 -158 -33 -131 0 -131 c 0
+ 33 -131 60 -158 60 -191 c 0
+ 60 -224 33 -251 0 -251 c 0
+ -33 -251 -60 -224 -60 -191 c 0
+EndSplineSet
+EndChar
+
+StartChar: smajibu
+Encoding: 25 60825 25
+Width: 454
+VWidth: 0
+Flags: W
+HStem: 202 63<50 401>
+LayerCount: 2
+Fore
+SplineSet
+50 265 m 5
+ 401 265 l 5
+ 401 202 l 5
+ 50 202 l 5
+ 50 265 l 5
+EndSplineSet
+Substitution2: "Single Substitution lookup 31 subtable" smajibu.fina
+Substitution2: "Single Substitution lookup 30 subtable" smajibu.fina
+Substitution2: "Single Substitution lookup 29 subtable" smajibu.fina
+Substitution2: "Single Substitution lookup 27 subtable" smajibu.medi
+Substitution2: "Single Substitution lookup 26 subtable" smajibu.medi
+Substitution2: "Single Substitution lookup 25 subtable" smajibu.medi
+Substitution2: "Single Substitution lookup 24 subtable" smajibu.medi
+Substitution2: "Single Substitution lookup 22 subtable" smajibu.init
+Substitution2: "Single Substitution lookup 21 subtable" smajibu.init
+Substitution2: "Single Substitution lookup 20 subtable" smajibu.init
+EndChar
+
+StartChar: slakabu
+Encoding: 26 60826 26
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: tcenabu
+Encoding: 27 60827 27
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -189 66<-221 221>
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-221 -123 m 1
+ 221 -123 l 1
+ 221 -189 l 1
+ -221 -189 l 1
+ -221 -123 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniED9C
+Encoding: 28 60828 28
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniED9D
+Encoding: 29 60829 29
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniED9E
+Encoding: 30 60830 30
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniED9F
+Encoding: 31 60831 31
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: abu
+Encoding: 32 60832 32
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 106 244<-28 27>
+VStem: -45 90<181.778 350>
+AnchorPoint: "Top" 0 155 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-28 106 m 1
+ -45 230 l 1
+ -45 350 l 1
+ 45 350 l 1
+ 45 230 l 1
+ 27 106 l 1
+ -28 106 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 33 subtable" abu.dot
+EndChar
+
+StartChar: ebu
+Encoding: 33 60833 33
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 200 72<-120 120>
+VStem: -120 240<200 272>
+AnchorPoint: "Top" 0 235 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-120 200 m 1
+ -120 272 l 1
+ 120 272 l 1
+ 120 200 l 1
+ -120 200 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 34 subtable" ebu.dot
+EndChar
+
+StartChar: ibu
+Encoding: 34 60834 34
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 175 120<-46.2546 46.2546>
+VStem: -60 120<188.745 281.255>
+AnchorPoint: "Top" 1 234 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-60 235 m 0
+ -60 268 -33 295 0 295 c 0
+ 33 295 60 268 60 235 c 0
+ 60 202 33 175 0 175 c 0
+ -33 175 -60 202 -60 235 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 35 subtable" ibu.dot
+Substitution2: "Single Substitution lookup 15 subtable" iy
+EndChar
+
+StartChar: obu
+Encoding: 35 60835 35
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 185 61<-2.14856 81.5387> 225 57<-80.4553 -0.822388>
+VStem: -145 58<184 213.67> 89 56<253.237 283>
+AnchorPoint: "Top" 1 236 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-145 184 m 1x70
+ -145 214 -137 238 -120 256 c 0
+ -103 274 -82 282 -56 282 c 0x70
+ -38 282 -15 275 16 259 c 0
+ 33 251 47 246 57 246 c 0
+ 67 246 73 248 78 253 c 0
+ 83 258 87 267 89 283 c 1
+ 145 283 l 1
+ 144 249 136 226 120 209 c 0
+ 104 192 84 185 60 185 c 0xb0
+ 42 185 18 193 -12 209 c 0
+ -31 219 -46 225 -54 225 c 0
+ -64 225 -72 221 -78 214 c 0
+ -84 207 -87 197 -87 184 c 1
+ -145 184 l 1x70
+EndSplineSet
+Substitution2: "Single Substitution lookup 36 subtable" obu.dot
+EndChar
+
+StartChar: ubu
+Encoding: 36 60836 36
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 164.1 61.1006<-59.9316 60.9521>
+VStem: 85.1504 62.3994<245.862 291.5>
+AnchorPoint: "Top" 0 222 mark 0
+LayerCount: 2
+Fore
+SplineSet
+85.150390625 291.5 m 5
+ 147.549804688 291.5 l 5
+ 142.350585938 249.900390625 125.450195312 218.700195312 100.75 196.599609375 c 4
+ 76.0498046875 174.5 42.25 164.099609375 0.650390625 164.099609375 c 4
+ -40.9501953125 164.099609375 -76.0498046875 174.5 -100.75 196.599609375 c 4
+ -125.450195312 218.700195312 -142.349609375 249.900390625 -147.549804688 291.5 c 5
+ -85.1494140625 291.5 l 5
+ -79.9501953125 269.400390625 -72.1494140625 252.5 -57.849609375 242.099609375 c 4
+ -43.5498046875 231.700195312 -26.6494140625 225.200195312 -3.25 225.200195312 c 4
+ 24.0498046875 225.200195312 43.5498046875 230.400390625 57.8505859375 240.799804688 c 4
+ 72.150390625 251.200195312 79.9501953125 268.099609375 85.150390625 291.5 c 5
+EndSplineSet
+Substitution2: "Single Substitution lookup 37 subtable" ubu.dot
+Substitution2: "Single Substitution lookup 16 subtable" uy
+EndChar
+
+StartChar: ybu
+Encoding: 37 60837 37
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 136.05 45.9502<-40.5974 42.2632> 288 44.9502<-39.8681 42.1345>
+VStem: -96.7998 45.7998<192.341 277.505> 53 43.7998<193.173 276.748>
+AnchorPoint: "Top" 0 235 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-0 136.049804688 m 0
+ -55.0126953125 136.049804688 -96.7998046875 180.508789062 -96.7998046875 236.150390625 c 0
+ -96.7998046875 288.4921875 -52.33984375 332.950195312 -0 332.950195312 c 0
+ 52.9208984375 332.950195312 96.7998046875 287.162109375 96.7998046875 233.950195312 c 0
+ 96.7998046875 179.756835938 53.5126953125 136.049804688 -0 136.049804688 c 0
+1 288 m 0
+ -26.7392578125 288 -51 263.73828125 -51 236 c 0
+ -51 206.6171875 -27.79296875 182 1 182 c 256
+ 29.2685546875 182 53 206.440429688 53 235 c 256
+ 53 263.563476562 29.2705078125 288 1 288 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 38 subtable" ybu.dot
+EndChar
+
+StartChar: aibu
+Encoding: 38 60838 38
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 330 37<22.3285 29.2969>
+VStem: -63.0674 73.4521<254.918 322.63> -16.4727 79.54<153.326 225.324>
+AnchorPoint: "Top" 0 245 mark 0
+LayerCount: 2
+Fore
+SplineSet
+25.134765625 367 m 1xc0
+ 47.134765625 330 l 1
+ 34.134765625 328 23.134765625 314 17.134765625 307 c 0
+ 12.634765625 301.75 10.384765625 295.9375 10.384765625 289.140625 c 0xc0
+ 10.384765625 273.497070312 21.2197265625 265.915039062 34.134765625 253 c 0
+ 51.3720703125 237.330078125 63.0673828125 220.946289062 63.0673828125 194.6484375 c 0
+ 63.0673828125 178.641601562 57.1474609375 166.587890625 47.134765625 153 c 0
+ 33.134765625 134 6.134765625 106 -26.865234375 99 c 1
+ -47.865234375 134 l 1
+ -32.865234375 139 -22.08984375 154.549804688 -18.865234375 161 c 0
+ -17.4013671875 163.927734375 -16.47265625 170.607421875 -16.47265625 176.331054688 c 0xa0
+ -16.47265625 190.609375 -19.7822265625 205.833984375 -33.865234375 221 c 0
+ -48.8212890625 237.618164062 -63.0673828125 246.930664062 -63.0673828125 274.639648438 c 0
+ -63.0673828125 289.169921875 -57.5517578125 302.084960938 -47.865234375 315 c 0
+ -32.865234375 335 -4.865234375 362 25.134765625 367 c 1xc0
+EndSplineSet
+Substitution2: "Single Substitution lookup 39 subtable" aibu.dot
+Ligature2: "zlmVV subtable" abu ibu
+EndChar
+
+StartChar: eibu
+Encoding: 39 60839 39
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 251 61<-61.023 61.2184>
+VStem: -144.5 61<185 227.855> 84.5 60<185 227.855>
+AnchorPoint: "Top" 0 229 mark 0
+LayerCount: 2
+Fore
+SplineSet
+144.5 185 m 5
+ 84.5 185 l 5
+ 75.8330078125 229 46.8330078125 251 -2.5 251 c 4
+ -47.8330078125 251 -74.8330078125 229 -83.5 185 c 5
+ -144.5 185 l 5
+ -134.5 269 -86.1669921875 311.333007812 0.5 312 c 4
+ 86.5 311.333007812 134.5 269 144.5 185 c 5
+EndSplineSet
+Substitution2: "Single Substitution lookup 40 subtable" eibu.dot
+Ligature2: "zlmVV subtable" ebu ibu
+EndChar
+
+StartChar: oibu
+Encoding: 40 60840 40
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 128 61<17.08 82.0387> 177 60.6953<-46.7021 -3.51447>
+VStem: 89.5 56<196.237 226>
+AnchorPoint: "Top" 0 238 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-15.5 370 m 1x60
+ 54.5 370 l 1
+ -21.9560546875 237.615234375 l 1
+ -21.548828125 237.668945312 -21.13671875 237.6953125 -20.7197265625 237.6953125 c 0x60
+ -10.4228515625 237.6953125 2.8759765625 221.704101562 16.5 211 c 0
+ 30.5 200 47.5 189 57.5 189 c 0
+ 67.5 189 73.5 191 78.5 196 c 0
+ 83.5 201 87.5 210 89.5 226 c 1
+ 145.5 226 l 1
+ 144.5 192 136.5 169 120.5 152 c 0
+ 104.5 135 84.5 128 60.5 128 c 0xa0
+ 42.5 128 16.548828125 140.80078125 -11.5 161 c 0
+ -17.3525390625 165.21484375 -29.5 177 -39.5 177 c 0
+ -53.904296875 177 -69.0615234375 152.741210938 -75.5 136 c 1
+ -144.5 136 l 2
+ -145.5 136 l 1
+ -15.5 370 l 1x60
+EndSplineSet
+Substitution2: "Single Substitution lookup 41 subtable" oibu.dot
+Ligature2: "zlmVV subtable" obu ibu
+EndChar
+
+StartChar: aubu
+Encoding: 41 60841 41
+Width: 0
+VWidth: 0
+Flags: W
+HStem: 136.441 0.558594<-42.9678 -39.0528> 261.968 92.0322<-63.34 -15.0426>
+VStem: -1.12402 70.458<178.414 264.871>
+AnchorPoint: "Top" 0 252 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-32.8974609375 261.967773438 m 0
+ -55.6318359375 261.967773438 -69.333984375 282.881835938 -69.333984375 307.44140625 c 0
+ -69.333984375 327.765625 -59.150390625 348.8203125 -34.734375 354 c 0
+ -26.4423828125 355.786132812 -18.39453125 356.676757812 -10.6904296875 356.676757812 c 0
+ 35.5 356.676757812 69.333984375 324.651367188 69.333984375 261.49609375 c 0
+ 69.333984375 252.612304688 68.6640625 243.11328125 67.265625 233 c 0
+ 57.2578125 156.579101562 2.5556640625 136.44140625 -38.8603515625 136.44140625 c 0
+ -42.9677734375 136.44140625 -46.9443359375 136.638671875 -50.734375 137 c 1
+ -50.734375 137 -1.1240234375 174.361328125 -1.1240234375 223.19921875 c 0
+ -1.1240234375 236.765625 -4.9521484375 251.217773438 -14.734375 266 c 1
+ -21.3173828125 263.21484375 -27.388671875 261.967773438 -32.8974609375 261.967773438 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 42 subtable" aubu.dot
+Ligature2: "zlmVV subtable" abu ubu
+EndChar
+
+StartChar: iy
+Encoding: 42 60842 42
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<51 158.511 442.489 550>
+AnchorPoint: "Top" 298 644 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+300.5 353.675 m 5
+ 150 0 l 5
+ 51 0 l 5
+ 250 470 l 6
+ 351 470 l 5
+ 550 0 l 5
+ 451 0 l 5
+ 300.5 353.675 l 5
+EndSplineSet
+EndChar
+
+StartChar: uy
+Encoding: 43 60843 43
+Width: 600
+VWidth: 0
+Flags: W
+HStem: 0 21G<241.532 359.468>
+AnchorPoint: "Top" 300 657 basechar 0
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+300.5 116.325195312 m 1
+ 451 470 l 1
+ 550 470 l 1
+ 351 0 l 1
+ 250 0 l 2
+ 51 470 l 1
+ 150 470 l 1
+ 300.5 116.325195312 l 1
+EndSplineSet
+EndChar
+
+StartChar: uniEDAC
+Encoding: 44 60844 44
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDAD
+Encoding: 45 60845 45
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDAE
+Encoding: 46 60846 46
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDAF
+Encoding: 47 60847 47
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: seplimeabu
+Encoding: 48 60848 48
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 21G<50 150> 390 80<150 550>
+VStem: 50 100<0 390>
+AnchorPoint: "Bottom" 327 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 0 m 1
+ 50 0 l 1
+ 50 156.666666667 50 313.333333333 50 470 c 1
+ 216.666666667 470 383.333333333 470 550 470 c 1
+ 550 390 l 1
+ 150 390 l 1
+ 150 0 l 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeabu
+EndChar
+
+StartChar: seplimeebu
+Encoding: 49 60849 49
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 21G<49 149> 195 80<149 550>
+VStem: 49 100<0 195 275 470>
+AnchorPoint: "Bottom" 320 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+149 0 m 1
+ 49 0 l 1
+ 49 470 l 1
+ 149 470 l 1
+ 149 275 l 1
+ 550 275 l 1
+ 550 195 l 1
+ 416.333333333 195 282.666666667 195 149 195 c 1
+ 149 0 l 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeebu
+EndChar
+
+StartChar: seplimeibu
+Encoding: 50 60850 50
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 21G<49 149 449 549> 390 80<149 449 549 550>
+VStem: 49 100<0 390> 449 100<0 390>
+AnchorPoint: "Bottom" 301 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+149 0 m 1
+ 49 0 l 1
+ 49 470 l 1
+ 550 470 l 1
+ 550 390 l 1
+ 549 390 l 1
+ 549 0 l 1
+ 449 0 l 1
+ 449 390 l 1
+ 349 390 249 390 149 390 c 1
+ 149 0 l 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeibu
+EndChar
+
+StartChar: seplimeobu
+Encoding: 51 60851 51
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 80<50 450>
+VStem: 450 100<80 470>
+AnchorPoint: "Bottom" 304 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+550 0 m 1
+ 50 0 l 1
+ 50 80 l 1
+ 450 80 l 1
+ 450 470 l 1
+ 550 470 l 1
+ 550 313.333333333 550 156.666666667 550 0 c 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeobu
+EndChar
+
+StartChar: seplimeubu
+Encoding: 52 60852 52
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 80<150 450>
+VStem: 50 100<80 470> 450 100<80 470>
+AnchorPoint: "Bottom" 310 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+50 0 m 1
+ 50 470 l 1
+ 83 470 117 470 150 470 c 1
+ 150 80 l 1
+ 450 80 l 1
+ 450 470 l 1
+ 483 470 517 470 550 470 c 1
+ 550 313 550 157 550 0 c 1
+ 50 0 l 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeubu
+EndChar
+
+StartChar: seplimeybu
+Encoding: 53 60853 53
+Width: 599
+VWidth: 1024
+Flags: W
+HStem: 0 21G<251 350> 195 80<50 250 350 550>
+VStem: 251 99<0 195 275 470>
+AnchorPoint: "Bottom" 304 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+350 0 m 1
+ 251 0 l 1
+ 251 195 l 1
+ 50 195 l 1
+ 50 275 l 1
+ 250 275 l 1
+ 250 470 l 1
+ 350 470 l 1
+ 350 275 l 1
+ 550 275 l 1
+ 550 195 l 1
+ 350 195 l 1
+ 350 0 l 1
+EndSplineSet
+Ligature2: "zlmSF subtable" slakabu seplimeybu
+EndChar
+
+StartChar: seplimeaibu
+Encoding: 54 60854 54
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 80<150 550> 390 80<150 550>
+VStem: 50 100<80 390>
+AnchorPoint: "Bottom" 305 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+150 390 m 1
+ 150 80 l 1
+ 550 80 l 1
+ 550 0 l 1
+ 50 0 l 1
+ 50 470 l 1
+ 550 470 l 1
+ 550 390 l 1
+ 150 390 l 1
+EndSplineSet
+Ligature2: "zlmSFF subtable" slakabu seplimeaibu
+Ligature2: "zlmFF subtable" seplimeabu seplimeibu
+EndChar
+
+StartChar: seplimeeibu
+Encoding: 55 60855 55
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: -5 62<199.965 416.429> 414 62<186.695 402.035>
+VStem: 42 108<99.7867 149 308.904 383.018> 452 108<87.7838 161.402 322 371.213>
+AnchorPoint: "Bottom" 311 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+456 322 m 1
+ 443 388 381 414 294 414 c 0
+ 245 414 210 407 186 393 c 0
+ 162 379 150 362 150 343 c 0
+ 150 313 181 301 214 293 c 1
+ 215 293 l 1
+ 281 276 407 257 465 239 c 0
+ 515 224 560 194 560 135 c 0
+ 560 110 550 87 529 65 c 0
+ 486 19 402 -5 309 -5 c 0
+ 163 -5 48 44 42 149 c 1
+ 146 149 l 1
+ 159 83 221 57 308 57 c 0
+ 357 57 392 64 416 78 c 0
+ 440 92 452 108 452 127 c 0
+ 452 157 421 170 388 178 c 1
+ 387 177 l 1
+ 321 194 195 214 137 232 c 0
+ 87 247 42 276 42 335 c 0
+ 42 360 52 384 73 406 c 0
+ 116 452 200 476 293 476 c 0
+ 439 476 554 427 560 322 c 1
+ 456 322 l 1
+EndSplineSet
+Ligature2: "zlmSFF subtable" slakabu seplimeeibu
+Ligature2: "zlmFF subtable" seplimeebu seplimeibu
+EndChar
+
+StartChar: seplimeoibu
+Encoding: 56 60856 56
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 80<50 450> 390 80<50 450>
+VStem: 450 100<80 390>
+AnchorPoint: "Bottom" 304 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+450 390 m 1
+ 316.666992188 390 183.333333333 390 50 390 c 1
+ 50 470 l 1
+ 550 470 l 1
+ 550 0 l 1
+ 383.333333333 -0 216.666666667 0 50 0 c 1
+ 50 80 l 1
+ 450 80 l 1
+ 450 390 l 1
+EndSplineSet
+Ligature2: "zlmSFF subtable" slakabu seplimeoibu
+Ligature2: "zlmFF subtable" seplimeobu seplimeibu
+EndChar
+
+StartChar: seplimeaubu
+Encoding: 57 60857 57
+Width: 600
+VWidth: 1024
+Flags: W
+HStem: 0 21G<51 167.021 433.979 550>
+AnchorPoint: "Bottom" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+51 470 m 1
+ 151 470 l 1
+ 300.5 293.897243108 l 1
+ 450 470 l 1
+ 483.333333333 470 516.666666667 470 550 470 c 1
+ 350.250312891 235.294117647 l 1
+ 550 0 l 1
+ 451 0 l 1
+ 300.5 176.8375 l 1
+ 150 0 l 1
+ 51 0 l 1
+ 250.749687109 235.294117647 l 1
+ 51 470 l 1
+EndSplineSet
+Ligature2: "zlmSFF subtable" slakabu seplimeaubu
+Ligature2: "zlmFF subtable" seplimeabu seplimeubu
+EndChar
+
+StartChar: uniEDBA
+Encoding: 58 60858 58
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDBB
+Encoding: 59 60859 59
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDBC
+Encoding: 60 60860 60
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDBD
+Encoding: 61 60861 61
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDBE
+Encoding: 62 60862 62
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniEDBF
+Encoding: 63 60863 63
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: abu_yhy
+Encoding: 64 -1 64
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 489 244<59 114>
+VStem: 42 90<564.778 733> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 32 60832 S 1 0 0 1 87 383 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 4 subtable" abu yhy
+LCarets2: 1 0
+EndChar
+
+StartChar: ebu_yhy
+Encoding: 65 -1 65
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 580 72<-20 220>
+VStem: -20 240<580 652> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 33 60833 N 1 0 0 1 100 380 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 5 subtable" ebu yhy
+EndChar
+
+StartChar: ibu_yhy
+Encoding: 66 -1 66
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 551 120<53.7454 146.255>
+VStem: 40 120<564.745 657.255> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 34 60834 S 1 0 0 1 100 376 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 6 subtable" ibu yhy
+EndChar
+
+StartChar: obu_yhy
+Encoding: 67 -1 67
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 556 61<122.851 206.539> 596 57<44.5447 124.178>
+VStem: -20 58<555 584.67> 214 56<624.237 654> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 35 60835 S 1 0 0 1 125 371 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 7 subtable" obu yhy
+EndChar
+
+StartChar: ubu_yhy
+Encoding: 68 -1 68
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 524.1 61.1006<40.0684 160.952>
+VStem: 185.15 62.3994<605.862 651.5> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 36 60836 S 1 0 0 1 100 360 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 8 subtable" ubu yhy
+EndChar
+
+StartChar: ybu_yhy
+Encoding: 69 -1 69
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 495.05 45.9502<51.4026 134.263> 647 44.9502<52.1319 134.134>
+VStem: -4.7998 45.7998<551.341 636.505> 145 43.7998<552.173 635.748> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 37 60837 S 1 0 0 1 92 359 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 9 subtable" ybu yhy
+EndChar
+
+StartChar: aibu_yhy
+Encoding: 70 -1 70
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 685 37<111.328 118.297>
+VStem: 25.9326 73.4521<609.918 677.63> 72.5273 79.54<508.326 580.324> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 38 60838 S 1 0 0 1 89 355 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 10 subtable" aibu yhy
+EndChar
+
+StartChar: eibu_yhy
+Encoding: 71 -1 71
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 595 61<29.977 152.218>
+VStem: -53.5 61<529 571.855> 175.5 60<529 571.855> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 39 60839 S 1 0 0 1 91 344 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 12 subtable" oibu yhy
+Ligature2: "Ligature Substitution lookup 11 subtable" eibu yhy
+EndChar
+
+StartChar: oibu_yhy
+Encoding: 72 -1 72
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 528 61<124.08 189.039> 577 60.6953<60.2979 103.486>
+VStem: 196.5 56<596.237 626> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 40 60840 S 1 0 0 1 107 400 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: aubu_yhy
+Encoding: 73 -1 73
+Width: 460
+VWidth: 0
+Flags: W
+HStem: 0 21G<330 410> 246 91.8711<163.67 203.32> 525.441 0.558594<63.0322 66.9472> 650.968 92.0322<42.66 90.9574>
+VStem: 104.876 70.458<567.414 653.871> 330 80<0 350>
+AnchorPoint: "Top" 359 616 basechar 0
+LayerCount: 2
+Fore
+Refer: 41 60841 N 1 0 0 1 106 389 2
+Refer: 11 60811 N 1 0 0 1 0 0 2
+Ligature2: "Ligature Substitution lookup 13 subtable" aubu yhy
+EndChar
+
+StartChar: bahebu_bahebu
+Encoding: 74 -1 74
+Width: 0
+VWidth: 0
+Flags: W
+HStem: -251 120<-137.255 -44.7454 44.7454 137.255>
+VStem: -151 120<-237.255 -144.745> 31 120<-237.255 -144.745>
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-151 -191 m 0
+ -151 -158 -124 -131 -91 -131 c 0
+ -58 -131 -31 -158 -31 -191 c 0
+ -31 -224 -58 -251 -91 -251 c 0
+ -124 -251 -151 -224 -151 -191 c 0
+31 -191 m 0
+ 31 -158 58 -131 91 -131 c 0
+ 124 -131 151 -158 151 -191 c 0
+ 151 -224 124 -251 91 -251 c 0
+ 58 -251 31 -224 31 -191 c 0
+EndSplineSet
+EndChar
+
+StartChar: bahebu_bahebu_bahebu
+Encoding: 75 -1 75
+Width: 0
+VWidth: 0
+Flags: WO
+HStem: -293 120<-137.255 -44.7454 44.7454 137.255> -160 120<-46.2546 46.2546>
+VStem: -151 120<-279.255 -186.745> -60 120<-146.255 -53.7454> 31 120<-279.255 -186.745>
+AnchorPoint: "Bottom" 0 0 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-60 -100 m 0xd0
+ -60 -67 -33 -40 0 -40 c 0
+ 33 -40 60 -67 60 -100 c 0
+ 60 -133 33 -160 0 -160 c 0
+ -33 -160 -60 -133 -60 -100 c 0xd0
+-151 -233 m 0xe0
+ -151 -200 -124 -173 -91 -173 c 0
+ -58 -173 -31 -200 -31 -233 c 0
+ -31 -266 -58 -293 -91 -293 c 0
+ -124 -293 -151 -266 -151 -233 c 0xe0
+31 -233 m 0xc8
+ 31 -200 58 -173 91 -173 c 0
+ 124 -173 151 -200 151 -233 c 0
+ 151 -266 124 -293 91 -293 c 0
+ 58 -293 31 -266 31 -233 c 0xc8
+EndSplineSet
+LCarets2: 2 0 0
+Ligature2: "zlmBahebu subtable" bahebu bahebu
+Ligature2: "zlmBahebu subtable" bahebu bahebu bahebu
+EndChar
+
+StartChar: smajibu.init
+Encoding: 76 -1 76
+Width: 454
+VWidth: 0
+Flags: W
+HStem: 202 63<50 502>
+LayerCount: 2
+Fore
+SplineSet
+50 265 m 1
+ 502 265 l 1
+ 502 202 l 1
+ 50 202 l 1
+ 50 265 l 1
+EndSplineSet
+EndChar
+
+StartChar: smajibu.medi
+Encoding: 77 -1 77
+Width: 454
+VWidth: 0
+Flags: W
+HStem: 202 63<-43 491>
+LayerCount: 2
+Fore
+SplineSet
+-43 265 m 1
+ 491 265 l 1
+ 491 202 l 1
+ -43 202 l 1
+ -43 265 l 1
+EndSplineSet
+EndChar
+
+StartChar: smajibu.fina
+Encoding: 78 -1 78
+Width: 454
+VWidth: 0
+Flags: W
+HStem: 202 63<-68 401>
+LayerCount: 2
+Fore
+SplineSet
+-68 265 m 1
+ 401 265 l 1
+ 401 202 l 1
+ -68 202 l 1
+ -68 265 l 1
+EndSplineSet
+EndChar
+
+StartChar: space
+Encoding: 79 32 79
+Width: 300
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: abu.dot
+Encoding: 80 -1 80
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 489 244<120 175>
+VStem: 72 156<181.215 288.785> 103 90<564.778 733>
+LayerCount: 2
+Fore
+Refer: 32 60832 S 1 0 0 1 148 383 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ebu.dot
+Encoding: 81 -1 81
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 589 72<36 276>
+VStem: 36 240<589 661> 72 156<181.215 288.785>
+LayerCount: 2
+Fore
+Refer: 33 60833 S 1 0 0 1 156 389 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ibu.dot
+Encoding: 82 -1 82
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 559 120<99.7454 192.255>
+VStem: 72 156<181.215 288.785> 86 120<572.745 665.255>
+LayerCount: 2
+Fore
+Refer: 34 60834 S 1 0 0 1 146 384 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: obu.dot
+Encoding: 83 -1 83
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 568 61<147.851 231.539> 608 57<69.5447 149.178>
+VStem: 5 58<567 596.67> 72 156<181.215 288.785> 239 56<636.237 666>
+LayerCount: 2
+Fore
+Refer: 35 60835 S 1 0 0 1 150 383 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ubu.dot
+Encoding: 84 -1 84
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 559.1 61.1006<90.0684 210.952>
+VStem: 72 156<181.215 288.785> 235.15 62.3994<640.862 686.5>
+LayerCount: 2
+Fore
+Refer: 36 60836 S 1 0 0 1 150 395 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: ybu.dot
+Encoding: 85 -1 85
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 553.05 45.9502<113.403 196.263> 705 44.9502<114.132 196.134>
+VStem: 57.2002 45.7998<609.341 694.505> 72 156<181.215 288.785> 207 43.7998<610.173 693.748>
+LayerCount: 2
+Fore
+Refer: 37 60837 S 1 0 0 1 154 417 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: aibu.dot
+Encoding: 86 -1 86
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 757 37<170.328 177.297>
+VStem: 72 156<181.215 288.785> 84.9326 73.4521<681.918 749.63> 131.527 79.54<580.326 652.324>
+LayerCount: 2
+Fore
+Refer: 38 60838 S 1 0 0 1 148 427 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eibu.dot
+Encoding: 87 -1 87
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 663 61<88.977 211.218>
+VStem: 5.5 61<597 639.855> 72 156<181.215 288.785> 234.5 60<597 639.855>
+LayerCount: 2
+Fore
+Refer: 39 60839 S 1 0 0 1 150 412 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: oibu.dot
+Encoding: 88 -1 88
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 539 61<159.08 224.039> 588 60.6953<95.2979 138.486>
+VStem: 72 156<181.215 288.785> 231.5 56<607.237 637>
+LayerCount: 2
+Fore
+Refer: 40 60840 S 1 0 0 1 142 411 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: aubu.dot
+Encoding: 89 -1 89
+Width: 300
+VWidth: 0
+Flags: W
+HStem: 157 156<96.2149 203.785> 536.441 0.558594<97.0322 100.947> 661.968 92.0322<76.66 124.957>
+VStem: 72 156<181.215 288.785> 138.876 70.458<578.414 664.871>
+LayerCount: 2
+Fore
+Refer: 41 60841 N 1 0 0 1 140 400 2
+Refer: 9 60809 N 1 0 0 1 0 0 2
+EndChar
+EndChars
+EndSplineFont

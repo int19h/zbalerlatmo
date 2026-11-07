@@ -1,0 +1,648 @@
+---
+title: Zbalermorna Font Examiner
+css: examiner
+permalink: /examiner/
+redirect_from: /test/index.html
+nav: |
+  <div class="nav-right">
+    <select id="font-selector">
+      <option value="manri">manri</option>
+      <option value="drakono">drakono</option>
+      <option value="crisa-light">crisa-light</option>
+      <option value="crisa-regular">crisa-regular</option>
+      <option value="piper-karot">piper-karot</option>
+      <option value="ritli-regular">ritli-regular</option>
+    </select>
+  </div>
+---
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <header>
+          <h1>Zbalermorna Font Examiner</h1>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <p>This page has contains various featues of the Zbalermorna typeface, and can be used to preview fonts during development. <b>You can drag and drop your font file (any format) to load it here.</b> If you've merged the <code>tools/zbalermorna.fea</code> feature file into your font, you should be able to copy text directly from this page into the metrics window in FontForge to modify things if you see that something is off. Check out the <a href="{{ "/ime/" | absolute_url }}" id="ime-link">Javascript Zbalermorna IME</a> to test out everything in real-time. You can also use an OS IME to input text as well. All of this page was dynamically converted to the Zbalermorna Unicode space using the Javascript IME engine.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column" style="text-align: center;">
+        <h2>la berti brife jo'u la solri<br />
+        <small><a href="https://en.wikipedia.org/wiki/Lojban#The_North_Wind_and_the_Sun">A translation of The North Wind and
+              the Sun</a></small></h2>
+        <p class="reference" style="font-size:1em;" data-zlm-translate>ni'o la berti brife jo'u la solri pu troci lo ka cuxna lo poi me vo'a vau traji be lo ka vlipa i ca'o bo lo pa litru noi dasni lo glare kosta cu klama .i le re mei pu simxu lo ka tugni fi lo nu lo traji be lo ka clira fa lo nu ce'u snada lo ka gasnu lo nu le litru co'u dasni le kosta cu traji lo ka vlipa .i ba bo la berti brife co'a traji cupra lo brife ku'i lo nu by by zenba lo ka cupra lo xo kau brife cu rinka lo nu le litru zu'e ri zenba lo ka se tagji le kosta i ba bo la berti brife co'u troci i ba bo la solri co'a glare dirce i ba zi bo le litru co'u dasni le kosta se ki'u bo la berti brife cu bilga lo ka tugni fi lo nu la solri cu traji lo ka vlipa</p>
+        <p id="eye-doctor" class="reference" data-zlm-translate>ni'o la berti brife jo'u la solri pu troci lo ka cuxna lo poi me vo'a vau traji be lo ka vlipa i ca'o bo lo pa litru noi dasni lo glare kosta cu klama .i le re mei pu simxu lo ka tugni fi lo nu lo traji be lo ka clira fa lo nu ce'u snada lo ka gasnu lo nu le litru co'u dasni le kosta cu traji lo ka vlipa .i ba bo la berti brife co'a traji cupra lo brife</p>
+        <p style="font-weight:bold;" class="reference" data-zlm-translate>ku'i lo nu by by zenba lo ka cupra lo xo kau brife cu rinka lo nu le litru zu'e ri zenba lo ka se tagji le kosta i ba bo la berti brife co'u troci i ba bo la solri co'a glare dirce i ba zi bo le litru co'u dasni le kosta</p>
+        <p style="font-style:italic;" class="reference" data-zlm-translate>se ki'u bo la berti brife cu bilga lo ka tugni fi lo nu la solri cu traji lo ka vlipa</p>
+
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+      <div class="column">
+        <h3>Lone Characters</h3>
+        <div class="reference center" data-zlm-translate>p t k f l s c m x b d g v r z j n</div>
+        <div class="reference center" data-zlm-translate>,a ,e ,i ,o ,u ,y ,ai ,ei ,oi ,au</div>
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+      <div class="column">
+        <h3>Ligature precedence in the IME</h3>
+
+        <table class="u-full-width">
+          <tr>
+            <th>Input</th>
+            <th>IME Output</th>
+            <th>Expected</th>
+          </tr>
+
+          <tr class="reference">
+            <td> co'o ci'izra </td>
+            <td data-zlm-translate> co'o ci'izra </td>
+            <td>   </td>
+          </tr>
+
+          <tr class="reference">
+            <td> uau je'u do'oi </td>
+            <td data-zlm-translate> uau je'u do'oi </td>
+            <td>    </td>
+          </tr>
+
+          <tr class="reference">
+            <td> plukauaii </td>
+            <td data-zlm-translate> plukauaii </td>
+            <td>  </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+      <div class="column one-half">
+        <h3>Size WRT latin text</h3>
+        <p class="reference">
+          <span>k</span><span data-zlm-translate>pa</span>
+          <span>h</span><span data-zlm-translate>ta</span>
+          <span>p</span><span data-zlm-translate>za</span>
+          <span>o</span><span data-zlm-translate>xau</span>
+          <span>i</span><span data-zlm-translate>.i'i</span>
+        </p>
+      </div>
+      <div class="column one-half">
+        <h3>Full vowels</h3>
+        <p class="reference">
+          <span data-zlm-translate>A E I O U Y AI EI OI AU</span>
+        </p>
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+      <div class="column one-half">
+        <h3>Optional features</h3>
+        <p class="reference">
+          <span data-zlm-translate>me```l``bi`-- - ---gle~ki~ ki1 do2 mi3 le4</span>
+        </p>
+      </div>
+      <div class="column one-half">
+        <h3>Using the slakabu</h3>
+        <p class="reference">
+          <span data-zlm-translate>uE,In uEIn ,e ,i</span>
+        </p>
+      </div>
+    </div>
+    <p></p>
+    <div class="row">
+      <div class="column">
+        <h3>Common Words</h3>
+        <p class="reference" data-zlm-translate>
+lo
+i
+mi
+cu
+la
+nu
+do
+zo
+na
+se
+coi
+xu
+ma
+ka
+be
+u'i
+ku'i
+da
+pu
+ua
+ie
+du'u
+fi
+ca
+lu
+fa
+li'u
+doi
+ro
+pilno
+ku
+je'e
+nai
+co'o
+poi
+go'i
+vau
+tu'a
+mo
+zo'u
+ko
+no
+cusku
+jai
+na'e
+gy
+co'e
+gi'e
+le
+je
+</p>
+      </div>
+    </div>
+
+    <p></p>
+    <div class="row">
+      <div class="column one-half">
+        <h3>CV ligatures</h3>
+        <div class="table-row reference">
+          <div data-zlm-translate>pa</div>
+          <div data-zlm-translate>pe</div>
+          <div data-zlm-translate>pi</div>
+          <div data-zlm-translate>po</div>
+          <div data-zlm-translate>pu</div>
+          <div data-zlm-translate>py</div>
+          <div data-zlm-translate>pai</div>
+          <div data-zlm-translate>pei</div>
+          <div data-zlm-translate>poi</div>
+          <div data-zlm-translate>pau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ta</div>
+          <div data-zlm-translate>te</div>
+          <div data-zlm-translate>ti</div>
+          <div data-zlm-translate>to</div>
+          <div data-zlm-translate>tu</div>
+          <div data-zlm-translate>ty</div>
+          <div data-zlm-translate>tai</div>
+          <div data-zlm-translate>tei</div>
+          <div data-zlm-translate>toi</div>
+          <div data-zlm-translate>tau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ka</div>
+          <div data-zlm-translate>ke</div>
+          <div data-zlm-translate>ki</div>
+          <div data-zlm-translate>ko</div>
+          <div data-zlm-translate>ku</div>
+          <div data-zlm-translate>ky</div>
+          <div data-zlm-translate>kai</div>
+          <div data-zlm-translate>kei</div>
+          <div data-zlm-translate>koi</div>
+          <div data-zlm-translate>kau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>fa</div>
+          <div data-zlm-translate>fe</div>
+          <div data-zlm-translate>fi</div>
+          <div data-zlm-translate>fo</div>
+          <div data-zlm-translate>fu</div>
+          <div data-zlm-translate>fy</div>
+          <div data-zlm-translate>fai</div>
+          <div data-zlm-translate>fei</div>
+          <div data-zlm-translate>foi</div>
+          <div data-zlm-translate>fau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>la</div>
+          <div data-zlm-translate>le</div>
+          <div data-zlm-translate>li</div>
+          <div data-zlm-translate>lo</div>
+          <div data-zlm-translate>lu</div>
+          <div data-zlm-translate>ly</div>
+          <div data-zlm-translate>lai</div>
+          <div data-zlm-translate>lei</div>
+          <div data-zlm-translate>loi</div>
+          <div data-zlm-translate>lau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>sa</div>
+          <div data-zlm-translate>se</div>
+          <div data-zlm-translate>si</div>
+          <div data-zlm-translate>so</div>
+          <div data-zlm-translate>su</div>
+          <div data-zlm-translate>sy</div>
+          <div data-zlm-translate>sai</div>
+          <div data-zlm-translate>sei</div>
+          <div data-zlm-translate>soi</div>
+          <div data-zlm-translate>sau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ca</div>
+          <div data-zlm-translate>ce</div>
+          <div data-zlm-translate>ci</div>
+          <div data-zlm-translate>co</div>
+          <div data-zlm-translate>cu</div>
+          <div data-zlm-translate>cy</div>
+          <div data-zlm-translate>cai</div>
+          <div data-zlm-translate>cei</div>
+          <div data-zlm-translate>coi</div>
+          <div data-zlm-translate>cau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ma</div>
+          <div data-zlm-translate>me</div>
+          <div data-zlm-translate>mi</div>
+          <div data-zlm-translate>mo</div>
+          <div data-zlm-translate>mu</div>
+          <div data-zlm-translate>my</div>
+          <div data-zlm-translate>mai</div>
+          <div data-zlm-translate>mei</div>
+          <div data-zlm-translate>moi</div>
+          <div data-zlm-translate>mau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>xa</div>
+          <div data-zlm-translate>xe</div>
+          <div data-zlm-translate>xi</div>
+          <div data-zlm-translate>xo</div>
+          <div data-zlm-translate>xu</div>
+          <div data-zlm-translate>xy</div>
+          <div data-zlm-translate>xai</div>
+          <div data-zlm-translate>xei</div>
+          <div data-zlm-translate>xoi</div>
+          <div data-zlm-translate>xau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ba</div>
+          <div data-zlm-translate>be</div>
+          <div data-zlm-translate>bi</div>
+          <div data-zlm-translate>bo</div>
+          <div data-zlm-translate>bu</div>
+          <div data-zlm-translate>by</div>
+          <div data-zlm-translate>bai</div>
+          <div data-zlm-translate>bei</div>
+          <div data-zlm-translate>boi</div>
+          <div data-zlm-translate>bau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>da</div>
+          <div data-zlm-translate>de</div>
+          <div data-zlm-translate>di</div>
+          <div data-zlm-translate>do</div>
+          <div data-zlm-translate>du</div>
+          <div data-zlm-translate>dy</div>
+          <div data-zlm-translate>dai</div>
+          <div data-zlm-translate>dei</div>
+          <div data-zlm-translate>doi</div>
+          <div data-zlm-translate>dau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ga</div>
+          <div data-zlm-translate>ge</div>
+          <div data-zlm-translate>gi</div>
+          <div data-zlm-translate>go</div>
+          <div data-zlm-translate>gu</div>
+          <div data-zlm-translate>gy</div>
+          <div data-zlm-translate>gai</div>
+          <div data-zlm-translate>gei</div>
+          <div data-zlm-translate>goi</div>
+          <div data-zlm-translate>gau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>va</div>
+          <div data-zlm-translate>ve</div>
+          <div data-zlm-translate>vi</div>
+          <div data-zlm-translate>vo</div>
+          <div data-zlm-translate>vu</div>
+          <div data-zlm-translate>vy</div>
+          <div data-zlm-translate>vai</div>
+          <div data-zlm-translate>vei</div>
+          <div data-zlm-translate>voi</div>
+          <div data-zlm-translate>vau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ra</div>
+          <div data-zlm-translate>re</div>
+          <div data-zlm-translate>ri</div>
+          <div data-zlm-translate>ro</div>
+          <div data-zlm-translate>ru</div>
+          <div data-zlm-translate>ry</div>
+          <div data-zlm-translate>rai</div>
+          <div data-zlm-translate>rei</div>
+          <div data-zlm-translate>roi</div>
+          <div data-zlm-translate>rau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>za</div>
+          <div data-zlm-translate>ze</div>
+          <div data-zlm-translate>zi</div>
+          <div data-zlm-translate>zo</div>
+          <div data-zlm-translate>zu</div>
+          <div data-zlm-translate>zy</div>
+          <div data-zlm-translate>zai</div>
+          <div data-zlm-translate>zei</div>
+          <div data-zlm-translate>zoi</div>
+          <div data-zlm-translate>zau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>ja</div>
+          <div data-zlm-translate>je</div>
+          <div data-zlm-translate>ji</div>
+          <div data-zlm-translate>jo</div>
+          <div data-zlm-translate>ju</div>
+          <div data-zlm-translate>jy</div>
+          <div data-zlm-translate>jai</div>
+          <div data-zlm-translate>jei</div>
+          <div data-zlm-translate>joi</div>
+          <div data-zlm-translate>jau</div>
+        </div>
+        <div class="table-row reference">
+          <div data-zlm-translate>na</div>
+          <div data-zlm-translate>ne</div>
+          <div data-zlm-translate>ni</div>
+          <div data-zlm-translate>no</div>
+          <div data-zlm-translate>nu</div>
+          <div data-zlm-translate>ny</div>
+          <div data-zlm-translate>nai</div>
+          <div data-zlm-translate>nei</div>
+          <div data-zlm-translate>noi</div>
+          <div data-zlm-translate>nau</div>
+        </div>
+      </div>
+      <div class="column one-half">
+        <h3>Vowels</h3>
+        <div class="reference rows">
+          <div class="table-row">
+            <div data-zlm-translate>.a</div>
+            <div data-zlm-translate>.e</div>
+            <div data-zlm-translate>.i</div>
+            <div data-zlm-translate>.o</div>
+            <div data-zlm-translate>.u</div>
+            <div data-zlm-translate>.y</div>
+            <div data-zlm-translate>.ai</div>
+            <div data-zlm-translate>.ei</div>
+            <div data-zlm-translate>.oi</div>
+            <div data-zlm-translate>.au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>'a</div>
+            <div data-zlm-translate>'e</div>
+            <div data-zlm-translate>'i</div>
+            <div data-zlm-translate>'o</div>
+            <div data-zlm-translate>'u</div>
+            <div data-zlm-translate>'y</div>
+            <div data-zlm-translate>'ai</div>
+            <div data-zlm-translate>'ei</div>
+            <div data-zlm-translate>'oi</div>
+            <div data-zlm-translate>'au</div>
+          </div>
+        </div>
+        <h3>Semivowels</h3>
+        <div class="reference rows">
+          <div class="table-row">
+            <div data-zlm-translate>ia</div>
+            <div data-zlm-translate>ie</div>
+            <div data-zlm-translate>ii</div>
+            <div data-zlm-translate>io</div>
+            <div data-zlm-translate>iu</div>
+            <div data-zlm-translate>iy</div>
+            <div data-zlm-translate>iai</div>
+            <div data-zlm-translate>iei</div>
+            <div data-zlm-translate>ioi</div>
+            <div data-zlm-translate>iau</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>ua</div>
+            <div data-zlm-translate>ue</div>
+            <div data-zlm-translate>ui</div>
+            <div data-zlm-translate>uo</div>
+            <div data-zlm-translate>uu</div>
+            <div data-zlm-translate>uy</div>
+            <div data-zlm-translate>uai</div>
+            <div data-zlm-translate>uei</div>
+            <div data-zlm-translate>uoi</div>
+            <div data-zlm-translate>uau</div>
+          </div>
+        </div>
+        <h3>Attitudinal ligatures</h3>
+        <div class="reference rows">
+          <div class="table-row">
+            <div data-zlm-translate>a'a</div>
+            <div data-zlm-translate>a'e</div>
+            <div data-zlm-translate>a'i</div>
+            <div data-zlm-translate>a'o</div>
+            <div data-zlm-translate>a'u</div>
+            <div data-zlm-translate>a'y</div>
+            <div data-zlm-translate>a'ai</div>
+            <div data-zlm-translate>a'ei</div>
+            <div data-zlm-translate>a'oi</div>
+            <div data-zlm-translate>a'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>e'a</div>
+            <div data-zlm-translate>e'e</div>
+            <div data-zlm-translate>e'i</div>
+            <div data-zlm-translate>e'o</div>
+            <div data-zlm-translate>e'u</div>
+            <div data-zlm-translate>e'y</div>
+            <div data-zlm-translate>e'ai</div>
+            <div data-zlm-translate>e'ei</div>
+            <div data-zlm-translate>e'oi</div>
+            <div data-zlm-translate>e'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>i'a</div>
+            <div data-zlm-translate>i'e</div>
+            <div data-zlm-translate>i'i</div>
+            <div data-zlm-translate>i'o</div>
+            <div data-zlm-translate>i'u</div>
+            <div data-zlm-translate>i'y</div>
+            <div data-zlm-translate>i'ai</div>
+            <div data-zlm-translate>i'ei</div>
+            <div data-zlm-translate>i'oi</div>
+            <div data-zlm-translate>i'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>o'a</div>
+            <div data-zlm-translate>o'e</div>
+            <div data-zlm-translate>o'i</div>
+            <div data-zlm-translate>o'o</div>
+            <div data-zlm-translate>o'u</div>
+            <div data-zlm-translate>o'y</div>
+            <div data-zlm-translate>o'ai</div>
+            <div data-zlm-translate>o'ei</div>
+            <div data-zlm-translate>o'oi</div>
+            <div data-zlm-translate>o'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>u'a</div>
+            <div data-zlm-translate>u'e</div>
+            <div data-zlm-translate>u'i</div>
+            <div data-zlm-translate>u'o</div>
+            <div data-zlm-translate>u'u</div>
+            <div data-zlm-translate>u'y</div>
+            <div data-zlm-translate>u'ai</div>
+            <div data-zlm-translate>u'ei</div>
+            <div data-zlm-translate>u'oi</div>
+            <div data-zlm-translate>u'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>i'a</div>
+            <div data-zlm-translate>i'e</div>
+            <div data-zlm-translate>i'i</div>
+            <div data-zlm-translate>i'o</div>
+            <div data-zlm-translate>i'u</div>
+            <div data-zlm-translate>i'y</div>
+            <div data-zlm-translate>i'ai</div>
+            <div data-zlm-translate>i'ei</div>
+            <div data-zlm-translate>i'oi</div>
+            <div data-zlm-translate>i'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>y'a</div>
+            <div data-zlm-translate>y'e</div>
+            <div data-zlm-translate>y'i</div>
+            <div data-zlm-translate>y'o</div>
+            <div data-zlm-translate>y'u</div>
+            <div data-zlm-translate>y'y</div>
+            <div data-zlm-translate>y'ai</div>
+            <div data-zlm-translate>y'ei</div>
+            <div data-zlm-translate>y'oi</div>
+            <div data-zlm-translate>y'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>ai'a</div>
+            <div data-zlm-translate>ai'e</div>
+            <div data-zlm-translate>ai'i</div>
+            <div data-zlm-translate>ai'o</div>
+            <div data-zlm-translate>ai'u</div>
+            <div data-zlm-translate>ai'y</div>
+            <div data-zlm-translate>ai'ai</div>
+            <div data-zlm-translate>ai'ei</div>
+            <div data-zlm-translate>ai'oi</div>
+            <div data-zlm-translate>ai'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>ei'a</div>
+            <div data-zlm-translate>ei'e</div>
+            <div data-zlm-translate>ei'i</div>
+            <div data-zlm-translate>ei'o</div>
+            <div data-zlm-translate>ei'u</div>
+            <div data-zlm-translate>ei'y</div>
+            <div data-zlm-translate>ei'ai</div>
+            <div data-zlm-translate>ei'ei</div>
+            <div data-zlm-translate>ei'oi</div>
+            <div data-zlm-translate>ei'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>oi'a</div>
+            <div data-zlm-translate>oi'e</div>
+            <div data-zlm-translate>oi'i</div>
+            <div data-zlm-translate>oi'o</div>
+            <div data-zlm-translate>oi'u</div>
+            <div data-zlm-translate>oi'y</div>
+            <div data-zlm-translate>oi'ai</div>
+            <div data-zlm-translate>oi'ei</div>
+            <div data-zlm-translate>oi'oi</div>
+            <div data-zlm-translate>oi'au</div>
+          </div>
+          <div class="table-row">
+            <div data-zlm-translate>au'a</div>
+            <div data-zlm-translate>au'e</div>
+            <div data-zlm-translate>au'i</div>
+            <div data-zlm-translate>au'o</div>
+            <div data-zlm-translate>au'u</div>
+            <div data-zlm-translate>au'y</div>
+            <div data-zlm-translate>au'ai</div>
+            <div data-zlm-translate>au'ei</div>
+            <div data-zlm-translate>au'oi</div>
+            <div data-zlm-translate>au'au</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p></p>
+
+    <!--div class="test-blocks">
+    <div class="test-block">
+    <h3>Consonant Pairs</h3>
+    <pre class="reference" data-zlm-translate>
+pl  pr                          fl  fr
+bl  br                          vl  vr
+
+cp  cf      ct  ck  cm  cn      cl  cr
+jb  jv      jd  jg  jm
+sp  sf      st  sk  sm  sn      sl  sr
+zb  zv      zd  zg  zm
+
+tc  tr      ts                  kl  kr
+dj  dr      dz                  gl  gr
+ml  mr                          xl  xr
+</pre>
+
+</div>
+</div-->
+
+  </div>
+  <script src="../assets/js/zbalermorna.js"></script>
+  <script>
+var log = console.log.bind(console);
+
+function toArray (list) {
+  return Array.prototype.slice.apply(list);
+}
+
+function Q (sel, parent) {
+  return toArray((parent || document).querySelectorAll(sel));
+};
+
+// Translate test cases into appropriate unicode
+
+Q('[data-zlm-translate]').forEach(function (phrase) {
+    phrase.innerHTML = toArray(phrase.innerHTML).map(latinToZbalermorna).join('');
+    return;
+});
+
+const font_selector = document.getElementById('font-selector');
+const ime_link = document.getElementById('ime-link');
+
+function updateFont(value) {
+  for (var i = 0; i < document.getElementsByClassName('reference').length; i++) {
+    document.getElementsByClassName('reference')[i].style["font-family"] = value;
+  }
+}
+
+font_selector.addEventListener('change', (event) => {
+  history.replaceState(undefined, undefined, "#" + event.target.value)
+  ime_link.href = "{{ "/ime/" | absolute_url }}" + window.location.hash;
+  updateFont(event.target.value);
+});
+
+if (window.location.hash && !window.location.hash.match(/[0-9]/)) {
+  font_selector.value = window.location.hash.substring(1);
+  ime_link.href = "{{ "/ime/" | absolute_url }}" + window.location.hash;
+} else {
+  font_selector.value = "crisa-regular";
+  history.replaceState(undefined, undefined, "#" + font_selector.value);
+  ime_link.href = "{{ "/ime/" | absolute_url }}" + window.location.hash;
+}
+
+updateFont(font_selector.value);
+
+  </script>
+  <script src="../assets/js/drop.js"></script>

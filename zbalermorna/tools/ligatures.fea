@@ -1,0 +1,407 @@
+@consonant = [ py ty ky fy ly sy cy my xy \by dy gy vy ry zy jy ny yhy iy uy ];
+@singlevowel = [ abu ebu ibu obu ubu ybu ];
+@vowel = [ @singlevowel aibu eibu oibu aubu ];
+@anything = [ @consonant @vowel ];
+@fullvowel = [ seplimeabu seplimeebu seplimeibu seplimeobu seplimeubu seplimeybu seplimeaibu seplimeeibu seplimeoibu seplimeaubu ];
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+lookup zlmSelfDottingCAS {
+  lookupflag 0;
+  ignore sub denpabu @vowel' yhy;
+  ignore sub denpabu.cas @vowel' yhy;
+  ignore sub @consonant @vowel' yhy;
+  sub abu' yhy by denpabu.cas_abu;
+  sub ebu' yhy by denpabu.cas_ebu;
+  sub ibu' yhy by denpabu.cas_ibu;
+  sub obu' yhy by denpabu.cas_obu;
+  sub ubu' yhy by denpabu.cas_ubu;
+  sub ybu' yhy by denpabu.cas_ybu;
+  sub aibu' yhy by denpabu.cas_aibu;
+  sub eibu' yhy by denpabu.cas_eibu;
+  sub oibu' yhy by denpabu.cas_oibu;
+  sub aubu' yhy by denpabu.cas_aubu;
+} zlmSelfDottingCAS;
+
+lookup zlmSelfDottingVowels {
+  lookupflag 0;
+  ignore sub @anything @vowel';
+  ignore sub slakabu @vowel';
+  ignore sub @vowel' slakabu;
+  ignore sub denpabu @vowel';
+  ignore sub denpabu.cas @vowel';
+  sub abu' by denpabu_abu;
+  sub ebu' by denpabu_ebu;
+  sub ibu' by denpabu_ibu;
+  sub obu' by denpabu_obu;
+  sub ubu' by denpabu_ubu;
+  sub ybu' by denpabu_ybu;
+  sub aibu' by denpabu_aibu;
+  sub eibu' by denpabu_eibu;
+  sub oibu' by denpabu_oibu;
+  sub aubu' by denpabu_aubu;
+} zlmSelfDottingVowels;
+
+lookup mtb_ligatures_ny {
+  lookupflag 0;
+  sub ny abu by ny_abu;
+  sub ny ebu by ny_ebu;
+  sub ny ibu by ny_ibu;
+  sub ny obu by ny_obu;
+  sub ny ubu by ny_ubu;
+  sub ny ybu by ny_ybu;
+  sub ny aibu by ny_aibu;
+  sub ny eibu by ny_eibu;
+  sub ny oibu by ny_oibu;
+  sub ny aubu by ny_aubu;
+} mtb_ligatures_ny;
+
+lookup mtb_ligatures_dy {
+  lookupflag 0;
+  sub dy abu by dy_abu;
+  sub dy ebu by dy_ebu;
+  sub dy ibu by dy_ibu;
+  sub dy obu by dy_obu;
+  sub dy ubu by dy_ubu;
+  sub dy ybu by dy_ybu;
+  sub dy aibu by dy_aibu;
+  sub dy eibu by dy_eibu;
+  sub dy oibu by dy_oibu;
+  sub dy aubu by dy_aubu;
+} mtb_ligatures_dy;
+
+lookup mtb_ligatures_ty {
+  lookupflag 0;
+  sub ty abu by ty_abu;
+  sub ty ebu by ty_ebu;
+  sub ty ibu by ty_ibu;
+  sub ty obu by ty_obu;
+  sub ty ubu by ty_ubu;
+  sub ty ybu by ty_ybu;
+  sub ty aibu by ty_aibu;
+  sub ty eibu by ty_eibu;
+  sub ty oibu by ty_oibu;
+  sub ty aubu by ty_aubu;
+} mtb_ligatures_ty;
+
+lookup mtb_ligatures_zy {
+  lookupflag 0;
+  sub zy abu by zy_abu;
+  sub zy ebu by zy_ebu;
+  sub zy ibu by zy_ibu;
+  sub zy obu by zy_obu;
+  sub zy ubu by zy_ubu;
+  sub zy ybu by zy_ybu;
+  sub zy aibu by zy_aibu;
+  sub zy eibu by zy_eibu;
+  sub zy oibu by zy_oibu;
+  sub zy aubu by zy_aubu;
+} mtb_ligatures_zy;
+
+lookup mtb_ligatures_sy {
+  lookupflag 0;
+  sub sy abu by sy_abu;
+  sub sy ebu by sy_ebu;
+  sub sy ibu by sy_ibu;
+  sub sy obu by sy_obu;
+  sub sy ubu by sy_ubu;
+  sub sy ybu by sy_ybu;
+  sub sy aibu by sy_aibu;
+  sub sy eibu by sy_eibu;
+  sub sy oibu by sy_oibu;
+  sub sy aubu by sy_aubu;
+} mtb_ligatures_sy;
+
+lookup mtb_ligatures_gy {
+  lookupflag 0;
+  sub gy abu by gy_abu;
+  sub gy ebu by gy_ebu;
+  sub gy ibu by gy_ibu;
+  sub gy obu by gy_obu;
+  sub gy ubu by gy_ubu;
+  sub gy ybu by gy_ybu;
+  sub gy aibu by gy_aibu;
+  sub gy eibu by gy_eibu;
+  sub gy oibu by gy_oibu;
+  sub gy aubu by gy_aubu;
+} mtb_ligatures_gy;
+
+lookup mtb_ligatures_jy {
+  lookupflag 0;
+  sub jy abu by jy_abu;
+  sub jy ebu by jy_ebu;
+  sub jy ibu by jy_ibu;
+  sub jy obu by jy_obu;
+  sub jy ubu by jy_ubu;
+  sub jy ybu by jy_ybu;
+  sub jy aibu by jy_aibu;
+  sub jy eibu by jy_eibu;
+  sub jy oibu by jy_oibu;
+  sub jy aubu by jy_aubu;
+} mtb_ligatures_jy;
+
+lookup mtb_ligatures_xy {
+  lookupflag 0;
+  sub xy abu by xy_abu;
+  sub xy ebu by xy_ebu;
+  sub xy ibu by xy_ibu;
+  sub xy obu by xy_obu;
+  sub xy ubu by xy_ubu;
+  sub xy ybu by xy_ybu;
+  sub xy aibu by xy_aibu;
+  sub xy eibu by xy_eibu;
+  sub xy oibu by xy_oibu;
+  sub xy aubu by xy_aubu;
+} mtb_ligatures_xy;
+
+lookup mtb_ligatures_iy {
+  lookupflag 0;
+  sub iy abu by iy_abu;
+  sub iy ebu by iy_ebu;
+  sub iy ibu by iy_ibu;
+  sub iy obu by iy_obu;
+  sub iy ubu by iy_ubu;
+  sub iy ybu by iy_ybu;
+  sub iy aibu by iy_aibu;
+  sub iy eibu by iy_eibu;
+  sub iy oibu by iy_oibu;
+  sub iy aubu by iy_aubu;
+} mtb_ligatures_iy;
+
+lookup mtb_ligatures_ry {
+  lookupflag 0;
+  sub ry abu by ry_abu;
+  sub ry ebu by ry_ebu;
+  sub ry ibu by ry_ibu;
+  sub ry obu by ry_obu;
+  sub ry ubu by ry_ubu;
+  sub ry ybu by ry_ybu;
+  sub ry aibu by ry_aibu;
+  sub ry eibu by ry_eibu;
+  sub ry oibu by ry_oibu;
+  sub ry aubu by ry_aubu;
+} mtb_ligatures_ry;
+
+lookup mtb_ligatures_my {
+  lookupflag 0;
+  sub my abu by my_abu;
+  sub my ebu by my_ebu;
+  sub my ibu by my_ibu;
+  sub my obu by my_obu;
+  sub my ubu by my_ubu;
+  sub my ybu by my_ybu;
+  sub my aibu by my_aibu;
+  sub my eibu by my_eibu;
+  sub my oibu by my_oibu;
+  sub my aubu by my_aubu;
+} mtb_ligatures_my;
+
+lookup mtb_ligatures_by {
+  lookupflag 0;
+  sub \by abu by by_abu;
+  sub \by ebu by by_ebu;
+  sub \by ibu by by_ibu;
+  sub \by obu by by_obu;
+  sub \by ubu by by_ubu;
+  sub \by ybu by by_ybu;
+  sub \by aibu by by_aibu;
+  sub \by eibu by by_eibu;
+  sub \by oibu by by_oibu;
+  sub \by aubu by by_aubu;
+} mtb_ligatures_by;
+
+lookup mtb_ligatures_py {
+  lookupflag 0;
+  sub py abu by py_abu;
+  sub py ebu by py_ebu;
+  sub py ibu by py_ibu;
+  sub py obu by py_obu;
+  sub py ubu by py_ubu;
+  sub py ybu by py_ybu;
+  sub py aibu by py_aibu;
+  sub py eibu by py_eibu;
+  sub py oibu by py_oibu;
+  sub py aubu by py_aubu;
+} mtb_ligatures_py;
+
+lookup mtb_ligatures_vy {
+  lookupflag 0;
+  sub vy abu by vy_abu;
+  sub vy ebu by vy_ebu;
+  sub vy ibu by vy_ibu;
+  sub vy obu by vy_obu;
+  sub vy ubu by vy_ubu;
+  sub vy ybu by vy_ybu;
+  sub vy aibu by vy_aibu;
+  sub vy eibu by vy_eibu;
+  sub vy oibu by vy_oibu;
+  sub vy aubu by vy_aubu;
+} mtb_ligatures_vy;
+
+lookup mtb_ligatures_fy {
+  lookupflag 0;
+  sub fy abu by fy_abu;
+  sub fy ebu by fy_ebu;
+  sub fy ibu by fy_ibu;
+  sub fy obu by fy_obu;
+  sub fy ubu by fy_ubu;
+  sub fy ybu by fy_ybu;
+  sub fy aibu by fy_aibu;
+  sub fy eibu by fy_eibu;
+  sub fy oibu by fy_oibu;
+  sub fy aubu by fy_aubu;
+} mtb_ligatures_fy;
+
+lookup mtb_ligatures_ky {
+  lookupflag 0;
+  sub ky abu by ky_abu;
+  sub ky ebu by ky_ebu;
+  sub ky ibu by ky_ibu;
+  sub ky obu by ky_obu;
+  sub ky ubu by ky_ubu;
+  sub ky ybu by ky_ybu;
+  sub ky aibu by ky_aibu;
+  sub ky eibu by ky_eibu;
+  sub ky oibu by ky_oibu;
+  sub ky aubu by ky_aubu;
+} mtb_ligatures_ky;
+
+lookup mtb_ligatures_cy {
+  lookupflag 0;
+  sub cy abu by cy_abu;
+  sub cy ebu by cy_ebu;
+  sub cy ibu by cy_ibu;
+  sub cy obu by cy_obu;
+  sub cy ubu by cy_ubu;
+  sub cy ybu by cy_ybu;
+  sub cy aibu by cy_aibu;
+  sub cy eibu by cy_eibu;
+  sub cy oibu by cy_oibu;
+  sub cy aubu by cy_aubu;
+} mtb_ligatures_cy;
+
+lookup mtb_ligatures_yhy {
+  lookupflag 0;
+  sub yhy abu by yhy_abu;
+  sub yhy ebu by yhy_ebu;
+  sub yhy ibu by yhy_ibu;
+  sub yhy obu by yhy_obu;
+  sub yhy ubu by yhy_ubu;
+  sub yhy ybu by yhy_ybu;
+  sub yhy aibu by yhy_aibu;
+  sub yhy eibu by yhy_eibu;
+  sub yhy oibu by yhy_oibu;
+  sub yhy aubu by yhy_aubu;
+} mtb_ligatures_yhy;
+
+lookup mtb_ligatures_uy {
+  lookupflag 0;
+  sub uy abu by uy_abu;
+  sub uy ebu by uy_ebu;
+  sub uy ibu by uy_ibu;
+  sub uy obu by uy_obu;
+  sub uy ubu by uy_ubu;
+  sub uy ybu by uy_ybu;
+  sub uy aibu by uy_aibu;
+  sub uy eibu by uy_eibu;
+  sub uy oibu by uy_oibu;
+  sub uy aubu by uy_aubu;
+} mtb_ligatures_uy;
+
+lookup mtb_ligatures_ly {
+  lookupflag 0;
+  sub ly abu by ly_abu;
+  sub ly ebu by ly_ebu;
+  sub ly ibu by ly_ibu;
+  sub ly obu by ly_obu;
+  sub ly ubu by ly_ubu;
+  sub ly ybu by ly_ybu;
+  sub ly aibu by ly_aibu;
+  sub ly eibu by ly_eibu;
+  sub ly oibu by ly_oibu;
+  sub ly aubu by ly_aubu;
+} mtb_ligatures_ly;
+
+lookup mtb_ligatures_denpabu {
+  lookupflag 0;
+  sub denpabu abu by denpabu_abu;
+  sub denpabu ebu by denpabu_ebu;
+  sub denpabu ibu by denpabu_ibu;
+  sub denpabu obu by denpabu_obu;
+  sub denpabu ubu by denpabu_ubu;
+  sub denpabu ybu by denpabu_ybu;
+  sub denpabu aibu by denpabu_aibu;
+  sub denpabu eibu by denpabu_eibu;
+  sub denpabu oibu by denpabu_oibu;
+  sub denpabu aubu by denpabu_aubu;
+} mtb_ligatures_denpabu;
+
+lookup mtb_ligatures_denpabu.cas {
+  lookupflag 0;
+  sub denpabu.cas abu by denpabu.cas_abu;
+  sub denpabu.cas ebu by denpabu.cas_ebu;
+  sub denpabu.cas ibu by denpabu.cas_ibu;
+  sub denpabu.cas obu by denpabu.cas_obu;
+  sub denpabu.cas ubu by denpabu.cas_ubu;
+  sub denpabu.cas ybu by denpabu.cas_ybu;
+  sub denpabu.cas aibu by denpabu.cas_aibu;
+  sub denpabu.cas eibu by denpabu.cas_eibu;
+  sub denpabu.cas oibu by denpabu.cas_oibu;
+  sub denpabu.cas aubu by denpabu.cas_aubu;
+} mtb_ligatures_denpabu.cas;
+
+feature liga {
+  script DFLT;
+    language dflt;
+    lookup zlmSelfDottingCAS;
+    lookup zlmSelfDottingVowels;
+    lookup mtb_ligatures_ny;
+    lookup mtb_ligatures_dy;
+    lookup mtb_ligatures_ty;
+    lookup mtb_ligatures_zy;
+    lookup mtb_ligatures_sy;
+    lookup mtb_ligatures_gy;
+    lookup mtb_ligatures_jy;
+    lookup mtb_ligatures_xy;
+    lookup mtb_ligatures_iy;
+    lookup mtb_ligatures_ry;
+    lookup mtb_ligatures_my;
+    lookup mtb_ligatures_by;
+    lookup mtb_ligatures_py;
+    lookup mtb_ligatures_vy;
+    lookup mtb_ligatures_fy;
+    lookup mtb_ligatures_ky;
+    lookup mtb_ligatures_cy;
+    lookup mtb_ligatures_yhy;
+    lookup mtb_ligatures_uy;
+    lookup mtb_ligatures_ly;
+    lookup mtb_ligatures_denpabu;
+    lookup mtb_ligatures_denpabu.cas;
+  script latn;
+    language dflt;
+    lookup zlmSelfDottingCAS;
+    lookup zlmSelfDottingVowels;
+    lookup mtb_ligatures_ny;
+    lookup mtb_ligatures_dy;
+    lookup mtb_ligatures_ty;
+    lookup mtb_ligatures_zy;
+    lookup mtb_ligatures_sy;
+    lookup mtb_ligatures_gy;
+    lookup mtb_ligatures_jy;
+    lookup mtb_ligatures_xy;
+    lookup mtb_ligatures_iy;
+    lookup mtb_ligatures_ry;
+    lookup mtb_ligatures_my;
+    lookup mtb_ligatures_by;
+    lookup mtb_ligatures_py;
+    lookup mtb_ligatures_vy;
+    lookup mtb_ligatures_fy;
+    lookup mtb_ligatures_ky;
+    lookup mtb_ligatures_cy;
+    lookup mtb_ligatures_yhy;
+    lookup mtb_ligatures_uy;
+    lookup mtb_ligatures_ly;
+    lookup mtb_ligatures_denpabu;
+    lookup mtb_ligatures_denpabu.cas;
+} liga;

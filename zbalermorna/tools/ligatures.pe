@@ -1,0 +1,63 @@
+#!/usr/local/bin/fontforge
+# usage: fontforge -lang=ff -script ligatures.pe <font>
+
+c = ["ny", "dy", "ty", "zy", "sy", "gy", "jy", "xy", "iy", "ry", "my", "by", "py", "vy", "fy", "ky", "cy", "yhy", "uy", "ly", "denpabu", "denpabu.cas" ]
+v = ["abu", "ebu", "ibu", "obu", "ubu", "ybu", "aibu", "eibu", "oibu", "aubu"]
+
+Open("src/" + $1 + ".sfd")
+
+LoadNamelist("tools/zbalermorna.nam")
+LoadEncodingFile("tools/ligatures.ps")
+
+i = 0;
+while ( i < 22 )
+	j = 0;
+	while ( j < 10 )
+		Reencode("zbalermorna_" + c[i])
+		#RenameGlyphs("zbalermorna")
+
+		# CV clusters
+		Select(c[i]) # consonant
+		cAnchors = GetAnchorPoints()
+		if (cAnchors[0][0] == "Top")
+			cAnchorTop = cAnchors[0]
+			cAnchorBottom = cAnchors[1]
+		else
+			cAnchorTop = cAnchors[1]
+			cAnchorBottom = cAnchors[0]
+		endif
+		CopyReference()
+		Select(c[i] + "_" + v[j]) 
+		if (!GlyphInfo("PointCount") && !GlyphInfo("RefCount"))
+			Paste()
+			AddAnchorPoint(cAnchorBottom[0], cAnchorBottom[1], cAnchorBottom[2], cAnchorBottom[3])
+
+			Select(v[j])
+			vAnchors = GetAnchorPoints()
+			CopyReference()
+			Select(c[i] + "_" + v[j])
+			PasteWithOffset(cAnchorTop[2] - vAnchors[0][2], cAnchorTop[3] - vAnchors[0][3])
+			#PasteInto()
+		endif
+
+		j++
+	endloop
+	i++
+endloop
+
+SelectAll()
+#UnlinkReference()
+#RemoveOverlap()
+AutoHint()
+AutoCounter()
+
+LoadEncodingFile("tools/zbalermorna.ps")
+Reencode("zbalermorna")
+#RenameGlyphs("zbalermorna")
+
+RemoveLookup("zlmSelfDottingVowels")
+MergeFeature("tools/ligatures.fea")
+
+Generate("fonts/" + $1 + ".otf")
+
+Save("src/" + $1 + "_ligatured.sfd")

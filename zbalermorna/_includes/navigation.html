@@ -1,0 +1,11 @@
+<nav>
+	<div class="container">
+		<a {% if page.url == "/" %}class="current" {% endif %}href="{{ site.baseurl }}/" >Home</a>
+		<a {% if page.url == "/write-up/" %}class="current" {% endif %}href="{{ site.baseurl }}/write-up/" >Write-Up</a>
+		<a {% if page.url == "/unicode/" %}class="current" {% endif %}href="{{ site.baseurl }}/unicode/">Unicode</a>
+		<a {% if page.url == "/fonts/" %}class="current" {% endif %}href="{{ site.baseurl }}/fonts/">Fonts</a>
+		<a {% if page.url == "/examiner/" %}class="current" {% endif %}href="{{ site.baseurl }}/examiner/">Examiner</a>
+		<a {% if page.url == "/ime/" %}class="current" {% endif %}href="{{ site.baseurl }}/ime/">IME</a>
+		{{ page.nav }}
+	</div>
+</nav>

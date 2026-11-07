@@ -1,0 +1,59 @@
+.reference {
+  font-size: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+p.rows span {
+  margin:  0;
+  display: block;
+}
+
+textarea.reference {
+  font-size: 40px;
+}
+
+small {
+  font-size:   20px;
+  font-family: monospace;
+}
+
+.test-blocks {
+  display: flex;
+  padding: 0px 20px;
+}
+
+.test-block {
+  flex: 1;
+}
+
+#ime-output {
+  margin-left: 10px;
+  font-size: 40px;
+  white-space: pre-wrap;
+}
+
+.table-row {
+  display: flex;
+}
+
+.table-row div {
+  flex: 1;
+}
+.ucsur-zlm, .old-zlm {
+  display: inline;
+}
+.latin, .ucsur-zlm.hide, .old-zlm.hide {
+  display: none;
+}
+#eye-doctor .ucsur-zlm, #eye-doctor .old-zlm {
+  display: block;
+}
+#eye-doctor .ucsur-zlm.hide, #eye-doctor .old-zlm.hide {
+  display: none;
+}
+#eye-doctor span::first-line {
+  font-size: 128px;
+}

@@ -1,0 +1,128 @@
+header {
+	text-align: center;
+	counter-reset: figure;
+}
+body { 
+	counter-reset: section;
+}
+h2 { counter-reset: sub-section }
+h3 { counter-reset: composite }
+h4 { counter-reset: detail }
+
+h2::before {
+ counter-increment: section;
+ content: counter(section) " ";
+ color: #ccc;
+	text-decoration: none;
+}
+h3::before {
+ counter-increment: sub-section;
+ content: counter(section) "." counter(sub-section) " ";
+ color: #ccc;
+	text-decoration: none;
+}
+h4::before {
+ counter-increment: composite;
+ content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+ color: #ccc;
+	text-decoration: none;
+}
+h5::before {
+ counter-increment: detail;
+ content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+ color: #ccc;
+	text-decoration: none;
+}
+
+h2 a, h3 a, h4 a, h5 a, figcaption a {
+	text-decoration: none;
+}
+
+h2:target::after, h3:target::after, h4:target::after, h5:target::after {
+	content: "↓";
+	color: #ccc;
+	float: right;
+	margin-top: -10px;
+}
+
+figure {
+	text-align: center;
+	margin: 0px 0px 20px;
+}
+
+h2, h3, h4, h5, figure {
+  margin-top: -30px; 
+  padding-top: 20px;  
+}
+
+figcaption {
+	font-style: italic;
+	display: block;
+	text-align: center;
+}
+
+figcaption::before {
+	counter-increment: figure;
+	content: "Fig. " counter(figure) ": ";
+}
+
+.figure-row {
+	flex-direction: row;
+    display: flex;
+    justify-content: center;
+	font-size: 40px;
+    align-items: center;
+    line-height: 40px;
+    flex-wrap: wrap;
+}
+
+.figure-row div {
+	margin: 5px 0px;
+	padding: 0px 8px;
+}
+
+.figure-row .jbo, .figure-row .eng {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.figure-row .ipa {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+figure .zlm {
+	position: relative;
+	line-height: 30px;
+	height: 40px;
+	border-top: 1px rgba(0, 131, 255, 0.3) solid;
+	border-bottom: 1px rgba(0, 131, 255, 0.3) solid;
+}
+
+figure .zlm::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	border-top: 1px rgba(255, 0, 0, 0.2) solid;
+	top: 19px;
+	left: 0px;
+	z-index: -1;
+}
+figure .zlm::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	border-top: 1px rgba(62, 206, 62, 0.6) solid;
+	border-bottom: 1px rgba(62, 206, 62, 0.6) solid;
+	top: 9px;
+	left: 0px;
+	height: 20px;
+	z-index: -1;
+}
+
+.character {
+	font-weight: 600;
+	font-size: 36px;
+}

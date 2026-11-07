@@ -1,0 +1,14 @@
+title: Zbalermorna
+description: A diacritic orthography for Lojban
+baseurl: "/zbalermorna"
+github_username: jackhumbert
+repository: jackhumbert/zbalermorna
+gems:
+  - jekyll-redirect-from
+exclude: [ 'ime/windows/zlm' ]
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

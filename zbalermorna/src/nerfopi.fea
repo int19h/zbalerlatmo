@@ -1,0 +1,34 @@
+
+@consonant = [ py ty ky fy ly sy cy my xy \by dy gy vy ry zy jy ny yhy iy uy ];
+@singlevowel = [ abu ebu ibu obu ubu ybu ];
+@vowel = [ @singlevowel aibu eibu oibu aubu ];
+@anything = [ @consonant @vowel ];
+@fullvowel = [ seplimeabu seplimeebu seplimeibu seplimeobu seplimeubu seplimeybu seplimeaibu seplimeeibu seplimeoibu seplimeaubu ];
+
+@letters = [ty ky ly sy cy xy yhy jy yhy.cas ];
+@letters_fina = [ ty.fina ky.fina ly.fina sy.fina cy.fina xy.fina yhy.fina jy.fina yhy.cas.fina ];
+@jointers = [ \by dy gy ry zy jy ny cy sy ly ky ty py yhy denpabu denpabu.cas ];
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn DEU;
+languagesystem cyrl dflt;
+languagesystem cyrl SRB;
+languagesystem grek dflt;
+
+lookup nerfopiFina {
+  lookupflag 0;
+  ignore sub @letters' @vowel @jointers;
+  ignore sub @letters' @jointers;
+  sub @letters' by @letters_fina;
+} nerfopiFina;
+
+feature liga {
+  script DFLT;
+    language dflt;
+    lookup nerfopiFina;
+  script latn;
+    language dflt;
+    lookup nerfopiFina;
+} liga;
+
