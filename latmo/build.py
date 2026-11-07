@@ -2,16 +2,16 @@
 
 Usage: python -m latmo.build [FONT_ID ...]
 
-Fonts are configured in fonts.toml. For each font this:
+fonts.toml lists the fonts. For each one, the build:
 
 1. loads the upstream OTF from zbalermorna/fonts/;
-2. adds Latin punctuation the upstream font lacks, taken from the configured
-   Latin companion font (the one the upstream design was derived from);
+2. adds the Latin punctuation the upstream font lacks, from the Latin
+   companion font the upstream design was derived from;
 3. adds the ``lat.*`` input glyphs (see latmo/features.py) and maps Latin
-   characters to them; input glyphs carry Latin outlines, so text still reads
-   as Latin Lojban where no shaping happens;
-4. compiles the generated lookups and merges them ahead of the font's own
-   lookups in the ``rlig`` feature, which applications cannot switch off;
+   characters to them. The input glyphs have Latin outlines, so the text still
+   reads as Latin Lojban where no shaping happens;
+4. compiles the generated lookups and puts them ahead of the font's own
+   lookups in the ``rlig`` feature, which ligature switches leave on;
 5. renames the font and writes OTF and WOFF2 to fonts/.
 """
 
@@ -247,7 +247,8 @@ def merge_gsub(font: Font, generated: otTables.GSUB, order: list[int], pua_featu
     orig.LookupList.Lookup = list(ours) + list(upstream)
     orig.LookupList.LookupCount = len(orig.LookupList.Lookup)
 
-    # Collect features as (tag, lookup indices) keyed by original index.
+    # Shift the features' lookup indices, fold the PUA feature into rlig, and
+    # record the new position of each remaining feature.
     records = orig.FeatureList.FeatureRecord
     for fr in records:
         fr.Feature.LookupListIndex = [i + n for i in fr.Feature.LookupListIndex]
@@ -380,7 +381,7 @@ def build_font(cfg: dict, out_dir: Path | None = None) -> list[Path]:
         if font.has(gname):
             target = gname
         else:
-            # Source by name if the code point list is empty.
+            # Find the companion's glyph by name, or else by code point.
             glyph = None
             if gname in latin.glyphs:
                 glyph = latin.glyphs[gname]

@@ -2,12 +2,12 @@
 #
 #   id           short name used on the command line
 #   source       upstream OTF to build from
-#   latin        Latin companion font the upstream design was derived from;
-#                supplies missing punctuation and the Latin fallback outlines
+#   latin        Latin font the upstream design was derived from; it supplies
+#                missing punctuation and the Latin fallback outlines
 #   family/style names of the built font
 #   pua_feature  upstream feature holding the Zbalermorna lookups ("liga" in
 #                most upstream fonts, "calt" in fira-code-zlm); it is folded
-#                into rlig so it cannot be switched off
+#                into rlig, which ligature switches leave on
 
 [[font]]
 id = "crisa-regular"

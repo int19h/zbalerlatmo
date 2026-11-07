@@ -68,9 +68,10 @@ def pua_feature(source: Path) -> str:
 
 @pytest.mark.parametrize("source", UPSTREAM, ids=[p.stem for p in UPSTREAM])
 def test_every_upstream_font_builds(source, tmp_path):
-    """The generator works on all upstream fonts, not only the configured ones:
-    Latin input shapes exactly as the same text in the PUA encoding does in
-    the original upstream font. Lato stands in for each Latin companion."""
+    """The generator works on every upstream font, including those not in
+    fonts.toml: Latin input shapes exactly as the same text in the PUA
+    encoding does in the original upstream font. Lato stands in for each
+    font's Latin companion."""
     cfg = {"id": source.stem, "source": str(source.relative_to(ROOT)),
            "latin": "vendor/lato/Lato-Regular.ttf", "family": "Smoke Test",
            "style": "Regular", "pua_feature": pua_feature(source), "version": "0.1"}

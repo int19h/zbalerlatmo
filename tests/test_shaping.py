@@ -4,13 +4,13 @@ Each line of a ``tests/cases/*.tsv`` file is
 
     input <TAB> expected glyph names (space separated) [<TAB> comment]
 
-and is checked against every built font listed in fonts.toml. Lines starting
-with ``#`` and blank lines are ignored. Glyph names are those of the upstream
-Zbalermorna fonts, which all share one naming scheme.
+Every line is checked against each font in fonts.toml. Lines starting with
+``#`` and blank lines are skipped. Glyph names are the upstream Zbalermorna
+names, which all the upstream fonts share.
 
-``corpus*.tsv`` files have a third column instead of a comment: the same text in the
-upstream Private Use Area encoding. That text must shape to the same glyphs,
-which checks that the upstream behaviour for PUA input is preserved.
+In ``corpus*.tsv`` files the third column is the same text in the upstream
+Private Use Area encoding instead of a comment. It must shape to the same
+glyphs, which checks that PUA input still behaves as it does upstream.
 """
 
 from __future__ import annotations

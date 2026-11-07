@@ -1,21 +1,22 @@
 """Generate the Latin-input GSUB lookups as OpenType feature-file source.
 
-The generated lookups turn Latin-orthography Lojban into the same sequence of
-Zbalermorna glyphs that the upstream fonts use for their Private Use Area
-encoding, with glides and diphthongs already formed. The font's own upstream
-lookups (attitudinal shorthand, contextual forms, self-dotting and so on, which
-differ from font to font) run afterwards and finish the job.
+The generated lookups turn Latin-orthography Lojban into the glyphs the
+upstream fonts use for their Private Use Area encoding, with glides and
+diphthongs already formed. The upstream font's own lookups run afterwards and
+add what differs from font to font, such as the attitudinal shorthand,
+contextual forms and the period radical before a bare vowel.
 
-Every Latin character is mapped by cmap to an *input* glyph named ``lat.*``.
-Input glyphs never survive shaping: the last generated lookup lowers each of
-them to an upstream glyph. Between the two, a few internal variants are used:
+The cmap maps every Latin character to an input glyph named ``lat.*``. Input
+glyphs never survive shaping: the last generated lookup turns each of them into
+an upstream glyph. On the way, the lookups use a few internal variants:
 
 - ``lat.X.nm``: X inside a cmevla (name); its vowels render as full vowels.
 - ``lat.i.gl``, ``lat.u.gl``: i/u before a vowel, rendered as glide radicals.
 - ``lat.V.str``: a stressed vowel as typed (capital or accented); it is
   decomposed into ``lat.V`` + ``lat.stress`` first.
 
-The order of the lookups is load-bearing; see ``LOOKUP_ORDER`` below.
+Each lookup depends on the ones before it, so their order matters; see
+``LOOKUP_ORDER`` below.
 """
 
 from __future__ import annotations
@@ -27,7 +28,6 @@ DIPHTHONGS = ["ai", "ei", "oi", "au"]
 
 # Upstream glyph names.
 RADICAL = {c: c + "y" for c in CONSONANTS}
-RADICAL["b"] = "by"
 VOWEL_MARK = {v: v + "bu" for v in VOWELS}
 VOWEL_FULL = {v: "seplime" + v + "bu" for v in VOWELS}
 DIPHTHONG_MARK = {d: d + "bu" for d in DIPHTHONGS}
@@ -148,13 +148,13 @@ def generate() -> str:
     w("} latPunct;\n")
 
     # 3. Names. A cmevla is the only kind of word that ends in a consonant.
-    #    Mark a consonant that no Lojban letter follows (normally the period
-    #    after the name; also a space, punctuation or the end of the text,
-    #    so a forgotten trailing period does no harm), then propagate the
-    #    mark leftwards letter by letter. Reverse chaining lookups run right
-    #    to left, so each substitution is visible as lookahead to the glyph
-    #    on its left. The first matching rule wins; the middle rule leaves a
-    #    word-internal consonant unchanged.
+    #    Mark a consonant that no Lojban letter follows (a period, a space,
+    #    punctuation or the end of the text), then spread the mark leftwards
+    #    one letter at a time; it stops at the first character that is not a
+    #    letter, so periods around a name are optional. Reverse chaining
+    #    lookups run right to left, so each substitution is visible as
+    #    lookahead to the glyph on its left. The first matching rule wins,
+    #    and the middle rule leaves a consonant inside a word unchanged.
     w("lookup latNames {")
     w(f"    rsub @latPlain' @latNamed by @latNamed;")
     w(f"    rsub @latCons' @latPlain by @latCons;")
@@ -163,11 +163,11 @@ def generate() -> str:
 
     # 4. Stress written on the first vowel of a two-vowel syllable moves
     #    after the second vowel, so the glide and diphthong rules still see
-    #    two adjacent vowels. A syllable is stressed once: stress on both
-    #    halves (all-caps .UI, COI) is one stress mark, as two would read as
-    #    a double-dot dynamic. Glide syllables (.Ua, .UI) are handled before
-    #    the glide rule and diphthongs (lAi) after it, so that in .mAias. the
-    #    i still goes to the glide (ma-ias), not to a diphthong.
+    #    two adjacent vowels. Stress on both halves (all-caps .UI, COI) gives
+    #    one stress mark, because two would read as a double-dot dynamic.
+    #    Glide syllables (.Ua, .UI) are handled before the glide rule and
+    #    diphthongs (lAi) after it, so in .mAias. the i still becomes the
+    #    glide of ma-ias instead of joining the a in a diphthong.
     out.extend(stress_lookups("latGlideStress", glide_pairs()))
 
     # 5. Glides: i or u before a vowel. This must precede diphthong
@@ -187,9 +187,9 @@ def generate() -> str:
 
     out.extend(stress_lookups("latDiphStress", diphthong_pairs()))
 
-    # 6. Diphthongs, here rather than left to the upstream lookups: not every
-    #    upstream font forms them from separate vowels (Fira Code ZLM expects
-    #    the IME to send them composed).
+    # 6. Diphthongs. Some upstream fonts do not form them from separate
+    #    vowels (Fira Code ZLM expects the IME to send them composed), so the
+    #    generated lookups form them.
     w("lookup latDiphthongs {")
     for d in DIPHTHONGS:
         w(f"    sub {lat(d[0])} {lat(d[1])} by {DIPHTHONG_MARK[d]};")
@@ -221,9 +221,8 @@ def generate() -> str:
     return "\n".join(out) + "\n"
 
 
-# Lookups that must be registered (in this order) ahead of the upstream
-# lookups. Helper lookups that are only called from contextual lookups are
-# not listed here.
+# The lookups to register ahead of the upstream lookups, in this order.
+# Helper lookups that only contextual lookups call are left out.
 LOOKUP_ORDER = [
     "latDecompose",
     "latPunct",
