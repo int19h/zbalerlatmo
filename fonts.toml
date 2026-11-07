@@ -1,0 +1,27 @@
+# Fonts to build. Paths are relative to the repository root.
+#
+#   id           short name used on the command line
+#   source       upstream OTF to build from
+#   latin        Latin companion font the upstream design was derived from;
+#                supplies missing punctuation and the Latin fallback outlines
+#   family/style names of the built font
+#   pua_feature  upstream feature holding the Zbalermorna lookups; it is
+#                folded into rlig so it cannot be switched off
+
+[[font]]
+id = "crisa-regular"
+source = "zbalermorna/fonts/crisa-regular.otf"
+latin = "vendor/lato/Lato-Regular.ttf"
+family = "Crisa Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "crisa-light"
+source = "zbalermorna/fonts/crisa-light.otf"
+latin = "vendor/lato/Lato-Light.ttf"
+family = "Crisa Latmo"
+style = "Light"
+pua_feature = "liga"
+version = "0.1"

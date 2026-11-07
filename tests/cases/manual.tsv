@@ -1,0 +1,60 @@
+# Hand-checked shaping cases. See tests/test_shaping.py for the format.
+
+# Stress: capitals, acute, grave, decomposed acute; capital consonants are plain
+klAma	ky ly abu bahebu my abu	capital vowel is stressed
+kláma	ky ly abu bahebu my abu	precomposed acute
+klàma	ky ly abu bahebu my abu	precomposed grave
+kláma	ky ly abu bahebu my abu	decomposed acute
+KLAma	ky ly abu bahebu my abu	capital consonants carry no stress
+ba'e NA	by abu yhy ebu space ny abu bahebu	all-caps emphasis
+lAi	ly aibu bahebu	stress on a diphthong follows the diphthong
+COI	cy oibu bahebu	all-caps diphthong is one stress mark, not a double-dot dynamic
+.ÁU	denpabu aubu bahebu	accented all-caps diphthong
+.uÍ	denpabu uy ibu bahebu	stress after a glide
+
+# Names (cmevla): full vowels, glides, comma separation
+.DANkikang.	denpabu dy seplimeabu bahebu ny ky seplimeibu ky seplimeabu ny gy denpabu	stressed name
+.djénysys.	denpabu dy jy seplimeebu bahebu ny seplimeybu sy seplimeybu sy denpabu	accented name
+.djein.	denpabu dy jy seplimeeibu ny denpabu	diphthong in a name is one full-diphthong letter
+.djEIn.	denpabu dy jy seplimeeibu bahebu ny denpabu	stressed diphthong in a name
+.ve,in.	denpabu vy seplimeebu seplimeibu ny denpabu	comma separates the vowels; it is not drawn
+.ian.	denpabu iy seplimeabu ny denpabu	glide in a name
+.i,an.	denpabu seplimeibu seplimeabu ny denpabu	comma blocks the glide
+.maias.	denpabu my seplimeabu iy seplimeabu sy denpabu	glide wins over diphthong: ma-ias
+la diAN,uoryk.	ly abu space dy iy seplimeabu bahebu ny slakabu uy seplimeobu ry seplimeybu ky denpabu	glide after a consonant, comma before a glide
+la maikl.djaksyn.	ly abu space my seplimeaibu ky ly denpabu dy jy seplimeabu ky sy seplimeybu ny denpabu	two names joined by a period
+.fyl.	denpabu fy seplimeybu ly denpabu	a lerfu-shaped name is still a name
+ly.	ly ybu denpabu	a vowel-final word before a period is not a name
+la .djan. .i	ly abu space denpabu dy jy seplimeabu ny denpabu space denpabu ibu	name delimited on both sides
+
+# Apostrophe: ' ’ h between vowels; elsewhere ' and ’ are quotation marks
+.e'u	denpabu.cas ebu yhy.cas ubu	ASCII apostrophe, attitudinal shorthand
+.e’u	denpabu.cas ebu yhy.cas ubu	U+2019 apostrophe
+.ehu	denpabu.cas ebu yhy.cas ubu	h as apostrophe
+zo ‘du’u’	zy obu space quoteleft dy ubu yhy ubu quoteright	curly single quotes around a word with an apostrophe
+lu “coi” li’u	ly ubu space quotedblleft cy oibu quotedblright space ly ibu yhy ubu	curly double quotes
+lu "coi" li'u	ly ubu space quotedbl cy oibu quotedbl space ly ibu yhy ubu	straight double quotes
+zo 'nicte'	zy obu space quotesingle ny ibu cy ty ebu quotesingle	straight single quotes
+
+# Comma: between letters it separates syllables; elsewhere it is punctuation
+zo’u, la	zy obu yhy ubu comma space ly abu	comma before a space is drawn
+.i ji’a mi ba’e NA, sei	denpabu ibu space jy ibu yhy abu space my ibu space by abu yhy ebu space ny abu bahebu comma space sy eibu	comma after a stressed word
+
+# Stretch (tcenabu) from tilde
+dra~ta	dy ry abu tcenabu ty abu	stretch
+gle~ki~~	gy ly ebu tcenabu ky ibu tcenabu tcenabu	repeated stretch
+
+# Punctuation and digits
+mi?	my ibu question	question mark
+srera!	sy ry ebu ry abu exclam	exclamation mark
+(to .i toi)	parenleft ty obu space denpabu ibu space ty oibu parenright	parentheses
+[clani]	bracketleft cy ly abu ny ibu bracketright	brackets
+… fenki	ellipsis space fy ebu ny ky ibu	ellipsis
+k-k-kibro	ky hyphen ky hyphen ky ibu by ry obu	hyphens
+li 2014	ly ibu space two zero one four	digits
+zo'o: .ua	zy obu yhy obu colon space denpabu uy abu	colon
+
+# Periods
+pei.ua	py eibu denpabu uy abu	period with no spaces
+i	denpabu ibu	a bare vowel still gets the period radical
+.y'ybu	denpabu.cas ybu yhy.cas ybu by ubu	y'y
