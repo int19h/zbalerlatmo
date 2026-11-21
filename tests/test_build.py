@@ -87,3 +87,23 @@ def test_every_upstream_font_builds(source, tmp_path):
            "license": "OFL-1.1"}
     otf = build_font(cfg, out_dir=tmp_path)[0]
     assert glyph_names(otf, SMOKE_LATIN) == glyph_names(source, SMOKE_PUA)
+
+
+@pytest.mark.parametrize("cfg", CONFIG, ids=[c["id"] for c in CONFIG])
+def test_upstream_glyphs_unchanged(cfg):
+    """The build adds glyphs and lookups but leaves every upstream glyph's
+    outline and metrics, and the upstream GPOS, exactly as they were. With
+    the shaping tests, this means Latin input renders exactly like the same
+    text in the PUA encoding does in the original font."""
+    from fontTools.pens.recordingPen import DecomposingRecordingPen
+    upstream, font = TTFont(ROOT / cfg["source"]), TTFont(built(cfg))
+    up_glyphs, glyphs = upstream.getGlyphSet(), font.getGlyphSet()
+    changed = []
+    for name in upstream.getGlyphOrder():
+        before, after = DecomposingRecordingPen(up_glyphs), DecomposingRecordingPen(glyphs)
+        up_glyphs[name].draw(before)
+        glyphs[name].draw(after)
+        if before.value != after.value or upstream["hmtx"][name] != font["hmtx"][name]:
+            changed.append(name)
+    assert not changed
+    assert upstream["GPOS"].compile(upstream) == font["GPOS"].compile(font)
