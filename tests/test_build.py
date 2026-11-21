@@ -13,7 +13,7 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from latmo.build import build_font, load_config  # noqa: E402
+from latmo.build import LICENSES, build_font, load_config  # noqa: E402
 from latmo.shape import glyph_names  # noqa: E402
 
 CONFIG = load_config()
@@ -47,9 +47,18 @@ def test_names(cfg):
     assert name.getDebugName(1) == cfg["family"]
     assert name.getDebugName(5) == f"Version {cfg['version']}; latmo"
     assert font["CFF "].cff.fontNames == [f"{cfg['family'].replace(' ', '')}-{cfg['style']}"]
-    bold = "Bold" in cfg["style"]
+    bold, italic = "Bold" in cfg["style"], "Italic" in cfg["style"]
     assert bool(font["OS/2"].fsSelection & (1 << 5)) == bold
     assert bool(font["head"].macStyle & 1) == bold
+    assert bool(font["OS/2"].fsSelection & 1) == italic
+    assert bool(font["head"].macStyle & 2) == italic
+    assert (font["post"].italicAngle != 0) == italic
+    if cfg["license"] in LICENSES:
+        assert name.getDebugName(13) == LICENSES[cfg["license"]][0]
+        assert name.getDebugName(14) == LICENSES[cfg["license"]][1]
+    else:
+        assert name.getDebugName(13) == cfg["license_text"]
+    assert "Lato is a" not in (name.getDebugName(10) or "")
 
 
 UPSTREAM = sorted((ROOT / "zbalermorna" / "fonts").glob("*.otf"))
@@ -60,10 +69,10 @@ SMOKE_PUA = ("\ued84\ueda0 \ued89\ued91\ued96\uedb0\ued97\ued89 "
              "\ued89\ueda1\ued8a\ueda4 \ued86\ueda8\ued98 \ued89\uedab\ueda6 \ued82\ueda3\ued8a\ueda0")
 
 
-def pua_feature(source: Path) -> str:
+def pua_feature(source: Path) -> str | None:
     """The upstream feature holding the Zbalermorna lookups."""
     tags = {fr.FeatureTag for fr in TTFont(source)["GSUB"].table.FeatureList.FeatureRecord}
-    return "liga" if "liga" in tags else "calt"
+    return "liga" if "liga" in tags else None
 
 
 @pytest.mark.parametrize("source", UPSTREAM, ids=[p.stem for p in UPSTREAM])
@@ -74,6 +83,7 @@ def test_every_upstream_font_builds(source, tmp_path):
     font's Latin companion."""
     cfg = {"id": source.stem, "source": str(source.relative_to(ROOT)),
            "latin": "vendor/lato/Lato-Regular.ttf", "family": "Smoke Test",
-           "style": "Regular", "pua_feature": pua_feature(source), "version": "0.1"}
+           "style": "Regular", "pua_feature": pua_feature(source), "version": "0.1",
+           "license": "OFL-1.1"}
     otf = build_font(cfg, out_dir=tmp_path)[0]
     assert glyph_names(otf, SMOKE_LATIN) == glyph_names(source, SMOKE_PUA)

@@ -27,7 +27,7 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from latmo.shape import glyph_names  # noqa: E402
+from latmo.shape import glyph_names, shape  # noqa: E402
 
 CASES = ROOT / "tests" / "cases"
 
@@ -124,25 +124,47 @@ def test_matches_upstream(any_font, corpus):
     font, upstream = built(any_font), ROOT / any_font["source"]
     failures = []
     for text, _, pua in load(corpus):
-        got, want = glyph_names(font, text), glyph_names(upstream, compose(pua))
+        got, want = shape(font, text), shape(upstream, compose(pua))
         if got != want:
-            failures.append(f"{text}\n  upstream {' '.join(want)}\n  got      {' '.join(got)}")
+            failures.append(f"{text}\n  upstream {want}\n  got      {got}")
     assert not failures, f"{len(failures)} mismatches:\n" + "\n".join(failures[:40])
+
+
+# Characters a font may leave to the browser's next font: the optional
+# punctuation and digits, which the fonts without a Latin companion lack.
+OPTIONAL = set("0123456789-–—…/\\*+=@_|^`•·‚„")
 
 
 def test_manual_leaves_no_input_glyphs(any_font):
     """No Latin input glyph survives shaping the manual cases, and every
-    character the font covers gets a real glyph. Characters it does not
-    cover (digits in some fonts) are left to the browser's next font."""
+    character the font covers gets a real glyph. Only OPTIONAL characters
+    may be missing from the font."""
     font = built(any_font)
     covered = TTFont(font).getBestCmap()
     left = {}
     for text, _, _ in load("manual.tsv"):
-        text = "".join(c for c in text if ord(c) in covered or c == " ")
+        missing = {c for c in text if ord(c) not in covered} - {" "}
+        assert missing <= OPTIONAL, (text, missing)
+        text = "".join(c for c in text if c not in missing)
         stray = [g for g in glyph_names(font, text) if g.startswith("lat.") or g == ".notdef"]
         if stray:
             left[text] = stray
     assert not left
+
+
+# Strings with no Lojban letters: where the upstream font covers them, the
+# built font must shape them the same way (Fira Code ZLM's own Latin and its
+# programming ligatures, for example).
+PUNCTUATION_SAMPLES = ["-->", "--", "<!-- -->", "|- -|", "==", "!=", "<=", ">=",
+                       "( ) [ ] { }", "1234567890", "1 + 2 = 3", "#$%&", "\"\" (?)", "?!"]
+
+
+def test_punctuation_matches_upstream(any_font):
+    font, upstream = built(any_font), ROOT / any_font["source"]
+    cmap = TTFont(upstream).getBestCmap()
+    for text in PUNCTUATION_SAMPLES:
+        if all(ord(c) in cmap for c in text):
+            assert shape(font, text) == shape(upstream, text), text
 
 
 def test_rlig_cannot_be_disabled(any_font):

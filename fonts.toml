@@ -8,10 +8,13 @@
 #                and quote marks from the font's own semicolon and double quote
 #   latin_axes   axis values for a variable Latin font (default wght = 400)
 #   family/style names of the built font
+#   license      "OFL-1.1", "Apache-2.0" or "GPL-2.0", written into the font;
+#                "other" with license_text for anything else (see
+#                fonts/LICENSES.md)
 #   reference    the tests check exact glyph names on these fonts (Crisa);
 #                every other font is checked against its upstream font
 #   pua_feature  upstream feature holding the Zbalermorna lookups ("liga" in
-#                most upstream fonts, "calt" in fira-code-zlm); it is folded
+#                the upstream fonts that have them); it is folded
 #                into rlig, which ligature switches leave on. Leave it out
 #                when the upstream font has no Zbalermorna lookups to fold
 
@@ -22,6 +25,7 @@ latin = "vendor/lato/Lato-Regular.ttf"
 family = "Crisa Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 reference = true
 
@@ -32,6 +36,7 @@ latin = "vendor/lato/Lato-Light.ttf"
 family = "Crisa Latmo"
 style = "Light"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 reference = true
 
@@ -42,6 +47,7 @@ latin = "vendor/playfairdisplay/PlayfairDisplay[wght].ttf"
 family = "Vrude Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -51,6 +57,7 @@ latin = "vendor/playfairdisplay/PlayfairDisplay-Italic[wght].ttf"
 family = "Vrude Latmo"
 style = "Italic"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -60,6 +67,7 @@ latin = "vendor/exo2/Exo2[wght].ttf"
 family = "Balvi Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -69,6 +77,7 @@ latin = "vendor/robotoslab/RobotoSlab[wght].ttf"
 family = "Tanbo Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "Apache-2.0"
 version = "0.1"
 
 [[font]]
@@ -78,6 +87,7 @@ latin = "vendor/lobster/Lobster-Regular.ttf"
 family = "Nerfopi Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -87,6 +97,7 @@ latin = "vendor/goudybookletter1911/GoudyBookletter1911.ttf"
 family = "Primihi Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -96,6 +107,8 @@ latin = "vendor/lato/Lato-Regular.ttf"
 family = "Dunda Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "other"
+license_text = "Based on Tengwar Annatar, Copyright (c) 2004 Johan Winge, distributed under its author's terms. Punctuation from Lato, licensed under the SIL Open Font License, Version 1.1."
 version = "0.1"
 
 [[font]]
@@ -105,6 +118,7 @@ latin = "vendor/lato/Lato-Regular.ttf"
 family = "Tisna Latmo"
 style = "Bold"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -114,6 +128,7 @@ latin = "derive"
 family = "Ritli Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "GPL-2.0"
 version = "0.1"
 
 [[font]]
@@ -123,6 +138,7 @@ latin = "derive"
 family = "Piper Karot Latmo"
 style = "Regular"
 pua_feature = "liga"
+license = "OFL-1.1"
 version = "0.1"
 
 [[font]]
@@ -131,4 +147,5 @@ source = "zbalermorna/fonts/fira-code-zlm.otf"
 latin = "self"
 family = "Fira Code ZLM Latmo"
 style = "Regular"
+license = "OFL-1.1"
 version = "0.1"

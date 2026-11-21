@@ -13,6 +13,10 @@ These are unmodified copies; each directory keeps its license.
 | `lobster/` | Lobster | Nerfopi | OFL 1.1 | google/fonts `ofl/lobster` |
 | `goudybookletter1911/` | Goudy Bookletter 1911 | Primihi | OFL 1.1 | google/fonts `ofl/goudybookletter1911` |
 
+Nerfopi was made from Lobster 1.3. The Lobster here is a later release, so a
+few of its punctuation glyphs (`!`, parentheses) differ slightly from the
+ones Nerfopi already has; the build only uses it for the ones Nerfopi lacks.
+
 The google/fonts files are from commit
 `06bfe0d62a98375cb09c942fa18e68bd32cff057`. The build instances variable
 fonts at the weight given by `latin_axes` in `fonts.toml` (400 by default).

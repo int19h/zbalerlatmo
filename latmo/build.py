@@ -34,6 +34,7 @@ from fontTools.feaLib.parser import Parser
 from fontTools.misc.transform import Transform
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen, RecordingPen
+from fontTools.pens.reverseContourPen import ReverseContourPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont, newTable
@@ -169,6 +170,7 @@ class CompanionSource:
     has full Latin (Fira Code ZLM)."""
 
     def __init__(self, path: Path, target: Font, axes: dict | None = None):
+        self.path = path
         self.tt = TTFont(path)
         if "fvar" in self.tt:
             self.tt = instantiateVariableFont(self.tt, axes or {"wght": 400})
@@ -188,7 +190,11 @@ class CompanionSource:
             if name and src and self.glyphs[src].width:
                 ratios.append(tmet[name][0] / (self.glyphs[src].width * tgt_upm / upm))
         base = tgt_upm / upm
-        return base * (statistics.median(ratios) if ratios else 1.0)
+        if not ratios:
+            print(f"  warning: no shared punctuation to fit {self.path.name} to; "
+                  "using the unitsPerEm ratio", file=sys.stderr)
+            return base
+        return base * statistics.median(ratios)
 
     def outline(self, codepoint: int) -> Outline | None:
         name = self.cmap.get(codepoint)
@@ -198,7 +204,11 @@ class CompanionSource:
         recording = DecomposingRecordingPen(self.glyphs)
         glyph.draw(recording)
         scaled = RecordingPen()
-        recording.replay(TransformPen(scaled, Transform().scale(self.scale)))
+        out = TransformPen(scaled, Transform().scale(self.scale))
+        if "glyf" in self.tt:
+            # TrueType contours run the opposite way from CFF ones.
+            out = ReverseContourPen(out)
+        recording.replay(out)
         return round(glyph.width * self.scale), scaled
 
 
@@ -229,47 +239,57 @@ def _place(contours: list[list], transform: Transform) -> RecordingPen:
 
 class DerivedSource:
     """Punctuation built from the upstream font's own outlines, for fonts with
-    no usable Latin companion: the comma is the tail of the semicolon, the
-    single quotes are that tail raised to the height of the double quote (and
-    turned for the opening quotes), and the straight quote is half of the
-    double quote."""
+    no usable Latin companion: the comma is the tail of the semicolon, set
+    with the colon's side bearings; the curly quotes are that tail raised to
+    the height of the double quote (and turned for the opening quotes), and
+    the low quotes are the tail on the baseline; the straight quote is half
+    of the double quote. Quotes get the double quote's left side bearing on
+    both sides, and pairs keep its gap between the two marks."""
 
     def __init__(self, target: Font):
         glyphs = target.tt.getGlyphSet()
         cmap, hmtx = target.own_cmap, target.tt["hmtx"]
-        semicolon, quotedbl = cmap[ord(";")], cmap[ord('"')]
+        semicolon, quotedbl, colon = cmap[ord(";")], cmap[ord('"')], cmap[ord(":")]
         self.comma = min(_contours(glyphs, semicolon), key=lambda c: c[1][1])
-        self.comma_width = hmtx[semicolon][0]
+        colon_x0 = min(c[1][0] for c in _contours(glyphs, colon))
+        colon_x1 = max(c[1][2] for c in _contours(glyphs, colon))
+        self.colon_lsb, self.colon_rsb = colon_x0, hmtx[colon][0] - colon_x1
         quotes = sorted(_contours(glyphs, quotedbl), key=lambda c: c[1][0])
         self.straight = quotes[0]
-        self.gap = quotes[-1][1][0] - quotes[0][1][0]
-        self.quote_width = hmtx[quotedbl][0]
+        self.lsb = quotes[0][1][0]
+        # White space between the two marks of the double quote.
+        self.space = quotes[-1][1][0] - quotes[0][1][2]
         self.top = max(c[1][3] for c in quotes)
 
-    def _single(self, turned: bool, offset: float = 0) -> list:
+    def _mark(self, raised: bool, turned: bool, x: float) -> RecordingPen:
+        """The comma tail with its left edge at x, raised or on the baseline."""
         contour, (x0, y0, x1, y1) = self.comma
-        lsb = self.straight[1][0]
-        t = Transform().translate(lsb - x0 + offset, self.top - y1)
+        t = Transform().translate(x - x0, self.top - y1 if raised else 0)
         if turned:
             cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
             t = t.translate(cx, cy).rotate(math.pi).translate(-cx, -cy)
-        return [_place([contour], t)]
+        return _place([contour], t)
+
+    def _quotes(self, count: int, raised: bool, turned: bool) -> Outline:
+        ink = self.comma[1][2] - self.comma[1][0]
+        merged = RecordingPen()
+        for i in range(count):
+            self._mark(raised, turned, self.lsb + i * (ink + self.space)).replay(merged)
+        width = 2 * self.lsb + count * ink + (count - 1) * self.space
+        return round(width), merged
 
     def outline(self, codepoint: int) -> Outline | None:
-        single = self.quote_width - self.gap
         if codepoint == 0x2C:
-            return self.comma_width, _place([self.comma[0]], Transform())
+            x0, x1 = self.comma[1][0], self.comma[1][2]
+            width = self.colon_lsb + (x1 - x0) + self.colon_rsb
+            return round(width), _place([self.comma[0]], Transform().translate(self.colon_lsb - x0, 0))
         if codepoint == 0x27:
-            return single, _place([self.straight[0]], Transform())
-        if codepoint in (0x2019, 0x2018):
-            return single, self._single(codepoint == 0x2018)[0]
-        if codepoint in (0x201D, 0x201C):
-            turned = codepoint == 0x201C
-            pair = self._single(turned) + self._single(turned, self.gap)
-            merged = RecordingPen()
-            for rec in pair:
-                rec.replay(merged)
-            return self.quote_width, merged
+            x0, x1 = self.straight[1][0], self.straight[1][2]
+            return round(2 * x0 + (x1 - x0)), _place([self.straight[0]], Transform())
+        shapes = {0x2019: (1, True, False), 0x2018: (1, True, True), 0x201A: (1, False, False),
+                  0x201D: (2, True, False), 0x201C: (2, True, True), 0x201E: (2, False, False)}
+        if codepoint in shapes:
+            return self._quotes(*shapes[codepoint])
         return None
 
 
@@ -282,10 +302,10 @@ def make_source(cfg: dict, font: Font, src: Path):
     return CompanionSource(ROOT / latin, font, cfg.get("latin_axes"))
 
 
-def compile_generated(font: Font) -> tuple[otTables.GSUB, list[int]]:
+def compile_generated(font: Font, targets: dict[int, str]) -> tuple[otTables.GSUB, list[int]]:
     """Compile the generated lookups. Returns the GSUB and the indices of the
     lookups to register, in order."""
-    fea = features.generate()
+    fea = features.generate(targets)
     doc = Parser(io.StringIO(fea), glyphNames=set(font.order)).parse()
     builder = Builder(font.tt, doc)
     saved = font.tt.get("GSUB")
@@ -413,15 +433,27 @@ def merge_gsub(font: Font, generated: otTables.GSUB, order: list[int], pua_featu
 
 RIBBI = ("Regular", "Bold", "Italic", "Bold Italic")
 
+# License description (name ID 13) and URL (name ID 14) by fonts.toml key.
+LICENSES = {
+    "OFL-1.1": ("This Font Software is licensed under the SIL Open Font License, "
+                "Version 1.1.", "https://openfontlicense.org"),
+    "Apache-2.0": ("Licensed under the Apache License, Version 2.0.",
+                   "https://www.apache.org/licenses/LICENSE-2.0"),
+    "GPL-2.0": ("Licensed under the GNU General Public License, version 2.",
+                "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"),
+}
 
-def rename(font: Font, family: str, style: str, version: str) -> None:
-    """Set names, version strings and style bits for the built font."""
+
+def rename(font: Font, cfg: dict) -> None:
+    """Set names, license strings, version strings and style bits."""
+    family, style, version = cfg["family"], cfg["style"], cfg.get("version", "0.1")
+    name = font.tt["name"]
+    upstream_family = name.getDebugName(16) or name.getDebugName(1)
     ps_family = family.replace(" ", "")
     ps = f"{ps_family}-{style.replace(' ', '')}"
     full = f"{family} {style}"
-    name = font.tt["name"]
     for rec in list(name.names):
-        if rec.nameID in (1, 3, 4, 6, 16, 17, 21, 22):
+        if rec.nameID in (1, 3, 4, 6, 10, 13, 14, 16, 17, 21, 22):
             name.removeNames(nameID=rec.nameID)
     name.setName(family, 1, 3, 1, 0x409)
     bold, italic = "Bold" in style, "Italic" in style
@@ -437,10 +469,18 @@ def rename(font: Font, family: str, style: str, version: str) -> None:
         name.setName(style, 17, 3, 1, 0x409)
     # Drop Mac-platform names; modern systems read the Windows ones.
     name.names = [r for r in name.names if r.platformID == 3]
-    old_desc = name.getDebugName(10) or ""
-    name.setName(
-        ("Latin-input build of the upstream Zbalermorna font: renders Latin-"
-         "orthography Lojban as Zbalermorna. " + old_desc).strip(), 10, 3, 1, 0x409)
+    name.setName(f"Latin-input version of the Zbalermorna font {upstream_family}: "
+                 "renders Latin-orthography Lojban as Zbalermorna.", 10, 3, 1, 0x409)
+    # Upstream fonts often carry Lato's license strings from the template they
+    # were made from; replace them with this font's own.
+    license = cfg["license"]
+    if license in LICENSES:
+        text, url = LICENSES[license]
+        name.setName(text, 13, 3, 1, 0x409)
+        name.setName(url, 14, 3, 1, 0x409)
+        font.tt["OS/2"].fsType = 0  # installable: no embedding restrictions
+    else:
+        name.setName(cfg["license_text"], 13, 3, 1, 0x409)
     font.cff.fontNames = [ps]
     font.top.FullName = full
     font.top.FamilyName = family
@@ -469,26 +509,33 @@ def build_font(cfg: dict, out_dir: Path | None = None) -> list[Path]:
         width, recording = outline
         font.add_glyph(name, width, recording.replay)
 
-    # Punctuation the upstream font lacks.
+    # Punctuation the upstream font lacks. Where it has the character, under
+    # whatever glyph name, its own glyph is kept and nothing is added.
+    targets: dict[int, str] = {}
     for gname, source_cp, cps in PUNCTUATION:
-        if not font.has(gname):
-            if gname not in features.PUNCTUATION_TARGETS and cps and all(
-                    cp in font.own_cmap for cp in cps):
-                continue  # the upstream font already has it under another name
+        if font.has(gname):
+            glyph = gname
+        elif source_cp in font.own_cmap:
+            glyph = font.own_cmap[source_cp]
+        else:
             outline = source.outline(source_cp)
-            if outline is None and gname in features.PUNCTUATION_TARGETS:
+            if outline is None and source_cp in features.PUNCTUATION_TARGETS:
                 derived = derived or DerivedSource(font)
                 outline = derived.outline(source_cp)
             if outline is None:
                 continue  # browsers fall back to the next font for these
             add_outline(gname, outline)
+            glyph = gname
+        if source_cp in features.PUNCTUATION_TARGETS:
+            targets[source_cp] = glyph
         for cp in cps:
-            font.map(cp, gname)
+            if cp not in font.own_cmap:
+                font.map(cp, glyph)
 
     # Input glyphs. Their outlines are only seen where no shaping happens:
     # Latin where a Latin source exists, otherwise the upstream glyph that
     # shaping would produce.
-    fallback = dict(features.lowering())
+    fallback = dict(features.lowering(targets))
     for gname, cps in input_cmap().items():
         outline = source.outline(cps[0])
         if outline is None:
@@ -504,10 +551,10 @@ def build_font(cfg: dict, out_dir: Path | None = None) -> list[Path]:
     for gname in features.internal_glyphs():
         font.add_glyph(gname, 0)
 
-    generated, order = compile_generated(font)
+    generated, order = compile_generated(font, targets)
     merge_gsub(font, generated, order, cfg.get("pua_feature"))
 
-    rename(font, cfg["family"], cfg["style"], cfg.get("version", "0.1"))
+    rename(font, cfg)
 
     out_dir = out_dir or ROOT / "fonts"
     out_dir.mkdir(parents=True, exist_ok=True)

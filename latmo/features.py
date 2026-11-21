@@ -92,13 +92,17 @@ def stress_lookups(name: str, pairs: list[tuple[str, str]]) -> list[str]:
     return out
 
 
-# The glyphs the lowering lookup emits for punctuation; the build makes sure
-# every font has them.
-PUNCTUATION_TARGETS = ["comma", "quotesingle", "quoteright"]
+# The punctuation glyphs the lowering lookup emits, by the code point whose
+# punctuation form they are. The build passes the glyph names each font uses
+# for them (a font with its own Latin may call them uni002C and so on).
+PUNCTUATION_TARGETS = {0x2C: "comma", 0x27: "quotesingle", 0x2019: "quoteright"}
 
 
-def lowering() -> list[tuple[str, str]]:
-    """(input or internal glyph, upstream glyph) pairs for the last lookup."""
+def lowering(targets: dict[int, str] | None = None) -> list[tuple[str, str]]:
+    """(input or internal glyph, upstream glyph) pairs for the last lookup.
+    ``targets`` maps the code points in PUNCTUATION_TARGETS to the font's
+    glyph names."""
+    t = {**PUNCTUATION_TARGETS, **(targets or {})}
     pairs: list[tuple[str, str]] = []
     for c in CONSONANTS:
         pairs += [(lat(c), RADICAL[c]), (nm(c), RADICAL[c])]
@@ -111,9 +115,9 @@ def lowering() -> list[tuple[str, str]]:
         (lat("sep"), SEPARATOR), (nm("sep"), SEPARATOR),
         (lat("stress"), STRESS), (nm("stress"), STRESS),
         (lat("tilde"), STRETCH), (nm("tilde"), STRETCH),
-        (lat("comma"), "comma"),
-        (lat("quotesingle"), "quotesingle"),
-        (lat("quoteright"), "quoteright"),
+        (lat("comma"), t[0x2C]),
+        (lat("quotesingle"), t[0x27]),
+        (lat("quoteright"), t[0x2019]),
     ]
     return pairs
 
@@ -122,7 +126,7 @@ def cls(names) -> str:
     return "[" + " ".join(names) + "]"
 
 
-def generate() -> str:
+def generate(targets: dict[int, str] | None = None) -> str:
     """Return feature-file source defining the generated lookups.
 
     The lookups are standalone (not registered in any feature); the build
@@ -224,7 +228,7 @@ def generate() -> str:
 
     # 7. Turn every remaining input glyph into its upstream glyph.
     w("lookup latLower {")
-    for src, dst in lowering():
+    for src, dst in lowering(targets):
         w(f"    sub {src} by {dst};")
     w("} latLower;\n")
 

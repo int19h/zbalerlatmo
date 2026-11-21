@@ -96,7 +96,11 @@ The fonts expect well-formed Latin Lojban.
 - Punctuation and digits stay Latin. Quotation marks, dashes, the ellipsis and
   digits come from the Latin companion font.
 - Fira Code ZLM stays monospaced: as upstream, every vowel sign takes its own
-  cell, and its programming ligatures (in `calt`) can still be turned off.
+  cell. Its programming ligatures (in `calt`) can still be turned off, except
+  those that start with `.` or `~` (`..`, `~~`, `~@`), since those characters
+  are always the period radical and the stretch mark. Its upstream font has
+  no lookups of its own, so in Fira Code ZLM a bare vowel gets no period
+  radical and `.V'V` attitudinals use the ordinary period and apostrophe.
 
 All of this is in `rlig`, the required ligatures feature. Ligature switches in
 applications and `font-variant-ligatures: none` in CSS leave it on; only
@@ -146,7 +150,8 @@ the PUA encoding.
 The build code is under the MIT license (see [`LICENSE`](LICENSE)). Each built
 font keeps the license of the font it was derived from: most are under the SIL
 Open Font License 1.1, Tanbo Latmo is under the Apache License 2.0, and Ritli
-Latmo under the GPL. [`fonts/LICENSES.md`](fonts/LICENSES.md) lists each
+Latmo under the GPL. Dunda Latmo is based on Tengwar Annatar, which its author
+distributes under his own terms, not an open font license. [`fonts/LICENSES.md`](fonts/LICENSES.md) lists each
 font's license and copyright notices. The vendored companion fonts keep their
 own licenses (see [`vendor/README.md`](vendor/README.md)).
 `tests/cases/corpus-ziholafti.tsv` contains text from
