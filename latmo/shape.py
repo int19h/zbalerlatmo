@@ -23,6 +23,8 @@ def _load(path: str):
 
 def shape(path: str | Path, text: str, features: dict | None = None) -> list[tuple[str, int, int, int]]:
     """Return (glyph name, x advance, x offset, y offset) for each output glyph."""
+    if not text:
+        return []
     font, names = _load(str(path))
     buf = hb.Buffer()
     buf.add_str(text)

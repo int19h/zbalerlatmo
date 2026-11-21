@@ -1,0 +1,113 @@
+# Corner cases: input <TAB> expected glyphs (Crisa) <TAB> same text in the PUA encoding.
+# The PUA text comes from an independent Latin-to-Zbalermorna renderer, with diphthongs
+# written as their composed code points, except where a section says it is written by hand.
+# Expected glyphs are the original crisa-regular.otf shaping the PUA text. Generated; do not edit.
+
+# Names: full vowels, glides, diphthongs, comma separation, periods
+.djein.	denpabu dy jy seplimeeibu ny denpabu	
+.ve,in.	denpabu vy seplimeebu seplimeibu ny denpabu	
+.vein.	denpabu vy seplimeeibu ny denpabu	
+.ian.	denpabu iy seplimeabu ny denpabu	
+.i,an.	denpabu seplimeibu seplimeabu ny denpabu	
+.maias.	denpabu my seplimeabu iy seplimeabu sy denpabu	
+.mariias.	denpabu my seplimeabu ry seplimeibu iy seplimeabu sy denpabu	
+.uil.	denpabu uy seplimeibu ly denpabu	
+.iuan.	denpabu seplimeibu uy seplimeabu ny denpabu	
+.i,uan.	denpabu seplimeibu slakabu uy seplimeabu ny denpabu	
+la .xuan.	ly abu space denpabu xy uy seplimeabu ny denpabu	 
+la .djiuan.	ly abu space denpabu dy jy seplimeibu uy seplimeabu ny denpabu	 
+la maikl.djaksyn.	ly abu space my seplimeaibu ky ly denpabu dy jy seplimeabu ky sy seplimeybu ny denpabu	 
+.fyl.	denpabu fy seplimeybu ly denpabu	
+ly.	ly ybu denpabu	
+la .djan. .i	ly abu space denpabu dy jy seplimeabu ny denpabu space denpabu ibu	  
+la .sabin	ly abu space denpabu sy seplimeabu by seplimeibu ny	 
+la .sabin.	ly abu space denpabu sy seplimeabu by seplimeibu ny denpabu	 
+.i lif	denpabu ibu space ly seplimeibu fy	 
+la .alis. .e la .bab.	ly abu space denpabu seplimeabu ly seplimeibu sy denpabu space denpabu ebu space ly abu space denpabu by seplimeabu by denpabu	    
+doi .alis.	dy oibu space denpabu seplimeabu ly seplimeibu sy denpabu	 
+la .aus.	ly abu space denpabu seplimeaubu sy denpabu	 
+la .oits.	ly abu space denpabu seplimeoibu ty sy denpabu	 
+la .eilin.	ly abu space denpabu seplimeeibu ly seplimeibu ny denpabu	 
+la .a,ustin.	ly abu space denpabu seplimeabu seplimeubu sy ty seplimeibu ny denpabu	 
+la .noi,ys.	ly abu space denpabu ny seplimeoibu seplimeybu sy denpabu	 
+la .mai,us.	ly abu space denpabu my seplimeaibu seplimeubu sy denpabu	 
+la .iakob.	ly abu space denpabu iy seplimeabu ky seplimeobu by denpabu	 
+
+# Glides and diphthongs in ordinary words
+.ii	denpabu iy ibu	
+.ui	denpabu uy ibu	
+.iu	denpabu iy ubu	
+.uu	denpabu uy ubu	
+.ua	denpabu uy abu	
+.ue	denpabu uy ebu	
+.uo	denpabu uy obu	
+.ia	denpabu iy abu	
+.ie	denpabu iy ebu	
+.io	denpabu iy obu	
+.uai	denpabu uy aibu	
+.iau	denpabu iy aubu	
+.uei	denpabu uy eibu	
+.ioi	denpabu iy oibu	
+.ai .ei .oi .au	denpabu aibu space denpabu eibu space denpabu oibu space denpabu aubu	   
+coi .ui .uai .ie	cy oibu space denpabu uy ibu space denpabu uy aibu space denpabu iy ebu	   
+.iinai .uasai	denpabu iy ibu ny aibu space denpabu uy abu sy aibu	 
+
+# Apostrophe forms (' ’ h) and the attitudinal shorthand
+.e'u	denpabu.cas ebu yhy.cas ubu	
+.e’u	denpabu.cas ebu yhy.cas ubu	
+.ehu	denpabu.cas ebu yhy.cas ubu	
+.a'o .o'i .u'i	denpabu.cas abu yhy.cas obu space denpabu.cas obu yhy.cas ibu space denpabu.cas ubu yhy.cas ibu	  
+zo'e ko'a mi'o	zy obu yhy ebu space ky obu yhy abu space my ibu yhy obu	  
+ro'i.u'a	ry obu yhy ibu denpabu.cas ubu yhy.cas abu	
+.y'y.	denpabu.cas ybu yhy.cas ybu denpabu	
+ba'e	by abu yhy ebu	
+.i'i .ai'e	denpabu.cas ibu yhy.cas ibu space denpabu.cas aibu yhy.cas ebu	 
+ki’a ku’i	ky ibu yhy abu space ky ubu yhy ibu	 
+
+# Periods
+pei.ua	py eibu denpabu uy abu	
+.i	denpabu ibu	
+.i .i .i	denpabu ibu space denpabu ibu space denpabu ibu	  
+ni'o .i mi klama	ny ibu yhy obu space denpabu ibu space my ibu space ky ly abu my abu	   
+
+# Punctuation the upstream fonts have
+mi?	my ibu question	?
+srera!	sy ry ebu ry abu exclam	!
+(to .i toi)	parenleft ty obu space denpabu ibu space ty oibu parenright	(  )
+zo'o: .ua	zy obu yhy obu colon space denpabu uy abu	: 
+.a'u!	denpabu.cas abu yhy.cas ubu exclam	!
+ma? mo!	my abu question space my obu exclam	? !
+
+# Stress, every stressed syllable written explicitly
+klAma	ky ly abu bahebu my abu	
+kláma	ky ly abu bahebu my abu	
+klàma	ky ly abu bahebu my abu	
+kláma	ky ly abu bahebu my abu	
+mi klAma le zArci	my ibu space ky ly abu bahebu my abu space ly ebu space zy abu bahebu ry cy ibu	   
+lAi	ly aibu bahebu	
+COI	cy oibu bahebu	
+.uÍ	denpabu uy ibu bahebu	
+.UI	denpabu uy ibu bahebu	
+la .DANkikang.	ly abu space denpabu dy seplimeabu bahebu ny ky seplimeibu ky seplimeabu ny gy denpabu	 
+la .djénysys.	ly abu space denpabu dy jy seplimeebu bahebu ny seplimeybu sy seplimeybu sy denpabu	 
+la .pIAtr.	ly abu space denpabu py iy seplimeabu bahebu ty ry denpabu	 
+.DIAN.	denpabu dy iy seplimeabu bahebu ny denpabu	
+.mAias.	denpabu my seplimeabu bahebu iy seplimeabu sy denpabu	
+lojbanIstu	ly obu jy by abu ny ibu bahebu sy ty ubu	
+pAnci	py abu bahebu ny cy ibu	
+kÁU	ky aubu bahebu	
+la .uIl.	ly abu space denpabu uy seplimeibu bahebu ly denpabu	 
+
+# Stress, written by hand: stress on a glide letter marks its syllable (the oracle drops it); a stressed diphthong in a name is one full-diphthong letter (the oracle writes two full vowels)
+.Ua	denpabu uy abu bahebu	
+la .Ian.	ly abu space denpabu iy seplimeabu bahebu ny denpabu	 
+la .djEIn.	ly abu space denpabu dy jy seplimeeibu bahebu ny denpabu	 
+
+# Stretch mark (~), written by hand: the oracle does not accept ~; the mark follows the vowel and any stress mark
+dra~ta	dy ry abu tcenabu ty abu	
+gle~ki~~	gy ly ebu tcenabu ky ibu tcenabu tcenabu	
+mi~	my ibu tcenabu	
+.ui~	denpabu uy ibu tcenabu	
+kla~ma	ky ly abu tcenabu my abu	
+klA~ma	ky ly abu bahebu tcenabu my abu	
+la .dja~n.	ly abu space denpabu dy jy seplimeabu tcenabu ny denpabu	 

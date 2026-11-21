@@ -134,13 +134,19 @@ python -m pytest tests
 ```
 
 `tests/cases/manual.tsv` has hand-checked cases. `tests/cases/corpus.tsv` has
-dictionary words and sentences, and `tests/cases/corpus-ziholafti.tsv` has
-sentences from Joi Massat's *zi’o lafti*. The expected output of both corpora
-comes from an independent Latin-to-Zbalermorna renderer, shaped with the
-original upstream Crisa. These expected glyph names are checked on the fonts
+dictionary words and sentences, `tests/cases/corpus-ziholafti.tsv` has
+sentences from Joi Massat's *zi’o lafti*, and `tests/cases/corpus-corners.tsv`
+has corner cases: names, glides, diphthongs, apostrophes, stress and the
+stretch mark. The expected output of the corpora comes from an independent
+Latin-to-Zbalermorna renderer, shaped with the original upstream Crisa; the
+few corner cases that renderer cannot express are written by hand and marked
+as such. These expected glyph names are checked on the fonts
 marked `reference` in `fonts.toml` (Crisa), in Latin and in the PUA encoding.
 Every other font is checked against its own upstream font: each corpus line in
 Latin must shape like the same text in the PUA encoding does in the original.
+`tests/cases/punctuation.tsv` covers punctuation the upstream fonts lack:
+every font must give it real glyphs and leave the Zbalermorna around it as
+upstream shapes the same text without it.
 `tests/test_build.py` checks the built fonts' metrics and names, and builds
 every upstream font to check that its Latin input shapes like the same text in
 the PUA encoding.

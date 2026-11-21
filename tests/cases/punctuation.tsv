@@ -1,0 +1,19 @@
+# Text with punctuation the upstream fonts lack <TAB> - <TAB> the same text without the
+# punctuation, in the PUA encoding (from an independent renderer). With the punctuation
+# glyphs left out, the first must shape like the third does in the upstream font.
+zo’u, la	-	 
+zo ‘du’u’	-	 
+lu “coi” li’u	-	  
+lu "coi" li'u	-	  
+zo 'nicte'	-	 
+… fenki	-	
+li 2014	-	
+[clani]	-	
+.i la .djan., .e la .bab.	-	     
+mi-do	-	 
+— .ui —	-	
+„.ua“	-	
+‚coi‘	-	
+zo’e, zo’e, zo’e	-	  
+1 + 2 = 3 / 4 * 5 @ _ | ^ ` • ·	-	
+doi .alis., coi	-	  

@@ -167,6 +167,35 @@ def test_punctuation_matches_upstream(any_font):
             assert shape(font, text) == shape(upstream, text), text
 
 
+def test_punctuation_keeps_lojban_intact(any_font):
+    """Punctuation the upstream fonts lack (quotes, the visible comma,
+    dashes, digits) gets a real glyph and leaves the Zbalermorna around it as
+    upstream shapes the same text without the punctuation."""
+    font, upstream = built(any_font), ROOT / any_font["source"]
+    covered = TTFont(font).getBestCmap()
+    for text, _, pua in load("punctuation.tsv"):
+        punct = {c for c in text if not (c.isalpha() or c in " .'’")}
+        missing = {c for c in punct if ord(c) not in covered}
+        assert missing <= OPTIONAL, (text, missing)
+        text = "".join(c for c in text if c not in missing)
+        glyphs = glyph_names(font, text)
+        assert not [g for g in glyphs if g.startswith("lat.") or g == ".notdef"], text
+        # The glyphs the font uses for punctuation: its cmap targets, and the
+        # punctuation forms of the comma and quotes.
+        punct_glyphs = {covered[ord(c)] for c in punct if ord(c) in covered}
+        punct_glyphs |= set(lowering_targets(font))
+        lojban = [g for g in glyphs if g not in punct_glyphs and g != "space"]
+        want = [g for g in glyph_names(upstream, pua) if g != "space"]
+        assert lojban == want, text
+
+
+def lowering_targets(font: Path) -> list[str]:
+    """The glyphs the generated lookups use as punctuation forms of the comma
+    and the quotes: whatever lat.comma, lat.quotesingle and lat.quoteright
+    turn into when not between letters."""
+    return [glyph_names(font, c)[0] for c in (",", "'", "’")]
+
+
 def test_rlig_cannot_be_disabled(any_font):
     """Turning off every discretionary ligature feature changes nothing."""
     font = built(any_font)
