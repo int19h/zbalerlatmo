@@ -5,11 +5,15 @@ Usage: python -m latmo.build [FONT_ID ...]
 fonts.toml lists the fonts. For each one, the build:
 
 1. loads the upstream OTF from zbalermorna/fonts/;
-2. adds the Latin punctuation the upstream font lacks, from the Latin
-   companion font the upstream design was derived from;
+2. adds the Latin punctuation the upstream font lacks. It comes from the
+   Latin companion font the upstream design was derived from, from the
+   upstream font itself where it has full Latin, or else is built from the
+   upstream font's own semicolon and double quote (see ``latin`` in
+   fonts.toml);
 3. adds the ``lat.*`` input glyphs (see latmo/features.py) and maps Latin
-   characters to them. The input glyphs have Latin outlines, so the text still
-   reads as Latin Lojban where no shaping happens;
+   characters to them. Where a Latin source exists, the input glyphs have
+   Latin outlines, so the text still reads as Latin Lojban where no shaping
+   happens;
 4. compiles the generated lookups and puts them ahead of the font's own
    lookups in the ``rlig`` feature, which ligature switches leave on;
 5. renames the font and writes OTF and WOFF2 to fonts/.
@@ -19,6 +23,7 @@ from __future__ import annotations
 
 import copy
 import io
+import math
 import statistics
 import sys
 import tomllib
@@ -28,47 +33,48 @@ from fontTools.feaLib.builder import Builder
 from fontTools.feaLib.parser import Parser
 from fontTools.misc.transform import Transform
 from fontTools.pens.boundsPen import BoundsPen
-from fontTools.pens.recordingPen import DecomposingRecordingPen
+from fontTools.pens.recordingPen import DecomposingRecordingPen, RecordingPen
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont, newTable
 from fontTools.ttLib.tables import otTables
+from fontTools.varLib.instancer import instantiateVariableFont
 
 from . import features
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Latin punctuation and symbols to copy from the companion font when the
-# upstream font lacks them, as (glyph name, code points).
+# Latin punctuation and symbols to add when the upstream font lacks them, as
+# (glyph name, code point of its source glyph, code points to map to it).
+# comma, quotesingle and quoteright are not mapped: U+002C, U+0027 and U+2019
+# go to input glyphs, and the generated lookups use these as punctuation forms.
 PUNCTUATION = [
-    ("comma", []),              # U+002C goes to lat.comma; this is its punctuation form
-    ("quotesingle", []),        # reached via the apostrophe logic only
-    ("quoteright", []),         # likewise
-    ("quoteleft", [0x2018]),
-    ("quotedblleft", [0x201C]),
-    ("quotedblright", [0x201D]),
-    ("quotesinglbase", [0x201A]),
-    ("quotedblbase", [0x201E]),
-    ("hyphen", [0x2D, 0x2010]),
-    ("endash", [0x2013]),
-    ("emdash", [0x2014]),
-    ("ellipsis", [0x2026]),
-    ("slash", [0x2F]),
-    ("backslash", [0x5C]),
-    ("asterisk", [0x2A]),
-    ("plus", [0x2B]),
-    ("equal", [0x3D]),
-    ("at", [0x40]),
-    ("underscore", [0x5F]),
-    ("bar", [0x7C]),
-    ("asciicircum", [0x5E]),
-    ("grave", [0x60]),
-    ("bullet", [0x2022]),
-    ("periodcentered", [0xB7]),
-    ("zero", [0x30]), ("one", [0x31]), ("two", [0x32]), ("three", [0x33]),
-    ("four", [0x34]), ("five", [0x35]), ("six", [0x36]), ("seven", [0x37]),
-    ("eight", [0x38]), ("nine", [0x39]),
-]
+    ("comma", 0x2C, []),
+    ("quotesingle", 0x27, []),
+    ("quoteright", 0x2019, []),
+    ("quoteleft", 0x2018, [0x2018]),
+    ("quotedblleft", 0x201C, [0x201C]),
+    ("quotedblright", 0x201D, [0x201D]),
+    ("quotesinglbase", 0x201A, [0x201A]),
+    ("quotedblbase", 0x201E, [0x201E]),
+    ("hyphen", 0x2D, [0x2D, 0x2010]),
+    ("endash", 0x2013, [0x2013]),
+    ("emdash", 0x2014, [0x2014]),
+    ("ellipsis", 0x2026, [0x2026]),
+    ("slash", 0x2F, [0x2F]),
+    ("backslash", 0x5C, [0x5C]),
+    ("asterisk", 0x2A, [0x2A]),
+    ("plus", 0x2B, [0x2B]),
+    ("equal", 0x3D, [0x3D]),
+    ("at", 0x40, [0x40]),
+    ("underscore", 0x5F, [0x5F]),
+    ("bar", 0x7C, [0x7C]),
+    ("asciicircum", 0x5E, [0x5E]),
+    ("grave", 0x60, [0x60]),
+    ("bullet", 0x2022, [0x2022]),
+    ("periodcentered", 0xB7, [0xB7]),
+] + [(name, 0x30 + i, [0x30 + i]) for i, name in enumerate(
+    ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"])]
 
 # Code points used to source the Latin fallback outline of each input glyph.
 STRESSED = {  # vowel -> code points that mean "stressed vowel"
@@ -116,6 +122,8 @@ class Font:
         self.cff = self.tt["CFF "].cff
         self.top = self.cff.topDictIndex[0]
         self.order = list(self.tt.getGlyphOrder())
+        # The upstream cmap before any Latin input is mapped.
+        self.own_cmap = dict(self.tt.getBestCmap())
 
     def has(self, name: str) -> bool:
         return name in self.top.CharStrings
@@ -126,14 +134,13 @@ class Font:
             raise ValueError(f"glyph {name} already exists")
         private = self.top.Private
         pen = T2CharStringPen(width - private.nominalWidthX, None)
-        lsb = 0
         if draw is not None:
             draw(pen)
-            bounds = BoundsPen(None)
-            draw(bounds)
-            if bounds.bounds is not None:
-                lsb = round(bounds.bounds[0])
         cs = pen.getCharString(private=private, globalSubrs=self.cff.GlobalSubrs)
+        # Measure the compiled glyph: CFF rounds coordinates, so the unrounded
+        # outline's xMin can be a unit off.
+        bounds = cs.calcBounds(None)
+        lsb = round(bounds[0]) if bounds else 0
         strings = self.top.CharStrings
         if strings.charStringsAreIndexed:
             strings.charStrings[name] = len(strings.charStringsIndex)
@@ -153,11 +160,18 @@ class Font:
                     table.cmap[codepoint] = name
 
 
-class LatinSource:
-    """The Latin companion font, scaled to the upstream design."""
+Outline = tuple[int, RecordingPen]  # advance width and outline, in font units
 
-    def __init__(self, path: Path, target: Font):
+
+class CompanionSource:
+    """A Latin font, scaled to the upstream design. It is the companion font
+    the upstream design was derived from, or the upstream font itself when it
+    has full Latin (Fira Code ZLM)."""
+
+    def __init__(self, path: Path, target: Font, axes: dict | None = None):
         self.tt = TTFont(path)
+        if "fvar" in self.tt:
+            self.tt = instantiateVariableFont(self.tt, axes or {"wght": 400})
         self.glyphs = self.tt.getGlyphSet()
         self.cmap = self.tt.getBestCmap()
         self.scale = self._fit_scale(target)
@@ -168,30 +182,104 @@ class LatinSource:
         tgt_upm = target.tt["head"].unitsPerEm
         ratios = []
         tmet = target.tt["hmtx"].metrics
-        for name in ("exclam", "question", "parenleft", "parenright",
-                     "colon", "semicolon", "bracketleft", "bracketright"):
-            if name in tmet and name in self.glyphs:
-                src = self.glyphs[name].width * tgt_upm / upm
-                if src:
-                    ratios.append(tmet[name][0] / src)
+        for cp in map(ord, "!?()[]:;"):
+            name = target.own_cmap.get(cp)
+            src = self.cmap.get(cp)
+            if name and src and self.glyphs[src].width:
+                ratios.append(tmet[name][0] / (self.glyphs[src].width * tgt_upm / upm))
         base = tgt_upm / upm
         return base * (statistics.median(ratios) if ratios else 1.0)
 
-    def glyph_for(self, codepoint: int):
+    def outline(self, codepoint: int) -> Outline | None:
         name = self.cmap.get(codepoint)
-        return None if name is None else self.glyphs[name]
-
-    def copy_into(self, font: Font, name: str, glyph) -> None:
-        transform = Transform().scale(self.scale)
-        width = round(glyph.width * self.scale)
-
+        if name is None:
+            return None
+        glyph = self.glyphs[name]
         recording = DecomposingRecordingPen(self.glyphs)
         glyph.draw(recording)
+        scaled = RecordingPen()
+        recording.replay(TransformPen(scaled, Transform().scale(self.scale)))
+        return round(glyph.width * self.scale), scaled
 
-        def draw(pen):
-            recording.replay(TransformPen(pen, transform))
 
-        font.add_glyph(name, width, draw)
+def _contours(glyphs, name: str) -> list[tuple[list, tuple]]:
+    """Split a glyph into contours, each with its bounds."""
+    recording = DecomposingRecordingPen(glyphs)
+    glyphs[name].draw(recording)
+    contours, current = [], []
+    for op, args in recording.value:
+        current.append((op, args))
+        if op in ("closePath", "endPath"):
+            bounds = BoundsPen(None)
+            for op2, args2 in current:
+                getattr(bounds, op2)(*args2)
+            contours.append((current, bounds.bounds))
+            current = []
+    return contours
+
+
+def _place(contours: list[list], transform: Transform) -> RecordingPen:
+    out = RecordingPen()
+    pen = TransformPen(out, transform)
+    for contour in contours:
+        for op, args in contour:
+            getattr(pen, op)(*args)
+    return out
+
+
+class DerivedSource:
+    """Punctuation built from the upstream font's own outlines, for fonts with
+    no usable Latin companion: the comma is the tail of the semicolon, the
+    single quotes are that tail raised to the height of the double quote (and
+    turned for the opening quotes), and the straight quote is half of the
+    double quote."""
+
+    def __init__(self, target: Font):
+        glyphs = target.tt.getGlyphSet()
+        cmap, hmtx = target.own_cmap, target.tt["hmtx"]
+        semicolon, quotedbl = cmap[ord(";")], cmap[ord('"')]
+        self.comma = min(_contours(glyphs, semicolon), key=lambda c: c[1][1])
+        self.comma_width = hmtx[semicolon][0]
+        quotes = sorted(_contours(glyphs, quotedbl), key=lambda c: c[1][0])
+        self.straight = quotes[0]
+        self.gap = quotes[-1][1][0] - quotes[0][1][0]
+        self.quote_width = hmtx[quotedbl][0]
+        self.top = max(c[1][3] for c in quotes)
+
+    def _single(self, turned: bool, offset: float = 0) -> list:
+        contour, (x0, y0, x1, y1) = self.comma
+        lsb = self.straight[1][0]
+        t = Transform().translate(lsb - x0 + offset, self.top - y1)
+        if turned:
+            cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+            t = t.translate(cx, cy).rotate(math.pi).translate(-cx, -cy)
+        return [_place([contour], t)]
+
+    def outline(self, codepoint: int) -> Outline | None:
+        single = self.quote_width - self.gap
+        if codepoint == 0x2C:
+            return self.comma_width, _place([self.comma[0]], Transform())
+        if codepoint == 0x27:
+            return single, _place([self.straight[0]], Transform())
+        if codepoint in (0x2019, 0x2018):
+            return single, self._single(codepoint == 0x2018)[0]
+        if codepoint in (0x201D, 0x201C):
+            turned = codepoint == 0x201C
+            pair = self._single(turned) + self._single(turned, self.gap)
+            merged = RecordingPen()
+            for rec in pair:
+                rec.replay(merged)
+            return self.quote_width, merged
+        return None
+
+
+def make_source(cfg: dict, font: Font, src: Path):
+    latin = cfg.get("latin", "derive")
+    if latin == "derive":
+        return DerivedSource(font)
+    if latin == "self":
+        return CompanionSource(src, font)
+    return CompanionSource(ROOT / latin, font, cfg.get("latin_axes"))
 
 
 def compile_generated(font: Font) -> tuple[otTables.GSUB, list[int]]:
@@ -374,34 +462,43 @@ def build_font(cfg: dict, out_dir: Path | None = None) -> list[Path]:
     missing = [g for g in required_upstream() if not font.has(g)]
     if missing:
         raise SystemExit(f"{cfg['id']}: upstream glyphs missing: {' '.join(missing)}")
-    latin = LatinSource(ROOT / cfg["latin"], font)
+    source = make_source(cfg, font, src)
+    derived = source if isinstance(source, DerivedSource) else None
 
-    # Punctuation.
-    for gname, cps in PUNCTUATION:
-        if font.has(gname):
-            target = gname
-        else:
-            # Find the companion's glyph by name, or else by code point.
-            glyph = None
-            if gname in latin.glyphs:
-                glyph = latin.glyphs[gname]
-            elif cps:
-                glyph = latin.glyph_for(cps[0])
-            if glyph is None:
-                print(f"  note: no source for {gname}", file=sys.stderr)
-                continue
-            latin.copy_into(font, gname, glyph)
-            target = gname
+    def add_outline(name: str, outline: Outline) -> None:
+        width, recording = outline
+        font.add_glyph(name, width, recording.replay)
+
+    # Punctuation the upstream font lacks.
+    for gname, source_cp, cps in PUNCTUATION:
+        if not font.has(gname):
+            if gname not in features.PUNCTUATION_TARGETS and cps and all(
+                    cp in font.own_cmap for cp in cps):
+                continue  # the upstream font already has it under another name
+            outline = source.outline(source_cp)
+            if outline is None and gname in features.PUNCTUATION_TARGETS:
+                derived = derived or DerivedSource(font)
+                outline = derived.outline(source_cp)
+            if outline is None:
+                continue  # browsers fall back to the next font for these
+            add_outline(gname, outline)
         for cp in cps:
-            font.map(cp, target)
+            font.map(cp, gname)
 
-    # Input glyphs, with Latin fallback outlines.
+    # Input glyphs. Their outlines are only seen where no shaping happens:
+    # Latin where a Latin source exists, otherwise the upstream glyph that
+    # shaping would produce.
+    fallback = dict(features.lowering())
     for gname, cps in input_cmap().items():
-        glyph = latin.glyph_for(cps[0])
-        if glyph is None:
-            font.add_glyph(gname, 0)
-        else:
-            latin.copy_into(font, gname, glyph)
+        outline = source.outline(cps[0])
+        if outline is None:
+            base = fallback[gname.removesuffix(".str")] if gname != features.lat("h") \
+                else features.APOSTROPHE
+            width = font.tt["hmtx"][base][0]
+            recording = DecomposingRecordingPen(font.tt.getGlyphSet())
+            font.tt.getGlyphSet()[base].draw(recording)
+            outline = (width, recording)
+        add_outline(gname, outline)
         for cp in cps:
             font.map(cp, gname)
     for gname in features.internal_glyphs():

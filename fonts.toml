@@ -3,11 +3,17 @@
 #   id           short name used on the command line
 #   source       upstream OTF to build from
 #   latin        Latin font the upstream design was derived from; it supplies
-#                missing punctuation and the Latin fallback outlines
+#                missing punctuation and the Latin fallback outlines. "self"
+#                uses the upstream font's own Latin; "derive" builds the comma
+#                and quote marks from the font's own semicolon and double quote
+#   latin_axes   axis values for a variable Latin font (default wght = 400)
 #   family/style names of the built font
+#   reference    the tests check exact glyph names on these fonts (Crisa);
+#                every other font is checked against its upstream font
 #   pua_feature  upstream feature holding the Zbalermorna lookups ("liga" in
 #                most upstream fonts, "calt" in fira-code-zlm); it is folded
-#                into rlig, which ligature switches leave on
+#                into rlig, which ligature switches leave on. Leave it out
+#                when the upstream font has no Zbalermorna lookups to fold
 
 [[font]]
 id = "crisa-regular"
@@ -17,6 +23,7 @@ family = "Crisa Latmo"
 style = "Regular"
 pua_feature = "liga"
 version = "0.1"
+reference = true
 
 [[font]]
 id = "crisa-light"
@@ -25,4 +32,103 @@ latin = "vendor/lato/Lato-Light.ttf"
 family = "Crisa Latmo"
 style = "Light"
 pua_feature = "liga"
+version = "0.1"
+reference = true
+
+[[font]]
+id = "vrude-regular"
+source = "zbalermorna/fonts/vrude-regular.otf"
+latin = "vendor/playfairdisplay/PlayfairDisplay[wght].ttf"
+family = "Vrude Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "vrude-italic"
+source = "zbalermorna/fonts/vrude-italic-regular.otf"
+latin = "vendor/playfairdisplay/PlayfairDisplay-Italic[wght].ttf"
+family = "Vrude Latmo"
+style = "Italic"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "balvi-regular"
+source = "zbalermorna/fonts/balvi-regular.otf"
+latin = "vendor/exo2/Exo2[wght].ttf"
+family = "Balvi Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "tanbo-regular"
+source = "zbalermorna/fonts/tanbo-regular.otf"
+latin = "vendor/robotoslab/RobotoSlab[wght].ttf"
+family = "Tanbo Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "nerfopi-regular"
+source = "zbalermorna/fonts/nerfopi-regular.otf"
+latin = "vendor/lobster/Lobster-Regular.ttf"
+family = "Nerfopi Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "primihi-regular"
+source = "zbalermorna/fonts/primihi-regular.otf"
+latin = "vendor/goudybookletter1911/GoudyBookletter1911.ttf"
+family = "Primihi Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "dunda-regular"
+source = "zbalermorna/fonts/dunda-regular.otf"
+latin = "vendor/lato/Lato-Regular.ttf"
+family = "Dunda Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "tisna-bold"
+source = "zbalermorna/fonts/tisna-bold.otf"
+latin = "vendor/lato/Lato-Regular.ttf"
+family = "Tisna Latmo"
+style = "Bold"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "ritli-regular"
+source = "zbalermorna/fonts/ritli-regular.otf"
+latin = "derive"
+family = "Ritli Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "piper-karot"
+source = "zbalermorna/fonts/piper-karot.otf"
+latin = "derive"
+family = "Piper Karot Latmo"
+style = "Regular"
+pua_feature = "liga"
+version = "0.1"
+
+[[font]]
+id = "fira-code-zlm"
+source = "zbalermorna/fonts/fira-code-zlm.otf"
+latin = "self"
+family = "Fira Code ZLM Latmo"
+style = "Regular"
 version = "0.1"

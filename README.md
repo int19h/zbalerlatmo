@@ -16,8 +16,27 @@ users can use the same fonts.
 | --- | --- | --- |
 | Crisa Latmo Regular | `crisa-regular.otf` | Lato Regular |
 | Crisa Latmo Light | `crisa-light.otf` | Lato Light |
+| Vrude Latmo Regular | `vrude-regular.otf` | Playfair Display |
+| Vrude Latmo Italic | `vrude-italic-regular.otf` | Playfair Display Italic |
+| Balvi Latmo | `balvi-regular.otf` | Exo 2 |
+| Tanbo Latmo | `tanbo-regular.otf` | Roboto Slab |
+| Nerfopi Latmo | `nerfopi-regular.otf` | Lobster |
+| Primihi Latmo | `primihi-regular.otf` | Goudy Bookletter 1911 |
+| Dunda Latmo | `dunda-regular.otf` | Lato Regular |
+| Tisna Latmo Bold | `tisna-bold.otf` | Lato Regular |
+| Ritli Latmo | `ritli-regular.otf` | none |
+| Piper Karot Latmo | `piper-karot.otf` | none |
+| Fira Code ZLM Latmo | `fira-code-zlm.otf` | its own Latin |
 
 The built fonts are in [`fonts/`](fonts), as OTF and WOFF2.
+
+The Latin companion is the font each upstream design was derived from, and
+supplies the punctuation the upstream font lacks. Where it has none that can
+be used, the build makes the comma and the quotation marks from the font's own
+semicolon and double quote, and leaves other punctuation (dashes, digits) to
+the next font in the CSS `font-family` list. Fira Code ZLM already contains all
+of Fira Code. The upstream repository's two prototype fonts,
+`unicode-drakono.otf` and `unicode-manri.otf`, are not built.
 
 ## Using the fonts on a web page
 
@@ -76,6 +95,8 @@ The fonts expect well-formed Latin Lojban.
   form, as in the upstream fonts.
 - Punctuation and digits stay Latin. Quotation marks, dashes, the ellipsis and
   digits come from the Latin companion font.
+- Fira Code ZLM stays monospaced: as upstream, every vowel sign takes its own
+  cell, and its programming ligatures (in `calt`) can still be turned off.
 
 All of this is in `rlig`, the required ligatures feature. Ligature switches in
 applications and `font-variant-ligatures: none` in CSS leave it on; only
@@ -112,18 +133,22 @@ python -m pytest tests
 dictionary words and sentences, and `tests/cases/corpus-ziholafti.tsv` has
 sentences from Joi Massat's *zi’o lafti*. The expected output of both corpora
 comes from an independent Latin-to-Zbalermorna renderer, shaped with the
-original upstream font. Each corpus line is also checked in the PUA encoding,
-which must give the same glyphs, so the tests also cover upstream behaviour.
+original upstream Crisa. These expected glyph names are checked on the fonts
+marked `reference` in `fonts.toml` (Crisa), in Latin and in the PUA encoding.
+Every other font is checked against its own upstream font: each corpus line in
+Latin must shape like the same text in the PUA encoding does in the original.
 `tests/test_build.py` checks the built fonts' metrics and names, and builds
 every upstream font to check that its Latin input shapes like the same text in
 the PUA encoding.
 
 ## Licenses
 
-The build code is under the MIT license (see [`LICENSE`](LICENSE)). The built
-fonts are Modified Versions under the SIL Open Font License 1.1 (see
-[`fonts/OFL.txt`](fonts/OFL.txt)). The vendored Lato fonts are also under the
-OFL (see [`vendor/lato/OFL.txt`](vendor/lato/OFL.txt)).
+The build code is under the MIT license (see [`LICENSE`](LICENSE)). Each built
+font keeps the license of the font it was derived from: most are under the SIL
+Open Font License 1.1, Tanbo Latmo is under the Apache License 2.0, and Ritli
+Latmo under the GPL. [`fonts/LICENSES.md`](fonts/LICENSES.md) lists each
+font's license and copyright notices. The vendored companion fonts keep their
+own licenses (see [`vendor/README.md`](vendor/README.md)).
 `tests/cases/corpus-ziholafti.tsv` contains text from
 [*zi’o lafti*](https://suzypavlis.neocities.org/lojban/prux/ziholafti) © 2026
 by Joi Massat, used and adapted under

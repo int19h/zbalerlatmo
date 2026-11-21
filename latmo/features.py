@@ -92,6 +92,32 @@ def stress_lookups(name: str, pairs: list[tuple[str, str]]) -> list[str]:
     return out
 
 
+# The glyphs the lowering lookup emits for punctuation; the build makes sure
+# every font has them.
+PUNCTUATION_TARGETS = ["comma", "quotesingle", "quoteright"]
+
+
+def lowering() -> list[tuple[str, str]]:
+    """(input or internal glyph, upstream glyph) pairs for the last lookup."""
+    pairs: list[tuple[str, str]] = []
+    for c in CONSONANTS:
+        pairs += [(lat(c), RADICAL[c]), (nm(c), RADICAL[c])]
+    for v in VOWELS:
+        pairs += [(lat(v), VOWEL_MARK[v]), (nm(v), VOWEL_FULL[v])]
+    pairs += [
+        (lat("i.gl"), GLIDE["i"]), (lat("u.gl"), GLIDE["u"]),
+        (lat("period"), PERIOD),
+        (lat("apos"), APOSTROPHE), (nm("apos"), APOSTROPHE),
+        (lat("sep"), SEPARATOR), (nm("sep"), SEPARATOR),
+        (lat("stress"), STRESS), (nm("stress"), STRESS),
+        (lat("tilde"), STRETCH), (nm("tilde"), STRETCH),
+        (lat("comma"), "comma"),
+        (lat("quotesingle"), "quotesingle"),
+        (lat("quoteright"), "quoteright"),
+    ]
+    return pairs
+
+
 def cls(names) -> str:
     return "[" + " ".join(names) + "]"
 
@@ -196,25 +222,9 @@ def generate() -> str:
         w(f"    sub {nm(d[0])} {nm(d[1])} by {DIPHTHONG_FULL[d]};")
     w("} latDiphthongs;\n")
 
-    # 7. Lower every remaining input glyph to its upstream glyph.
-    lower: list[tuple[str, str]] = []
-    for c in CONSONANTS:
-        lower += [(lat(c), RADICAL[c]), (nm(c), RADICAL[c])]
-    for v in VOWELS:
-        lower += [(lat(v), VOWEL_MARK[v]), (nm(v), VOWEL_FULL[v])]
-    lower += [
-        (lat("i.gl"), GLIDE["i"]), (lat("u.gl"), GLIDE["u"]),
-        (lat("period"), PERIOD),
-        (lat("apos"), APOSTROPHE), (nm("apos"), APOSTROPHE),
-        (lat("sep"), SEPARATOR), (nm("sep"), SEPARATOR),
-        (lat("stress"), STRESS), (nm("stress"), STRESS),
-        (lat("tilde"), STRETCH), (nm("tilde"), STRETCH),
-        (lat("comma"), "comma"),
-        (lat("quotesingle"), "quotesingle"),
-        (lat("quoteright"), "quoteright"),
-    ]
+    # 7. Turn every remaining input glyph into its upstream glyph.
     w("lookup latLower {")
-    for src, dst in lower:
+    for src, dst in lowering():
         w(f"    sub {src} by {dst};")
     w("} latLower;\n")
 
